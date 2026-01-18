@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.2026270573">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.2026270573" moduleId="org.eclipse.cdt.core.settings" name="HardwareDebug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.managedbuild.renesas.core.RenesasCompilerAssemblerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.managedbuild.core.buildRunnerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="com.renesas.cdt.managedbuild.core.toolchainInfo">
+				<option id="toolchain.id" value="Renesas_RXC"/>
+				<option id="toolchain.version" value="v3.05.00"/>
+				<option id="toolchain.enable" value="true"/>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="abs" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="Debug on hardware" id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.2026270573" name="HardwareDebug" parent="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration" postbuildStep="cmd /c &quot;copy ${workspace_loc:/${ProjName}}\HardwareDebug\\${ProjName}.map ${workspace_loc:/${ProjName}}\app\rmw\\${ProjName}.map &amp;&amp; cd /d ${workspace_loc:/${ProjName}}\app\rmw &amp;&amp; map2csv_RELCC.exe ${ProjName}.map var.csv&quot;">
+					<folderInfo id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.2026270573." name="/" resourcePath="">
+						<toolChain id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain.1264118768" name="Renesas CCRX Toolchain" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.PE" id="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform.231942627" osList="win32" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1}/HardwareDebug" id="com.renesas.cdt.managedbuild.renesas.ccrx.base.builder.1808828979" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CCRX Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.builder"/>
+							<tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.756365661" name="DSP Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp">
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.dsp.option.noDebugInfo.327308308" name="Output debug information (-no_debug_info)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.dsp.option.noDebugInfo" value="true" valueType="boolean"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.dsp.option.endian.2072288685" name="Endian of output data value (-littleEndianData)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.dsp.option.endian" value="com.renesas.cdt.managedbuild.renesas.ccrx.dsp.option.endian.big" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.dsp.option.dspSection.2086217162" name="Section name (-dsp_section)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.dsp.option.dspSection" value="" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.dsp.option.hasDSP.1732464039" name="Has DSP" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.dsp.option.hasDSP" value="false" valueType="string"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.2099326484" name="Common" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.common">
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.cpu.2119309796" name="CPU type (-cpu)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.cpu" value="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.cpu.rx200" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.isa.1738019835" name="Instruction set architecture (-isa)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.isa" value="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.isa.rxv3" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.rxArchitecture.1591597708" name="RX Architecture" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.rxArchitecture" value="rxv3" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.floatIns.159061610" name="Use floating point arithmetic instructions (-fpu/-nofpu)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.floatIns" value="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.floatIns.yes" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.hasFpu.1871232555" name="Has FPU" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.hasFpu" value="TRUE" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.deviceName.861046113" name="Device Name" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.deviceName" value="R5F526TFCxFM" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.deviceHistory.1379125599" name="Device history" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.deviceHistory" value="R5F526TFCxFP;R5F526TFCxFM" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.isaHistory.287626803" name="ISA history" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.isaHistory" value="non_init;com.renesas.cdt.managedbuild.renesas.ccrx.common.option.isa.rxv3" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.deviceCommand.1287596853" name="Device Command" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.deviceCommand" value="R5F526TF" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.checkRtos.434339353" name="Check RTOS" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.checkRtos" value="unusedRtos" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.hasDsp.624769228" name="Has DSP" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.hasDsp" value="false" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.deviceFamily.176064201" name="Device Family" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.deviceFamily" value="RX26T" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.hasTFU.1806245377" name="Has TFU" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.hasTFU" value="true" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.tfuType.916829186" name="TFU Type" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.common.option.tfuType" value="v2" valueType="string"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.631906894" name="Compiler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler">
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.fpu.314251611" name="Use floating point arithmetic instructions (-fpu/-nofpu)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.fpu" useByScannerDiscovery="false" value="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.fpu.depend" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.include.501127617" name="Include file directories (-include)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.include" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${TCINSTALL}/include"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/Config_MOTOR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/main}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/current_rx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/general}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/sensorless_vector_rx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/driver_rx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/speed_rx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/rmw}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/board_ui}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/r_config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/r_pincfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/general}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/r_bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_PORT}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_IWDT}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_CMT0}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_POE}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_S12AD2}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_MTU3_MTU4}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_S12AD0}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.userBefore.1074162840" name="User-defined options (added before all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.userBefore" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.userAfter.1163455397" name="User-defined options (added after all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.userAfter" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.tfuVersion.2137871333" name="TFU version" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.tfuVersion" useByScannerDiscovery="false" value="-tfu_version=v2" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.langFileC.1492034413" name="C source file (-lang)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.langFileC" useByScannerDiscovery="false" value="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.langFileC.c99" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.inputCharCode.2066574292" name="Character code of an input program (-euc/-sjis/-latin1/-utf8/-big5/-gb2312)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.inputCharCode" useByScannerDiscovery="false" value="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.inputCharCode.utf8" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.outcode.493181095" name="Output character code (-outcode)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.outcode" useByScannerDiscovery="false" value="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.outcode.utf8" valueType="enumerated"/>
+								<inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType.773498569" name="Compiler Input C" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType"/>
+								<inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType.464925050" name="Compiler Input CPP" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.1803878201" name="Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.option.userBefore.992941827" name="User-defined options (added before all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.option.userBefore" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.option.userAfter.1501319778" name="User-defined options (added after all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.option.userAfter" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.option.characterCode.211881665" name="Character code of an input program (-euc/-sjis/-latin1/-utf8/-big5/-gb2312)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.option.characterCode" value="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.option.characterCode.utf8" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.option.include.2121490877" name="Include file directories (-include)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.option.include" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/r_config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/r_pincfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/general}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/r_bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_PORT}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_IWDT}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_CMT0}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_POE}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_S12AD2}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_MTU3_MTU4}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_S12AD0}&quot;"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType.1318190465" name="Assembler InputType" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.1928227817" name="Linker" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.rom.675209503" name="ROM to RAM mapped section (-rom)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.rom" valueType="stringList">
+									<listOptionValue builtIn="false" value="D=R"/>
+									<listOptionValue builtIn="false" value="D_1=R_1"/>
+									<listOptionValue builtIn="false" value="D_2=R_2"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.linkerSection.2027789293" name="Sections (-start)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.linkerSection" value="BDTCTBL/0,SU,SI,B_1,R_1,B_2,R_2,B,R/0400,PResetPRG,C_1,C_2,C,C$*,D*,W*,L,P/0FFF80000,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.userBefore.15960212" name="User-defined options (added before all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.userBefore" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.userAfter.501403114" name="User-defined options (added after all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.userAfter" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.vect.321809454" name="Address setting for unused vector area (-vect)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.vect" value="_undefined_interrupt_source_isr" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.checkSection.2146035870" name="Checks the section larger than the specified range of addresses (-cpu)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.checkSection" value="true" valueType="boolean"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.memoryType.539474430" name="Memory address type assignment method (-cpu)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.memoryType" value="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.memoryType.autoSpecify" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.noneLinkageOrderList.1306288390" name="(Linkage order list) (-input/-library/-binary)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.noneLinkageOrderList" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;.\app/board_ui\r_app_board_ui.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\app/board_ui\r_app_board_ui_ctrl_rx26t_mcilv1.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\app/main\r_app_main.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\app/rmw\r_app_rmw.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\app/rmw\r_app_rmw_interrupt.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/current_rx\r_motor_current.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/current_rx\r_motor_current_api.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/current_rx\r_motor_current_modulation.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/current_rx\r_motor_current_pi_gain_calc.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/driver_rx\r_motor_driver.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/general\r_motor_filter.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/general\r_motor_pi_control.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_action.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_api.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_manager.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_protection.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_statemachine.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/speed_rx\r_motor_speed.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/speed_rx\r_motor_speed_api.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\motor_module/speed_rx\r_motor_speed_pi_gain_calc.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_CMT0\Config_CMT0.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_CMT0\Config_CMT0_user.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_IWDT\Config_IWDT.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_IWDT\Config_IWDT_user.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_MOTOR\Config_MOTOR.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_MOTOR\Config_MOTOR_user.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_POE\Config_POE.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_POE\Config_POE_user.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_PORT\Config_PORT.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_PORT\Config_PORT_user.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_S12AD2\Config_S12AD2.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/Config_S12AD2\Config_S12AD2_user.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/general\r_cg_hardware_setup.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/general\r_smc_cgc.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/general\r_smc_cgc_user.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/general\r_smc_interrupt.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/board/generic_rx26t\hwsetup.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\dbsct.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\lowlvl.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\lowsrc.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\mcu_locks.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\r_bsp_cpu.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\r_bsp_interrupts.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\r_bsp_locking.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\r_bsp_mcu_startup.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\r_bsp_software_interrupt.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\r_rx_intrinsic_functions.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\resetprg.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/all\sbrk.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/rx26t\mcu_clocks.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/rx26t\mcu_init.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/rx26t\mcu_interrupts.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/rx26t\mcu_mapped_interrupts.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_bsp/mcu/rx26t\vecttbl.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src/smc_gen/r_pincfg\Pin.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1.lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/rmw/ICS2_RX26T.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/current_rx/r_motor_current_bemf_observer.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/current_rx/r_motor_current_volt_err_comp.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/speed_rx/r_motor_speed_fluxwkn.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/speed_rx/r_motor_speed_opl_damp_ctrl.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/speed_rx/r_motor_speed_opl2less.lib}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.inputFile.621142356" name="Relocatable files, object files and library files (-input/-library/-binary)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.inputFile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/rmw/ICS2_RX26T.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/current_rx/r_motor_current_bemf_observer.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/current_rx/r_motor_current_volt_err_comp.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/speed_rx/r_motor_speed_fluxwkn.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/speed_rx/r_motor_speed_opl_damp_ctrl.lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/motor_module/speed_rx/r_motor_speed_opl2less.lib}&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.show.708170551" name="Specify listfile features (-show)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.show" value="com.renesas.cdt.managedbuild.renesas.ccrx.linker.option.show.all" valueType="enumerated"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.1204707982" name="Library Generator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian">
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.fpu.142676168" name="Use floating point arithmetic instructions (-fpu/-nofpu)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.fpu" value="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.fpu.depend" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.userBefore.588672905" name="User-defined options (added before all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.userBefore" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.userAfter.1373278185" name="User-defined options (added after all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.userAfter" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.lang.1892904101" name="Library configuration (-lang)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.lang" value="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.lang.c99" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.headMath.757807641" name="math.h (C89/C99): Numerical calculation library (-head=math)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.librarian.option.headMath" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.2002287402" name="Converter" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.userBefore.739961717" name="User-defined options (added before all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.userBefore" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.userAfter.1144213954" name="User-defined options (added after all specified options)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.userAfter" valueType="stringList">
+									<listOptionValue builtIn="false" value=""/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.typeOfOutputFile.121801558" name="Output file type (-form)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.typeOfOutputFile" value="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.typeOFOutputFile.none" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.separated.form.motorolaFile.1945210593" name="Motorola S format file (-form=stype)" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.separated.form.motorolaFile" value="true" valueType="boolean"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.outputHexFile.2144733875" name="Output hex file" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.converter.option.outputHexFile" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.454644973" name="RTOS Configurator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="app"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="motor_module"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="com.renesas.cdt.managedbuild.core.boardInfo"/>
+			<storageModule moduleId="com.renesas.cdt.managedbuild.core.deviceConfiguration">
+				<deviceConfiguration core="" device="R5F526TF" family="rx" modes="bank.single" package="CxFM"/>
+			</storageModule>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1.com.renesas.cdt.managedbuild.renesas.ccrx.projectType.233548959" name="Executable" projectType="com.renesas.cdt.managedbuild.renesas.ccrx.projectType"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+		<project-mappings>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cHeader" language="com.renesas.cdt.managedbuild.renesas.core.extendc"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cSource" language="com.renesas.cdt.managedbuild.renesas.core.extendc"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxHeader" language="com.renesas.cdt.managedbuild.renesas.core.extendcpp"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="com.renesas.cdt.managedbuild.renesas.core.extendcpp"/>
+		</project-mappings>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope"/>
+</cproject>

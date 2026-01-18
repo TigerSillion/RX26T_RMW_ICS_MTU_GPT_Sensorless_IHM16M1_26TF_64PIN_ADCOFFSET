@@ -1,0 +1,4277 @@
+Renesas Optimizing Linker (V3.05.00 )             18-Jan-2026 00:47:30
+
+*** Options ***
+
+-subcommand=LinkerRX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1.tmp
+-MAKEUD="C:\A_sw_workspace\e2s_workspace\e2workspace_202512\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\HardwareDebug/RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1_l.ud" 
+-library="C:\A_sw_workspace\e2s_workspace\e2workspace_202512\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\app\rmw\ICS2_RX26T.lib" 
+-library="C:\A_sw_workspace\e2s_workspace\e2workspace_202512\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\motor_module\current_rx\r_motor_current_bemf_observer.lib" 
+-library="C:\A_sw_workspace\e2s_workspace\e2workspace_202512\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\motor_module\current_rx\r_motor_current_volt_err_comp.lib" 
+-library="C:\A_sw_workspace\e2s_workspace\e2workspace_202512\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\motor_module\speed_rx\r_motor_speed_fluxwkn.lib" 
+-library="C:\A_sw_workspace\e2s_workspace\e2workspace_202512\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\motor_module\speed_rx\r_motor_speed_opl_damp_ctrl.lib" 
+-library="C:\A_sw_workspace\e2s_workspace\e2workspace_202512\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\motor_module\speed_rx\r_motor_speed_opl2less.lib" 
+-noprelink 
+-input=".\app/board_ui\r_app_board_ui.obj"
+-input=".\app/board_ui\r_app_board_ui_ctrl_rx26t_mcilv1.obj"
+-input=".\app/main\r_app_main.obj"
+-input=".\app/rmw\r_app_rmw.obj"
+-input=".\app/rmw\r_app_rmw_interrupt.obj"
+-input=".\motor_module/Config_MOTOR\Config_MOTOR.obj"
+-input=".\motor_module/Config_MOTOR\Config_MOTOR_user.obj"
+-input=".\motor_module/current_rx\r_motor_current.obj"
+-input=".\motor_module/current_rx\r_motor_current_api.obj"
+-input=".\motor_module/current_rx\r_motor_current_modulation.obj"
+-input=".\motor_module/current_rx\r_motor_current_pi_gain_calc.obj"
+-input=".\motor_module/driver_rx\r_motor_driver.obj"
+-input=".\motor_module/general\r_motor_filter.obj"
+-input=".\motor_module/general\r_motor_pi_control.obj"
+-input=".\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_action.obj"
+-input=".\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_api.obj"
+-input=".\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_manager.obj"
+-input=".\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_protection.obj"
+-input=".\motor_module/sensorless_vector_rx\r_motor_sensorless_vector_statemachine.obj"
+-input=".\motor_module/speed_rx\r_motor_speed.obj"
+-input=".\motor_module/speed_rx\r_motor_speed_api.obj"
+-input=".\motor_module/speed_rx\r_motor_speed_pi_gain_calc.obj"
+-input=".\src/smc_gen/Config_CMT0\Config_CMT0.obj"
+-input=".\src/smc_gen/Config_CMT0\Config_CMT0_user.obj"
+-input=".\src/smc_gen/Config_IWDT\Config_IWDT.obj"
+-input=".\src/smc_gen/Config_IWDT\Config_IWDT_user.obj"
+-input=".\src/smc_gen/Config_MTU3_MTU4\Config_MTU3_MTU4.obj"
+-input=".\src/smc_gen/Config_MTU3_MTU4\Config_MTU3_MTU4_user.obj"
+-input=".\src/smc_gen/Config_POE\Config_POE.obj"
+-input=".\src/smc_gen/Config_POE\Config_POE_user.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT_user.obj"
+-input=".\src/smc_gen/Config_S12AD0\Config_S12AD0.obj"
+-input=".\src/smc_gen/Config_S12AD0\Config_S12AD0_user.obj"
+-input=".\src/smc_gen/Config_S12AD2\Config_S12AD2.obj"
+-input=".\src/smc_gen/Config_S12AD2\Config_S12AD2_user.obj"
+-input=".\src/smc_gen/general\r_cg_hardware_setup.obj"
+-input=".\src/smc_gen/general\r_smc_cgc.obj"
+-input=".\src/smc_gen/general\r_smc_cgc_user.obj"
+-input=".\src/smc_gen/general\r_smc_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx26t\hwsetup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\dbsct.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowlvl.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowsrc.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\mcu_locks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_cpu.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_locking.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_mcu_startup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_software_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_rx_intrinsic_functions.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\resetprg.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\sbrk.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx26t\mcu_clocks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx26t\mcu_init.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx26t\mcu_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx26t\mcu_mapped_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx26t\vecttbl.obj"
+-input=".\src/smc_gen/r_pincfg\Pin.obj"
+-library=".\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1.lib"
+-output="RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1.abs" 
+-form=absolute 
+-nomessage 
+-vect=_undefined_interrupt_source_isr 
+-list 
+-show=all 
+-nooptimize 
+-start=BDTCTBL/0,SU,SI,B_1,R_1,B_2,R_2,B,R/0400,PResetPRG,C_1,C_2,C,C$*,D*,W*,L,P/0FFF80000,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC 
+-rom=D=R,D_1=R_1,D_2=R_2 
+-cpu=RAM=00000000-0000ffff,FIX=00080000-00083fff,FIX=00086000-00087fff,FIX=00088000-0009ffff,FIX=000a0000-000a3fff,FIX=000a6000-000bffff,FIX=000c0000-000dffff,FIX=000e0000-000fffff,ROM=00100000-00103fff,RAM=00120040-001200af,FIX=007fb174-007fb177,FIX=007fb17c-007fb17f,FIX=007fb1e4-007fb1eb,FIX=007fe000-007fffff,ROM=fff80000-ffffffff 
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+BDTCTBL
+                                  00000000  000003ff       400   4
+SU
+                                  00000400  000013ff      1000   4
+SI
+                                  00001400  000017ff       400   4
+B_1
+                                  00001800  00001847        48   1
+R_1
+                                  00001848  000018ac        65   1
+B_2
+                                  000018ae  000018cf        22   2
+R_2
+                                  000018d0  000018d7         8   2
+B
+                                  000018d8  000024d7       c00   4
+R
+                                  000024d8  0000263b       164   4
+$ADDR_C_120040
+                                  00120040  00120043         4   1
+$ADDR_C_120048
+                                  00120048  0012004b         4   1
+$ADDR_C_120050
+                                  00120050  0012006f        20   1
+$ADDR_C_120090
+                                  00120090  00120093         4   1
+$ADDR_C_1200A0
+                                  001200a0  001200a3         4   1
+PResetPRG
+                                  fff80000  fff80063        64   1
+C_1
+                                  fff80064  fff80064         0   1
+C_2
+                                  fff80064  fff80069         6   2
+C
+                                  fff8006c  fff801c7       15c   4
+C$DSEC
+                                  fff801c8  fff801eb        24   4
+C$BSEC
+                                  fff801ec  fff80203        18   4
+C$VECT
+                                  fff80204  fff80603       400   4
+D_1
+                                  fff80604  fff80668        65   1
+D_2
+                                  fff8066a  fff80671         8   2
+D
+                                  fff80674  fff807d7       164   4
+W
+                                  fff807d8  fff807d8         0   4
+W_1
+                                  fff807d8  fff807fb        24   1
+W_2
+                                  fff807fc  fff80813        18   2
+L
+                                  fff80814  fff80859        46   4
+P
+                                  fff8085a  fff85dec      5593   1
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  0000263b Byte(s)
+ROMDATA SECTION:  000008a1 Byte(s)
+PROGRAM SECTION:  000055f7 Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+    STRUCT                                      SIZE
+      MEMBER                        ADDR        SIZE    INFO
+
+SECTION=BDTCTBL
+FILE=.\app\main\r_app_main.obj
+                                  00000000  000003ff       400
+  _g_dtc_table
+                                  00000000       400   data ,g         1
+
+SECTION=SU
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  00000400  000013ff      1000
+
+SECTION=SI
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  00001400  000017ff       400
+
+SECTION=B_1
+FILE=.\app\rmw\r_app_rmw.obj
+                                  00001800  0000180b         c
+  _gui_u1_active_gui
+                                  00001800         1   data ,g         0
+  _com_u1_system_mode
+                                  00001801         1   data ,g         2
+  _g_u1_system_mode
+                                  00001802         1   data ,g         3
+  _com_u1_enable_write
+                                  00001803         1   data ,g         2
+  _g_u1_enable_write
+                                  00001804         1   data ,g         2
+  _com_u1_sw_userif
+                                  00001805         1   data ,g         2
+  _g_u1_sw_userif
+                                  00001806         1   data ,g         3
+  _com_u1_ctrl_loop_mode
+                                  00001807         1   data ,g         2
+  _com_u1_flag_volt_err_comp_use
+                                  00001808         1   data ,g         2
+  _com_u1_flag_fluxwkn_use
+                                  00001809         1   data ,g         2
+  _com_u1_flag_less_switch_use
+                                  0000180a         1   data ,g         2
+  _com_u1_flag_openloop_damping_use
+                                  0000180b         1   data ,g         2
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  0000180c  00001833        28
+  _flmod
+                                  0000180c        14   data ,g         3
+  _sml_buf
+                                  00001820        14   data ,g         0
+FILE=ICS2_RX26T
+                                  00001834  00001847        14
+  _ics_wbuf
+                                  00001834        12   data ,l         5
+  _ics_rsum
+                                  00001846         1   data ,l         1
+  _ics_rcom
+                                  00001847         1   data ,g         2
+
+SECTION=R_1
+FILE=.\app\board_ui\r_app_board_ui.obj
+                                  00001848  00001849         2
+  _s_u1_sw_cnt
+                                  00001848         1   data ,l         1
+  _s_u1_reset_req
+                                  00001849         1   data ,l         1
+FILE=.\app\rmw\r_app_rmw.obj
+                                  0000184a  0000184b         2
+  _g_u1_update_param_flag
+                                  0000184a         1   data ,g         2
+  _s_u1_cnt_ics
+                                  0000184b         1   data ,l         1
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_statemachine.obj
+                                  0000184c  00001857         c
+  _s_state_transition_table
+                                  0000184c         c   data ,l         1
+FILE=ICS2_RX26T
+                                  00001858  0000185c         5
+  _ics_rx_cnt
+                                  00001858         1   data ,l         2
+  _ics_even
+                                  00001859         1   data ,l         2
+  _ics_port
+                                  0000185a         1   data ,l         2
+  _ics_port_h4
+                                  0000185b         1   data ,l         9
+  _ics_tmode
+                                  0000185c         1   data ,l         2
+FILE=xfiles
+                                  0000185d  000018ac        50
+  _ebuf
+                                  0000185d        50   data ,l         5
+
+SECTION=B_2
+FILE=.\app\main\r_app_main.obj
+                                  000018ae  000018af         2
+  _j
+                                  000018ae         2   data ,g         1
+FILE=.\app\rmw\r_app_rmw.obj
+                                  000018b0  000018b5         6
+  _g_u2_conf_sw_ver
+                                  000018b0         2   data ,g         0
+  _com_u2_offset_calc_time
+                                  000018b2         2   data ,g         2
+  _com_u2_mtr_pp
+                                  000018b4         2   data ,g         2
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  000018b6  000018bd         8
+  _s_protect_counters
+                                  000018b6         8   data ,l         3
+FILE=ICS2_RX26T
+                                  000018be  000018cf        12
+  _ics_tx
+                                  000018be        12   data ,l         2
+
+SECTION=R_2
+FILE=.\app\rmw\r_app_rmw.obj
+                                  000018d0  000018d5         6
+  _g_u2_conf_hw
+                                  000018d0         2   data ,g         0
+  _g_u2_conf_sw
+                                  000018d2         2   data ,g         0
+  _g_u2_conf_tool
+                                  000018d4         2   data ,g         0
+FILE=ICS2_RX26T
+                                  000018d6  000018d7         2
+  _ics_wready
+                                  000018d6         2   data ,l         3
+
+SECTION=B
+FILE=.\app\main\r_app_main.obj
+                                  000018d8  000018db         4
+  _i
+                                  000018d8         4   data ,g         1
+FILE=.\app\rmw\r_app_rmw.obj
+                                  000018dc  000019e3       108
+  _g_st_rmw_input_buffer
+                                  000018dc        90   data ,g         2
+    struct  {
+                                                  90
+      _g_st_rmw_input_buffer.u2_offset_calc_time
+                                  000018dc         2   unsigned short
+      _g_st_rmw_input_buffer.st_motor
+                                  000018e0        1c
+    struct  {
+                                                  1c
+      _g_st_rmw_input_buffer.st_motor.u2_mtr_pp
+                                  000018e0         2   unsigned short
+      _g_st_rmw_input_buffer.st_motor.f4_mtr_r
+                                  000018e4         4   float
+      _g_st_rmw_input_buffer.st_motor.f4_mtr_ld
+                                  000018e8         4   float
+      _g_st_rmw_input_buffer.st_motor.f4_mtr_lq
+                                  000018ec         4   float
+      _g_st_rmw_input_buffer.st_motor.f4_mtr_m
+                                  000018f0         4   float
+      _g_st_rmw_input_buffer.st_motor.f4_mtr_j
+                                  000018f4         4   float
+      _g_st_rmw_input_buffer.st_motor.f4_nominal_current_rms
+                                  000018f8         4   float
+    }
+      _g_st_rmw_input_buffer.f4_max_speed_rpm
+                                  000018fc         4   float
+      _g_st_rmw_input_buffer.u1_ctrl_loop_mode
+                                  00001900         1   unsigned char
+      _g_st_rmw_input_buffer.f4_ol_ref_id
+                                  00001904         4   float
+      _g_st_rmw_input_buffer.f4_id_up_time
+                                  00001908         4   float
+      _g_st_rmw_input_buffer.f4_id_down_time
+                                  0000190c         4   float
+      _g_st_rmw_input_buffer.f4_id_down_speed_rpm
+                                  00001910         4   float
+      _g_st_rmw_input_buffer.f4_id_up_speed_rpm
+                                  00001914         4   float
+      _g_st_rmw_input_buffer.f4_current_omega_hz
+                                  00001918         4   float
+      _g_st_rmw_input_buffer.f4_current_zeta
+                                  0000191c         4   float
+      _g_st_rmw_input_buffer.f4_speed_omega_hz
+                                  00001920         4   float
+      _g_st_rmw_input_buffer.f4_speed_zeta
+                                  00001924         4   float
+      _g_st_rmw_input_buffer.f4_speed_lpf_hz
+                                  00001928         4   float
+      _g_st_rmw_input_buffer.f4_ref_speed_rpm
+                                  0000192c         4   float
+      _g_st_rmw_input_buffer.f4_speed_rate_limit_rpm
+                                  00001930         4   float
+      _g_st_rmw_input_buffer.f4_overspeed_limit_rpm
+                                  00001934         4   float
+      _g_st_rmw_input_buffer.u1_flag_volt_err_comp_use
+                                  00001938         1   unsigned char
+      _g_st_rmw_input_buffer.u1_flag_fluxwkn_use
+                                  00001939         1   unsigned char
+      _g_st_rmw_input_buffer.f4_e_obs_omega_hz
+                                  0000193c         4   float
+      _g_st_rmw_input_buffer.f4_e_obs_zeta
+                                  00001940         4   float
+      _g_st_rmw_input_buffer.f4_pll_est_omega_hz
+                                  00001944         4   float
+      _g_st_rmw_input_buffer.f4_pll_est_zeta
+                                  00001948         4   float
+      _g_st_rmw_input_buffer.u1_flag_less_switch_use
+                                  0000194c         1   unsigned char
+      _g_st_rmw_input_buffer.f4_switch_phase_err_deg
+                                  00001950         4   float
+      _g_st_rmw_input_buffer.f4_opl2less_sw_time
+                                  00001954         4   float
+      _g_st_rmw_input_buffer.f4_phase_err_lpf_cut_freq
+                                  00001958         4   float
+      _g_st_rmw_input_buffer.u1_flag_openloop_damping_use
+                                  0000195c         1   unsigned char
+      _g_st_rmw_input_buffer.f4_ed_hpf_omega
+                                  00001960         4   float
+      _g_st_rmw_input_buffer.f4_ol_damping_zeta
+                                  00001964         4   float
+      _g_st_rmw_input_buffer.f4_ol_damping_fb_limit_rate
+                                  00001968         4   float
+    }
+  _com_f4_mtr_r
+                                  0000196c         4   data ,g         2
+  _com_f4_mtr_ld
+                                  00001970         4   data ,g         2
+  _com_f4_mtr_lq
+                                  00001974         4   data ,g         2
+  _com_f4_mtr_m
+                                  00001978         4   data ,g         2
+  _com_f4_mtr_j
+                                  0000197c         4   data ,g         2
+  _com_f4_nominal_current_rms
+                                  00001980         4   data ,g         2
+  _com_f4_max_speed_rpm
+                                  00001984         4   data ,g         3
+  _com_f4_ol_ref_id
+                                  00001988         4   data ,g         2
+  _com_f4_id_up_time
+                                  0000198c         4   data ,g         2
+  _com_f4_id_down_time
+                                  00001990         4   data ,g         2
+  _com_f4_id_down_speed_rpm
+                                  00001994         4   data ,g         2
+  _com_f4_id_up_speed_rpm
+                                  00001998         4   data ,g         2
+  _com_f4_current_omega_hz
+                                  0000199c         4   data ,g         3
+  _com_f4_current_zeta
+                                  000019a0         4   data ,g         2
+  _com_f4_speed_omega_hz
+                                  000019a4         4   data ,g         3
+  _com_f4_speed_zeta
+                                  000019a8         4   data ,g         2
+  _com_f4_speed_lpf_hz
+                                  000019ac         4   data ,g         2
+  _com_f4_ref_speed_rpm
+                                  000019b0         4   data ,g         4
+  _com_f4_speed_rate_limit_rpm
+                                  000019b4         4   data ,g         2
+  _com_f4_overspeed_limit_rpm
+                                  000019b8         4   data ,g         2
+  _com_f4_e_obs_omega_hz
+                                  000019bc         4   data ,g         2
+  _com_f4_e_obs_zeta
+                                  000019c0         4   data ,g         2
+  _com_f4_pll_est_omega_hz
+                                  000019c4         4   data ,g         2
+  _com_f4_pll_est_zeta
+                                  000019c8         4   data ,g         2
+  _com_f4_switch_phase_err_deg
+                                  000019cc         4   data ,g         2
+  _com_f4_opl2less_sw_time
+                                  000019d0         4   data ,g         2
+  _com_f4_phase_err_lpf_cut_freq
+                                  000019d4         4   data ,g         2
+  _com_f4_ed_hpf_omega
+                                  000019d8         4   data ,g         2
+  _com_f4_ol_damping_zeta
+                                  000019dc         4   data ,g         2
+  _com_f4_ol_damping_fb_limit_rate
+                                  000019e0         4   data ,g         2
+FILE=.\motor_module\current_rx\r_motor_current_api.obj
+                                  000019e4  00001ba3       1c0
+  _g_st_cc
+                                  000019e4       1c0   data ,g         4
+    struct  {
+                                                 1c0
+      _g_st_cc.u1_active
+                                  000019e4         1   unsigned char
+      _g_st_cc.u1_flag_volt_err_comp_use
+                                  000019e5         1   unsigned char
+      _g_st_cc.u1_state_id_ref
+                                  000019e6         1   unsigned char
+      _g_st_cc.u1_state_iq_ref
+                                  000019e7         1   unsigned char
+      _g_st_cc.u1_flag_offset_calc
+                                  000019e8         1   unsigned char
+      _g_st_cc.u2_offset_calc_time
+                                  000019ea         2   unsigned short
+      _g_st_cc.u2_crnt_offset_cnt
+                                  000019ec         2   unsigned short
+      _g_st_cc.f4_ctrl_period
+                                  000019f0         4   float
+      _g_st_cc.f4_refu
+                                  000019f4         4   float
+      _g_st_cc.f4_refv
+                                  000019f8         4   float
+      _g_st_cc.f4_refw
+                                  000019fc         4   float
+      _g_st_cc.f4_vd_ref
+                                  00001a00         4   float
+      _g_st_cc.f4_vq_ref
+                                  00001a04         4   float
+      _g_st_cc.f4_id_ref
+                                  00001a08         4   float
+      _g_st_cc.f4_iq_ref
+                                  00001a0c         4   float
+      _g_st_cc.f4_id_ad
+                                  00001a10         4   float
+      _g_st_cc.f4_iq_ad
+                                  00001a14         4   float
+      _g_st_cc.f4_lim_iq
+                                  00001a18         4   float
+      _g_st_cc.f4_offset_iu
+                                  00001a1c         4   float
+      _g_st_cc.f4_offset_iw
+                                  00001a20         4   float
+      _g_st_cc.f4_sum_iu_ad
+                                  00001a24         4   float
+      _g_st_cc.f4_sum_iw_ad
+                                  00001a28         4   float
+      _g_st_cc.f4_vdc_ad
+                                  00001a2c         4   float
+      _g_st_cc.f4_iu_ad
+                                  00001a30         4   float
+      _g_st_cc.f4_iv_ad
+                                  00001a34         4   float
+      _g_st_cc.f4_iw_ad
+                                  00001a38         4   float
+      _g_st_cc.f4_modu
+                                  00001a3c         4   float
+      _g_st_cc.f4_modv
+                                  00001a40         4   float
+      _g_st_cc.f4_modw
+                                  00001a44         4   float
+      _g_st_cc.f4_speed_rad
+                                  00001a48         4   float
+      _g_st_cc.f4_ref_id_ctrl
+                                  00001a4c         4   float
+      _g_st_cc.f4_ref_iq_ctrl
+                                  00001a50         4   float
+      _g_st_cc.f4_id_up_step
+                                  00001a54         4   float
+      _g_st_cc.f4_id_down_step
+                                  00001a58         4   float
+      _g_st_cc.f4_iq_down_step
+                                  00001a5c         4   float
+      _g_st_cc.f4_iq_down_step_time_inv
+                                  00001a60         4   float
+      _g_st_cc.f4_ol_ref_id
+                                  00001a64         4   float
+      _g_st_cc.f4_va_max
+                                  00001a68         4   float
+      _g_st_cc.f4_ed
+                                  00001a6c         4   float
+      _g_st_cc.f4_eq
+                                  00001a70         4   float
+      _g_st_cc.f4_phase_err_rad
+                                  00001a74         4   float
+      _g_st_cc.f4_ol_speed_rad
+                                  00001a78         4   float
+      _g_st_cc.st_mod
+                                  00001a7c        18
+    struct  {
+                                                  18
+      _g_st_cc.st_mod.f4_vdc
+                                  00001a7c         4   float
+      _g_st_cc.st_mod.f4_1_div_vdc
+                                  00001a80         4   float
+      _g_st_cc.st_mod.f4_voltage_error_ratio
+                                  00001a84         4   float
+      _g_st_cc.st_mod.f4_max_duty
+                                  00001a88         4   float
+      _g_st_cc.st_mod.f4_min_duty
+                                  00001a8c         4   float
+      _g_st_cc.st_mod.f4_neutral_duty
+                                  00001a90         4   float
+    }
+      _g_st_cc.st_volt_comp
+                                  00001a94        74
+    struct  {
+                                                  74
+      _g_st_cc.st_volt_comp.f4_comp_v
+                                  00001a94        14   float
+      _g_st_cc.st_volt_comp.f4_comp_i
+                                  00001aa8        14   float
+      _g_st_cc.st_volt_comp.f4_slope
+                                  00001abc        18   float
+      _g_st_cc.st_volt_comp.f4_intcept
+                                  00001ad4        18   float
+      _g_st_cc.st_volt_comp.f4_volt_comp_array
+                                  00001aec         c   float
+      _g_st_cc.st_volt_comp.f4_vdc
+                                  00001af8         4   float
+      _g_st_cc.st_volt_comp.f4_volt_comp_limit
+                                  00001afc         4   float
+      _g_st_cc.st_volt_comp.f4_volt_comp_limit_ratio
+                                  00001b00         4   float
+      _g_st_cc.st_volt_comp.u1_volt_err_comp_enable
+                                  00001b04         1   unsigned char
+      _g_st_cc.st_volt_comp.u1_volt_comp_use_motor_type
+                                  00001b05         1   unsigned char
+    }
+      _g_st_cc.st_bemf_observer
+                                  00001b08        40
+    struct  {
+                                                  40
+      _g_st_cc.st_bemf_observer.f4_dt
+                                  00001b08         4   float
+      _g_st_cc.st_bemf_observer.p_st_motor
+                                  00001b0c         4   [pointer]
+      _g_st_cc.st_bemf_observer.st_d_axis
+                                  00001b10        1c
+    struct  {
+                                                  1c
+      _g_st_cc.st_bemf_observer.st_d_axis.f4_k_e_obs_1
+                                  00001b10         4   float
+      _g_st_cc.st_bemf_observer.st_d_axis.f4_k_e_obs_2
+                                  00001b14         4   float
+      _g_st_cc.st_bemf_observer.st_d_axis.f4_i_pre
+                                  00001b18         4   float
+      _g_st_cc.st_bemf_observer.st_d_axis.f4_i_est_pre
+                                  00001b1c         4   float
+      _g_st_cc.st_bemf_observer.st_d_axis.f4_d_est
+                                  00001b20         4   float
+      _g_st_cc.st_bemf_observer.st_d_axis.f4_d_est_pre
+                                  00001b24         4   float
+      _g_st_cc.st_bemf_observer.st_d_axis.f4_d_est_limit
+                                  00001b28         4   float
+    }
+      _g_st_cc.st_bemf_observer.st_q_axis
+                                  00001b2c        1c
+    struct  {
+                                                  1c
+      _g_st_cc.st_bemf_observer.st_q_axis.f4_k_e_obs_1
+                                  00001b2c         4   float
+      _g_st_cc.st_bemf_observer.st_q_axis.f4_k_e_obs_2
+                                  00001b30         4   float
+      _g_st_cc.st_bemf_observer.st_q_axis.f4_i_pre
+                                  00001b34         4   float
+      _g_st_cc.st_bemf_observer.st_q_axis.f4_i_est_pre
+                                  00001b38         4   float
+      _g_st_cc.st_bemf_observer.st_q_axis.f4_d_est
+                                  00001b3c         4   float
+      _g_st_cc.st_bemf_observer.st_q_axis.f4_d_est_pre
+                                  00001b40         4   float
+      _g_st_cc.st_bemf_observer.st_q_axis.f4_d_est_limit
+                                  00001b44         4   float
+    }
+    }
+      _g_st_cc.st_pll_est
+                                  00001b48         c
+    struct  {
+                                                   c
+      _g_st_cc.st_pll_est.f4_kp_est_speed
+                                  00001b48         4   float
+      _g_st_cc.st_pll_est.f4_ki_est_speed
+                                  00001b4c         4   float
+      _g_st_cc.st_pll_est.f4_i_est_speed
+                                  00001b50         4   float
+    }
+      _g_st_cc.st_pi_id
+                                  00001b54        14
+    struct  {
+                                                  14
+      _g_st_cc.st_pi_id.f4_err
+                                  00001b54         4   float
+      _g_st_cc.st_pi_id.f4_kp
+                                  00001b58         4   float
+      _g_st_cc.st_pi_id.f4_ki
+                                  00001b5c         4   float
+      _g_st_cc.st_pi_id.f4_refi
+                                  00001b60         4   float
+      _g_st_cc.st_pi_id.f4_ilimit
+                                  00001b64         4   float
+    }
+      _g_st_cc.st_pi_iq
+                                  00001b68        14
+    struct  {
+                                                  14
+      _g_st_cc.st_pi_iq.f4_err
+                                  00001b68         4   float
+      _g_st_cc.st_pi_iq.f4_kp
+                                  00001b6c         4   float
+      _g_st_cc.st_pi_iq.f4_ki
+                                  00001b70         4   float
+      _g_st_cc.st_pi_iq.f4_refi
+                                  00001b74         4   float
+      _g_st_cc.st_pi_iq.f4_ilimit
+                                  00001b78         4   float
+    }
+      _g_st_cc.st_rotor_angle
+                                  00001b7c         c
+    struct  {
+                                                   c
+      _g_st_cc.st_rotor_angle.f4_rotor_angle_rad
+                                  00001b7c         4   float
+      _g_st_cc.st_rotor_angle.f4_sin
+                                  00001b80         4   float
+      _g_st_cc.st_rotor_angle.f4_cos
+                                  00001b84         4   float
+    }
+      _g_st_cc.st_motor
+                                  00001b88        1c
+    struct  {
+                                                  1c
+      _g_st_cc.st_motor.u2_mtr_pp
+                                  00001b88         2   unsigned short
+      _g_st_cc.st_motor.f4_mtr_r
+                                  00001b8c         4   float
+      _g_st_cc.st_motor.f4_mtr_ld
+                                  00001b90         4   float
+      _g_st_cc.st_motor.f4_mtr_lq
+                                  00001b94         4   float
+      _g_st_cc.st_motor.f4_mtr_m
+                                  00001b98         4   float
+      _g_st_cc.st_motor.f4_mtr_j
+                                  00001b9c         4   float
+      _g_st_cc.st_motor.f4_nominal_current_rms
+                                  00001ba0         4   float
+    }
+    }
+FILE=.\motor_module\driver_rx\r_motor_driver.obj
+                                  00001ba4  00001bc3        20
+  _g_st_driver
+                                  00001ba4        20   data ,g         2
+    struct st_motor_driver {
+                                                  20
+      _g_st_driver.ADCDataGet
+                                  00001ba4         4   [pointer]
+      _g_st_driver.BLDCDutySet
+                                  00001ba8         4   [pointer]
+      _g_st_driver.PWMOutputStop
+                                  00001bac         4   [pointer]
+      _g_st_driver.PWMOutputStart
+                                  00001bb0         4   [pointer]
+      _g_st_driver.f4_ad_crnt_per_digit
+                                  00001bb4         4   float
+      _g_st_driver.f4_ad_vdc_per_digit
+                                  00001bb8         4   float
+      _g_st_driver.f4_pwm_period_cnt
+                                  00001bbc         4   float
+      _g_st_driver.f4_pwm_dead_time_cnt
+                                  00001bc0         4   float
+    }
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_api.obj
+                                  00001bc4  00001c87        c4
+  _g_st_sensorless_vector
+                                  00001bc4        c4   data ,g         b
+    struct  {
+                                                  c4
+      _g_st_sensorless_vector.u1_flag_less_switch_use
+                                  00001bc4         1   unsigned char
+      _g_st_sensorless_vector.u1_flag_openloop_damping_use
+                                  00001bc5         1   unsigned char
+      _g_st_sensorless_vector.u1_flag_down_to_ol
+                                  00001bc6         1   unsigned char
+      _g_st_sensorless_vector.u1_state_id_ref
+                                  00001bc7         1   unsigned char
+      _g_st_sensorless_vector.u1_state_iq_ref
+                                  00001bc8         1   unsigned char
+      _g_st_sensorless_vector.u1_state_speed_ref
+                                  00001bc9         1   unsigned char
+      _g_st_sensorless_vector.u1_direction
+                                  00001bca         1   unsigned char
+      _g_st_sensorless_vector.u1_ctrl_loop_mode
+                                  00001bcb         1   unsigned char
+      _g_st_sensorless_vector.u2_error_status
+                                  00001bcc         2   unsigned short
+      _g_st_sensorless_vector.u2_run_mode
+                                  00001bce         2   unsigned short
+      _g_st_sensorless_vector.f4_vdc_ad
+                                  00001bd0         4   float
+      _g_st_sensorless_vector.f4_iu_ad
+                                  00001bd4         4   float
+      _g_st_sensorless_vector.f4_iv_ad
+                                  00001bd8         4   float
+      _g_st_sensorless_vector.f4_iw_ad
+                                  00001bdc         4   float
+      _g_st_sensorless_vector.f4_overcurrent_limit
+                                  00001be0         4   float
+      _g_st_sensorless_vector.f4_overvoltage_limit
+                                  00001be4         4   float
+      _g_st_sensorless_vector.f4_undervoltage_limit
+                                  00001be8         4   float
+      _g_st_sensorless_vector.f4_overspeed_limit_rad
+                                  00001bec         4   float
+      _g_st_sensorless_vector.f4_phase_err_rad_lpf
+                                  00001bf0         4   float
+      _g_st_sensorless_vector.f4_switch_phase_err_rad
+                                  00001bf4         4   float
+      _g_st_sensorless_vector.f4_id_down_speed_rad
+                                  00001bf8         4   float
+      _g_st_sensorless_vector.f4_id_up_speed_rad
+                                  00001bfc         4   float
+      _g_st_sensorless_vector.f4_damp_comp_speed
+                                  00001c00         4   float
+      _g_st_sensorless_vector.f4_ol_speed_rad
+                                  00001c04         4   float
+      _g_st_sensorless_vector.st_phase_err_lpf
+                                  00001c08        14
+    struct  {
+                                                  14
+      _g_st_sensorless_vector.st_phase_err_lpf.f4_pre_output
+                                  00001c08         4   float
+      _g_st_sensorless_vector.st_phase_err_lpf.f4_pre_input
+                                  00001c0c         4   float
+      _g_st_sensorless_vector.st_phase_err_lpf.f4_omega_t
+                                  00001c10         4   float
+      _g_st_sensorless_vector.st_phase_err_lpf.f4_gain_ka
+                                  00001c14         4   float
+      _g_st_sensorless_vector.st_phase_err_lpf.f4_gain_kb
+                                  00001c18         4   float
+    }
+      _g_st_sensorless_vector.st_current_output
+                                  00001c1c        2c
+    struct  {
+                                                  2c
+      _g_st_sensorless_vector.st_current_output.u1_flag_offset_calc
+                                  00001c1c         1   unsigned char
+      _g_st_sensorless_vector.st_current_output.f4_modu
+                                  00001c20         4   float
+      _g_st_sensorless_vector.st_current_output.f4_modv
+                                  00001c24         4   float
+      _g_st_sensorless_vector.st_current_output.f4_modw
+                                  00001c28         4   float
+      _g_st_sensorless_vector.st_current_output.f4_neutral_duty
+                                  00001c2c         4   float
+      _g_st_sensorless_vector.st_current_output.f4_va_max
+                                  00001c30         4   float
+      _g_st_sensorless_vector.st_current_output.f4_ref_id_ctrl
+                                  00001c34         4   float
+      _g_st_sensorless_vector.st_current_output.f4_speed_rad
+                                  00001c38         4   float
+      _g_st_sensorless_vector.st_current_output.f4_ed
+                                  00001c3c         4   float
+      _g_st_sensorless_vector.st_current_output.f4_eq
+                                  00001c40         4   float
+      _g_st_sensorless_vector.st_current_output.f4_phase_err_rad
+                                  00001c44         4   float
+    }
+      _g_st_sensorless_vector.st_speed_output
+                                  00001c48        10
+    struct  {
+                                                  10
+      _g_st_sensorless_vector.st_speed_output.f4_id_ref
+                                  00001c48         4   float
+      _g_st_sensorless_vector.st_speed_output.f4_iq_ref
+                                  00001c4c         4   float
+      _g_st_sensorless_vector.st_speed_output.f4_ref_speed_rad_ctrl
+                                  00001c50         4   float
+      _g_st_sensorless_vector.st_speed_output.f4_speed_rad_lpf
+                                  00001c54         4   float
+    }
+      _g_st_sensorless_vector.st_stm
+                                  00001c58         6
+    struct  {
+                                                   6
+      _g_st_sensorless_vector.st_stm.u1_status
+                                  00001c58         1   unsigned char
+      _g_st_sensorless_vector.st_stm.u1_status_next
+                                  00001c59         1   unsigned char
+      _g_st_sensorless_vector.st_stm.u2_error_status
+                                  00001c5a         2   unsigned short
+      _g_st_sensorless_vector.st_stm.u1_current_event
+                                  00001c5c         1   unsigned char
+    }
+      _g_st_sensorless_vector.st_motor
+                                  00001c60        1c
+    struct  {
+                                                  1c
+      _g_st_sensorless_vector.st_motor.u2_mtr_pp
+                                  00001c60         2   unsigned short
+      _g_st_sensorless_vector.st_motor.f4_mtr_r
+                                  00001c64         4   float
+      _g_st_sensorless_vector.st_motor.f4_mtr_ld
+                                  00001c68         4   float
+      _g_st_sensorless_vector.st_motor.f4_mtr_lq
+                                  00001c6c         4   float
+      _g_st_sensorless_vector.st_motor.f4_mtr_m
+                                  00001c70         4   float
+      _g_st_sensorless_vector.st_motor.f4_mtr_j
+                                  00001c74         4   float
+      _g_st_sensorless_vector.st_motor.f4_nominal_current_rms
+                                  00001c78         4   float
+    }
+      _g_st_sensorless_vector.p_st_driver
+                                  00001c7c         4   [pointer]
+      _g_st_sensorless_vector.p_st_cc
+                                  00001c80         4   [pointer]
+      _g_st_sensorless_vector.p_st_sc
+                                  00001c84         4   [pointer]
+    }
+FILE=.\motor_module\speed_rx\r_motor_speed_api.obj
+                                  00001c88  00001d47        c0
+  _g_st_sc
+                                  00001c88        c0   data ,g         4
+    struct  {
+                                                  c0
+      _g_st_sc.u1_active
+                                  00001c88         1   unsigned char
+      _g_st_sc.u1_state_speed_ref
+                                  00001c89         1   unsigned char
+      _g_st_sc.u1_flag_fluxwkn_use
+                                  00001c8a         1   unsigned char
+      _g_st_sc.u1_flag_switching
+                                  00001c8b         1   unsigned char
+      _g_st_sc.f4_speed_ctrl_period
+                                  00001c8c         4   float
+      _g_st_sc.f4_ref_speed_rad_ctrl
+                                  00001c90         4   float
+      _g_st_sc.f4_ref_speed_rad
+                                  00001c94         4   float
+      _g_st_sc.f4_ref_speed_rad_manual
+                                  00001c98         4   float
+      _g_st_sc.f4_speed_rad_ctrl
+                                  00001c9c         4   float
+      _g_st_sc.f4_speed_rad
+                                  00001ca0         4   float
+      _g_st_sc.f4_max_speed_rad
+                                  00001ca4         4   float
+      _g_st_sc.f4_speed_rate_limit_rad
+                                  00001ca8         4   float
+      _g_st_sc.f4_id_ref_output
+                                  00001cac         4   float
+      _g_st_sc.f4_iq_ref_output
+                                  00001cb0         4   float
+      _g_st_sc.f4_va_max
+                                  00001cb4         4   float
+      _g_st_sc.f4_id_ad
+                                  00001cb8         4   float
+      _g_st_sc.f4_iq_ad
+                                  00001cbc         4   float
+      _g_st_sc.f4_opl2less_sw_time
+                                  00001cc0         4   float
+      _g_st_sc.f4_torque_current
+                                  00001cc4         4   float
+      _g_st_sc.st_motor
+                                  00001cc8        1c
+    struct  {
+                                                  1c
+      _g_st_sc.st_motor.u2_mtr_pp
+                                  00001cc8         2   unsigned short
+      _g_st_sc.st_motor.f4_mtr_r
+                                  00001ccc         4   float
+      _g_st_sc.st_motor.f4_mtr_ld
+                                  00001cd0         4   float
+      _g_st_sc.st_motor.f4_mtr_lq
+                                  00001cd4         4   float
+      _g_st_sc.st_motor.f4_mtr_m
+                                  00001cd8         4   float
+      _g_st_sc.st_motor.f4_mtr_j
+                                  00001cdc         4   float
+      _g_st_sc.st_motor.f4_nominal_current_rms
+                                  00001ce0         4   float
+    }
+      _g_st_sc.st_pi_speed
+                                  00001ce4        14
+    struct  {
+                                                  14
+      _g_st_sc.st_pi_speed.f4_err
+                                  00001ce4         4   float
+      _g_st_sc.st_pi_speed.f4_kp
+                                  00001ce8         4   float
+      _g_st_sc.st_pi_speed.f4_ki
+                                  00001cec         4   float
+      _g_st_sc.st_pi_speed.f4_refi
+                                  00001cf0         4   float
+      _g_st_sc.st_pi_speed.f4_ilimit
+                                  00001cf4         4   float
+    }
+      _g_st_sc.st_fluxwkn
+                                  00001cf8        20
+    struct  {
+                                                  20
+      _g_st_sc.st_fluxwkn.p_motor
+                                  00001cf8         4   [pointer]
+      _g_st_sc.st_fluxwkn.f4_ia_max
+                                  00001cfc         4   float
+      _g_st_sc.st_fluxwkn.f4_va_max
+                                  00001d00         4   float
+      _g_st_sc.st_fluxwkn.f4_vfw_ratio
+                                  00001d04         4   float
+      _g_st_sc.st_fluxwkn.f4_id_demag
+                                  00001d08         4   float
+      _g_st_sc.st_fluxwkn.f4_id_min
+                                  00001d0c         4   float
+      _g_st_sc.st_fluxwkn.f4_v_fw
+                                  00001d10         4   float
+      _g_st_sc.st_fluxwkn.u2_fw_status
+                                  00001d14         2   unsigned short
+    }
+      _g_st_sc.st_opl_damp
+                                  00001d18        1c
+    struct  {
+                                                  1c
+      _g_st_sc.st_opl_damp.st_ed_lpf
+                                  00001d18        14
+    struct  {
+                                                  14
+      _g_st_sc.st_opl_damp.st_ed_lpf.f4_pre_output
+                                  00001d18         4   float
+      _g_st_sc.st_opl_damp.st_ed_lpf.f4_pre_input
+                                  00001d1c         4   float
+      _g_st_sc.st_opl_damp.st_ed_lpf.f4_omega_t
+                                  00001d20         4   float
+      _g_st_sc.st_opl_damp.st_ed_lpf.f4_gain_ka
+                                  00001d24         4   float
+      _g_st_sc.st_opl_damp.st_ed_lpf.f4_gain_kb
+                                  00001d28         4   float
+    }
+      _g_st_sc.st_opl_damp.f4_damp_comp_gain
+                                  00001d2c         4   float
+      _g_st_sc.st_opl_damp.f4_fb_speed_limit_rate
+                                  00001d30         4   float
+    }
+      _g_st_sc.st_slpf
+                                  00001d34        14
+    struct  {
+                                                  14
+      _g_st_sc.st_slpf.f4_pre_output
+                                  00001d34         4   float
+      _g_st_sc.st_slpf.f4_pre_input
+                                  00001d38         4   float
+      _g_st_sc.st_slpf.f4_omega_t
+                                  00001d3c         4   float
+      _g_st_sc.st_slpf.f4_gain_ka
+                                  00001d40         4   float
+      _g_st_sc.st_slpf.f4_gain_kb
+                                  00001d44         4   float
+    }
+    }
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  00001d48  00001d97        50
+  __Files
+                                  00001d48        50   data ,g         5
+FILE=.\src\smc_gen\r_bsp\mcu\all\mcu_locks.obj
+                                  00001d98  00001f3b       1a4
+  _g_bsp_Locks
+                                  00001d98       1a4   data ,g         3
+    struct  {
+                                                   4
+      _g_bsp_Locks.lock
+                                  00001d98         4   long
+    }
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_interrupts.obj
+                                  00001f3c  00002067       12c
+  _g_bsp_vectors
+                                  00001f3c       12c   data ,l         4
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  00002068  0000246b       404
+  __s1ptr
+                                  00002068         4   data ,g         0
+  _s_heap_area
+                                  0000206c       400   data ,l         2
+    union   {
+                                                 400
+      _s_heap_area.dummy
+                                  0000206c         4   long
+      _s_heap_area.heap
+                                  0000206c       400   signed char
+    }
+FILE=ICS2_RX26T
+                                  0000246c  000024d3        68
+  _ics_waddr
+                                  0000246c        30   data ,l         3
+  _ics_buf2nd
+                                  0000249c        20   data ,l         1
+  _ics_data1
+                                  000024bc         4   data ,l         2
+  _ics_data2
+                                  000024c0         4   data ,l         2
+  _ics_dtc_tx
+                                  000024c4        10   data ,g         2
+FILE=_errno
+                                  000024d4  000024d7         4
+  __errno
+                                  000024d4         4   data ,g         5
+
+SECTION=R
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_statemachine.obj
+                                  000024d8  00002507        30
+  _s_action_table
+                                  000024d8        30   data ,l         1
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  00002508  0000251b        14
+  _env_list
+                                  00002508        10   data ,g         1
+  _environ
+                                  00002518         4   data ,g         0
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  0000251c  0000251f         4
+  _sp_brk
+                                  0000251c         4   data ,l         1
+FILE=xfiles
+                                  00002520  000025f7        d8
+  __Stdin
+                                  00002520        48   data ,g         8
+    struct _Dnk_filet {
+                                                  48
+      __Stdin._Mode
+                                  00002520         2   unsigned short
+      __Stdin._Idx
+                                  00002522         1   unsigned char
+      __Stdin._Handle
+                                  00002523         1   signed char
+      __Stdin._Buf
+                                  00002524         4   [pointer]
+      __Stdin._Bend
+                                  00002528         4   [pointer]
+      __Stdin._Next
+                                  0000252c         4   [pointer]
+      __Stdin._Rend
+                                  00002530         4   [pointer]
+      __Stdin._Wend
+                                  00002534         4   [pointer]
+      __Stdin._Rback
+                                  00002538         4   [pointer]
+      __Stdin._WRback
+                                  0000253c         4   [pointer]
+      __Stdin._WBack
+                                  00002540         4   unsigned short
+      __Stdin._Rsave
+                                  00002544         4   [pointer]
+      __Stdin._WRend
+                                  00002548         4   [pointer]
+      __Stdin._WWend
+                                  0000254c         4   [pointer]
+      __Stdin._Wstate
+                                  00002550         8
+    struct _Mbstatet {
+                                                   8
+      __Stdin._Wstate._Wchar
+                                  00002550         4   unsigned long
+      __Stdin._Wstate._Byte
+                                  00002554         2   unsigned short
+      __Stdin._Wstate._State
+                                  00002556         2   unsigned short
+    }
+      __Stdin._Tmpnam
+                                  00002558         4   [pointer]
+      __Stdin._Back
+                                  0000255c         8   unsigned char
+      __Stdin._Cbuf
+                                  00002564         1   unsigned char
+    }
+  __Stdout
+                                  00002568        48   data ,g         8
+    struct _Dnk_filet {
+                                                  48
+      __Stdout._Mode
+                                  00002568         2   unsigned short
+      __Stdout._Idx
+                                  0000256a         1   unsigned char
+      __Stdout._Handle
+                                  0000256b         1   signed char
+      __Stdout._Buf
+                                  0000256c         4   [pointer]
+      __Stdout._Bend
+                                  00002570         4   [pointer]
+      __Stdout._Next
+                                  00002574         4   [pointer]
+      __Stdout._Rend
+                                  00002578         4   [pointer]
+      __Stdout._Wend
+                                  0000257c         4   [pointer]
+      __Stdout._Rback
+                                  00002580         4   [pointer]
+      __Stdout._WRback
+                                  00002584         4   [pointer]
+      __Stdout._WBack
+                                  00002588         4   unsigned short
+      __Stdout._Rsave
+                                  0000258c         4   [pointer]
+      __Stdout._WRend
+                                  00002590         4   [pointer]
+      __Stdout._WWend
+                                  00002594         4   [pointer]
+      __Stdout._Wstate
+                                  00002598         8
+    struct _Mbstatet {
+                                                   8
+      __Stdout._Wstate._Wchar
+                                  00002598         4   unsigned long
+      __Stdout._Wstate._Byte
+                                  0000259c         2   unsigned short
+      __Stdout._Wstate._State
+                                  0000259e         2   unsigned short
+    }
+      __Stdout._Tmpnam
+                                  000025a0         4   [pointer]
+      __Stdout._Back
+                                  000025a4         8   unsigned char
+      __Stdout._Cbuf
+                                  000025ac         1   unsigned char
+    }
+  __Stderr
+                                  000025b0        48   data ,g         3
+    struct _Dnk_filet {
+                                                  48
+      __Stderr._Mode
+                                  000025b0         2   unsigned short
+      __Stderr._Idx
+                                  000025b2         1   unsigned char
+      __Stderr._Handle
+                                  000025b3         1   signed char
+      __Stderr._Buf
+                                  000025b4         4   [pointer]
+      __Stderr._Bend
+                                  000025b8         4   [pointer]
+      __Stderr._Next
+                                  000025bc         4   [pointer]
+      __Stderr._Rend
+                                  000025c0         4   [pointer]
+      __Stderr._Wend
+                                  000025c4         4   [pointer]
+      __Stderr._Rback
+                                  000025c8         4   [pointer]
+      __Stderr._WRback
+                                  000025cc         4   [pointer]
+      __Stderr._WBack
+                                  000025d0         4   unsigned short
+      __Stderr._Rsave
+                                  000025d4         4   [pointer]
+      __Stderr._WRend
+                                  000025d8         4   [pointer]
+      __Stderr._WWend
+                                  000025dc         4   [pointer]
+      __Stderr._Wstate
+                                  000025e0         8
+    struct _Mbstatet {
+                                                   8
+      __Stderr._Wstate._Wchar
+                                  000025e0         4   unsigned long
+      __Stderr._Wstate._Byte
+                                  000025e4         2   unsigned short
+      __Stderr._Wstate._State
+                                  000025e6         2   unsigned short
+    }
+      __Stderr._Tmpnam
+                                  000025e8         4   [pointer]
+      __Stderr._Back
+                                  000025ec         8   unsigned char
+      __Stderr._Cbuf
+                                  000025f4         1   unsigned char
+    }
+FILE=sincosfsub
+                                  000025f8  00002633        3c
+  _sinf_coeff
+                                  000025f8        10   data ,l         1
+  _cosf_coeff
+                                  00002608        10   data ,l         1
+  _pi4ptr_table
+                                  00002618         c   data ,l         1
+  _sub_table
+                                  00002624        10   data ,l         1
+FILE=malloc
+                                  00002634  0000263b         8
+  __Aldata
+                                  00002634         8   data ,g         3
+
+SECTION=$ADDR_C_120040
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\vecttbl.obj
+                                  00120040  00120043         4
+  ___SPCCreg
+                                  00120040         4   data ,g         0
+
+SECTION=$ADDR_C_120048
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\vecttbl.obj
+                                  00120048  0012004b         4
+  ___TMEFreg
+                                  00120048         4   data ,g         0
+
+SECTION=$ADDR_C_120050
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\vecttbl.obj
+                                  00120050  0012006f        20
+  ___OSIS1reg
+                                  00120050         4   data ,g         0
+  ___OSIS2reg
+                                  00120054         4   data ,g         0
+  ___OSIS3reg
+                                  00120058         4   data ,g         0
+  ___OSIS4reg
+                                  0012005c         4   data ,g         0
+  ___TMINFreg
+                                  00120060         4   data ,g         0
+  ___MDEreg
+                                  00120064         4   data ,g         0
+  ___OFS0reg
+                                  00120068         4   data ,g         0
+  ___OFS1reg
+                                  0012006c         4   data ,g         0
+
+SECTION=$ADDR_C_120090
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\vecttbl.obj
+                                  00120090  00120093         4
+  ___BANKSELreg
+                                  00120090         4   data ,g         0
+
+SECTION=$ADDR_C_1200A0
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\vecttbl.obj
+                                  001200a0  001200a3         4
+  ___FAWreg
+                                  001200a0         4   data ,g         0
+
+SECTION=PResetPRG
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  fff80000  fff80063        64
+  _PowerON_Reset_PC
+                                  fff80000        64   entry,g         1
+
+SECTION=C_2
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  fff80064  fff80069         6
+  _s_prcr_masks
+                                  fff80064         6   data ,l         2
+
+SECTION=C
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_manager.obj
+                                  fff8006c  fff80093        28
+  _crnt_array$2
+                                  fff8006c        14   data ,l         1
+  _volterr_array$1
+                                  fff80080        14   data ,l         1
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  fff80094  fff800ab        18
+  __CTBL
+                                  fff80094        18   data ,g         0
+FILE=_nfiles
+                                  fff800ac  fff800af         4
+  __nfiles
+                                  fff800ac         4   data ,g         4
+FILE=xfoprep
+                                  fff800b0  fff800f7        48
+  _init$1
+                                  fff800b0        48   data ,l         1
+FILE=consts
+                                  fff800f8  fff8014f        58
+  __IFZEROS
+                                  fff800f8         4   data ,g         2
+  __IFONES
+                                  fff800fc         4   data ,g         1
+  __HALFS
+                                  fff80100         4   data ,g         0
+  __QUOTS
+                                  fff80104         4   data ,g         0
+  __TWOS
+                                  fff80108         4   data ,g         0
+  __FOURS
+                                  fff8010c         4   data ,g         0
+  __PAIS
+                                  fff80110         4   data ,g         1
+  __2PAIS
+                                  fff80114         4   data ,g         0
+  __HLFPAIS
+                                  fff80118         4   data ,g         1
+  __QUOPAIS
+                                  fff8011c         4   data ,g         1
+  __LOGE2S
+                                  fff80120         4   data ,g         0
+  __NIFZEROS
+                                  fff80124         4   data ,g         1
+  __NIFONES
+                                  fff80128         4   data ,g         1
+  __NHALFS
+                                  fff8012c         4   data ,g         1
+  __NQUOTS
+                                  fff80130         4   data ,g         1
+  __NTWOS
+                                  fff80134         4   data ,g         0
+  __NFOURS
+                                  fff80138         4   data ,g         0
+  __NPAIS
+                                  fff8013c         4   data ,g         1
+  __N2PAIS
+                                  fff80140         4   data ,g         0
+  __NHLFPAIS
+                                  fff80144         4   data ,g         0
+  __NQUOPAIS
+                                  fff80148         4   data ,g         0
+  __NLOGE2S
+                                  fff8014c         4   data ,g         0
+FILE=xfopen
+                                  fff80150  fff8015f        10
+  _rwacc$1
+                                  fff80150        10   data ,l         1
+FILE=_a_atans
+                                  fff80160  fff80177        18
+  _atan_coef$1
+                                  fff80160        18   data ,l         1
+FILE=_const
+                                  fff80178  fff8019b        24
+  __IFNAND
+                                  fff80178         0   none ,g         0
+  __IFINFD
+                                  fff80180         0   none ,g         0
+  __NIFINFD
+                                  fff80188         0   none ,g         0
+  __IFNANS
+                                  fff80190         0   none ,g         3
+  __IFINFS
+                                  fff80194         0   none ,g         1
+  __NIFINFS
+                                  fff80198         0   none ,g         1
+FILE=_sbrk_si
+                                  fff8019c  fff8019f         4
+  __sbrk_size
+                                  fff8019c         4   data ,g         1
+FILE=floatval
+                                  fff801a0  fff801c7        28
+  __FLT_MAX_VAL
+                                  fff801a0         0   none ,g         1
+  __FLT_MIN_VAL
+                                  fff801a4         0   none ,g         0
+  __DBL_MAX_VAL
+                                  fff801a8         0   none ,g         0
+  __DBL_MIN_VAL
+                                  fff801b0         0   none ,g         0
+  __LDBL_MAX_VAL
+                                  fff801b8         0   none ,g         0
+  __LDBL_MIN_VAL
+                                  fff801c0         0   none ,g         0
+
+SECTION=C$DSEC
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  fff801c8  fff801eb        24
+  __DTBL
+                                  fff801c8        24   data ,g         0
+    struct  {
+                                                   c
+      __DTBL.rom_s
+                                  fff801c8         4   [pointer]
+      __DTBL.rom_e
+                                  fff801cc         4   [pointer]
+      __DTBL.ram_s
+                                  fff801d0         4   [pointer]
+    }
+
+SECTION=C$BSEC
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  fff801ec  fff80203        18
+  __BTBL
+                                  fff801ec        18   data ,g         0
+    struct  {
+                                                   8
+      __BTBL.b_s
+                                  fff801ec         4   [pointer]
+      __BTBL.b_e
+                                  fff801f0         4   [pointer]
+    }
+
+SECTION=C$VECT
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  fff80204  fff80603       400
+
+SECTION=D_1
+FILE=.\app\board_ui\r_app_board_ui.obj
+                                  fff80604  fff80605         2
+FILE=.\app\rmw\r_app_rmw.obj
+                                  fff80606  fff80607         2
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_statemachine.obj
+                                  fff80608  fff80613         c
+FILE=ICS2_RX26T
+                                  fff80614  fff80618         5
+FILE=xfiles
+                                  fff80619  fff80668        50
+
+SECTION=D_2
+FILE=.\app\rmw\r_app_rmw.obj
+                                  fff8066a  fff8066f         6
+FILE=ICS2_RX26T
+                                  fff80670  fff80671         2
+
+SECTION=D
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_statemachine.obj
+                                  fff80674  fff806a3        30
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  fff806a4  fff806b7        14
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  fff806b8  fff806bb         4
+FILE=xfiles
+                                  fff806bc  fff80793        d8
+FILE=sincosfsub
+                                  fff80794  fff807cf        3c
+FILE=malloc
+                                  fff807d0  fff807d7         8
+
+SECTION=W_1
+FILE=.\src\smc_gen\Config_S12AD2\Config_S12AD2.obj
+                                  fff807d8  fff807eb        14
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  fff807ec  fff807fb        10
+
+SECTION=W_2
+FILE=ICS2_RX26T
+                                  fff807fc  fff80813        18
+
+SECTION=L
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  fff80814  fff80817         4
+  _deadSpace
+                                  fff80814         4   data ,g         0
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  fff80818  fff80859        42
+
+SECTION=P
+FILE=.\app\board_ui\r_app_board_ui.obj
+                                  fff8085a  fff80966       10d
+  _r_app_board_ui_mainloop
+                                  fff8085a        c9   func ,g         1
+  _r_app_board_ui_led_control
+                                  fff80923        22   func ,g         2
+  _r_app_board_ui_remove_sw_chattering
+                                  fff80945        22   func ,g         4
+FILE=.\app\board_ui\r_app_board_ui_ctrl_rx26t_mcilv1.obj
+                                  fff80967  fff8097f        19
+  _r_app_board_ui_get_vr1
+                                  fff80967         3   func ,g         1
+  _r_app_board_ui_get_sw1
+                                  fff8096a         3   func ,g         2
+  _r_app_board_ui_get_sw2
+                                  fff8096d         3   func ,g         1
+  _r_app_board_ui_led1_on
+                                  fff80970         4   func ,g         1
+  _r_app_board_ui_led2_on
+                                  fff80974         4   func ,g         1
+  _r_app_board_ui_led1_off
+                                  fff80978         4   func ,g         2
+  _r_app_board_ui_led2_off
+                                  fff8097c         4   func ,g         2
+FILE=.\app\main\r_app_main.obj
+                                  fff80980  fff80a35        b6
+  _main
+                                  fff80980        46   func ,g         1
+  _r_app_main_ui_mainloop
+                                  fff809c6        58   func ,l         1
+  _r_app_main_init_motor_ctrl
+                                  fff80a1e         4   func ,l         1
+  _r_app_main_start_motor_ctrl
+                                  fff80a22        14   func ,l         1
+FILE=.\app\rmw\r_app_rmw.obj
+                                  fff80a36  fff80fc5       590
+  _r_app_rmw_ui_init
+                                  fff80a36       1c0   func ,g         2
+  _r_app_rmw_ui_mainloop
+                                  fff80bf6         3   func ,g         1
+  _r_app_rmw_copy_com_to_buffer
+                                  fff80bf9       175   func ,g         1
+  _r_app_rmw_interrupt_handler
+                                  fff80d6e        40   func ,g         1
+  _r_app_rmw_system_mode
+                                  fff80dae        64   func ,l         1
+  _r_app_rmw_check_com_input
+                                  fff80e12        53   func ,l         1
+  _r_app_rmw_update_params
+                                  fff80e65       148   func ,l         1
+  _r_app_rmw_update_command
+                                  fff80fad        19   func ,l         1
+FILE=.\app\rmw\r_app_rmw_interrupt.obj
+                                  fff80fc6  fff80fe6        21
+  _ics_rxi_interrupt
+                                  fff80fc6        1f   func ,l         0
+  _ics_txi_interrupt
+                                  fff80fe5         2   func ,l         0
+FILE=.\motor_module\Config_MOTOR\Config_MOTOR.obj
+                                  fff80fe7  fff810b6        d0
+  _R_Config_MOTOR_Create
+                                  fff80fe7         1   func ,g         0
+  _R_Config_MOTOR_StartTimerCount
+                                  fff80fe8         4   func ,g         1
+  _R_Config_MOTOR_StopTimerCount
+                                  fff80fec         4   func ,g         0
+  _R_Config_MOTOR_StartTimerCtrl
+                                  fff80ff0        32   func ,g         1
+  _R_Config_MOTOR_StopTimerCtrl
+                                  fff81022        32   func ,g         2
+  _R_Config_MOTOR_UpdDuty
+                                  fff81054         c   func ,g         1
+  _R_Config_MOTOR_StartAD
+                                  fff81060        17   func ,g         1
+  _R_Config_MOTOR_StopAD
+                                  fff81077        22   func ,g         0
+  _R_Config_MOTOR_AdcGetConvVal
+                                  fff81099        1e   func ,g         1
+FILE=.\motor_module\Config_MOTOR\Config_MOTOR_user.obj
+                                  fff810b7  fff810b7         1
+  _R_Config_MOTOR_Create_UserInit
+                                  fff810b7         1   func ,g         0
+FILE=.\motor_module\current_rx\r_motor_current.obj
+                                  fff810b8  fff81346       28f
+  _motor_current_decoupling
+                                  fff810b8        39   func ,g         1
+  _motor_current_pi_control
+                                  fff810f1        2d   func ,g         1
+  _motor_current_rotor_angle_reset
+                                  fff8111e         e   func ,g         2
+  _motor_current_rotor_angle_init
+                                  fff8111e         0   func ,g         1
+  _motor_current_rotor_angle_update
+                                  fff8112c        11   func ,g         1
+  _motor_current_transform_uvw_dq_abs
+                                  fff8113d        41   func ,g         1
+  _motor_current_transform_dq_uvw_abs
+                                  fff8117e        66   func ,g         2
+  _motor_current_volt_limit
+                                  fff811e4        44   func ,g         1
+  _motor_current_reference_iq_set
+                                  fff81228        34   func ,g         1
+  _motor_current_reference_id_set
+                                  fff8125c        3d   func ,g         1
+  _motor_current_angle_speed_detect
+                                  fff81299        ab   func ,g         1
+  _motor_current_angle_get
+                                  fff81344         3   func ,g         1
+FILE=.\motor_module\current_rx\r_motor_current_api.obj
+                                  fff81347  fff816ae       368
+  _R_MOTOR_CURRENT_Open
+                                  fff81347       136   func ,g         1
+  _R_MOTOR_CURRENT_Close
+                                  fff8147d         6   func ,g         1
+  _R_MOTOR_CURRENT_Reset
+                                  fff81483        60   func ,g         3
+  _R_MOTOR_CURRENT_Run
+                                  fff814e3         4   func ,g         1
+  _R_MOTOR_CURRENT_ParameterSet
+                                  fff814e7        24   func ,g         1
+  _R_MOTOR_CURRENT_ParameterGet
+                                  fff8150b        34   func ,g         2
+  _R_MOTOR_CURRENT_ParameterUpdate
+                                  fff8153f        49   func ,g         2
+  _R_MOTOR_CURRENT_CurrentCyclic
+                                  fff81588        99   func ,g         1
+  _R_MOTOR_CURRENT_OffsetCalibration
+                                  fff81621        3c   func ,g         1
+  _R_MOTOR_CURRENT_CurrentOffsetRemove
+                                  fff8165d        11   func ,g         1
+  _R_MOTOR_CURRENT_VoltErrCompParamSet
+                                  fff8166e         8   func ,g         1
+  _R_MOTOR_CURRENT_BEMFObserverParameterUpdate
+                                  fff81676        2d   func ,g         2
+  _R_MOTOR_CURRENT_HuntingSuppress
+                                  fff816a3         c   func ,g         2
+FILE=.\motor_module\current_rx\r_motor_current_modulation.obj
+                                  fff816af  fff81843       195
+  _motor_current_svpwm_mod_start
+                                  fff816af        3d   func ,l         1
+  _motor_current_mod_limit_set
+                                  fff816ec        3c   func ,l         1
+  _motor_current_mod_init
+                                  fff81728        49   func ,g         1
+  _motor_current_mod_reset
+                                  fff81771         1   func ,g         1
+  _motor_current_mod_start
+                                  fff81772        49   func ,g         1
+  _motor_current_mod_vdc_set
+                                  fff817bb        15   func ,g         2
+  _motor_current_mod_max_duty_set
+                                  fff817d0        26   func ,g         2
+  _motor_current_mod_min_duty_set
+                                  fff817f6        1b   func ,g         2
+  _motor_current_mod_volt_err_ratio_set
+                                  fff81811         3   func ,g         2
+  _motor_current_mod_voltage_multiplier_get
+                                  fff81814        1c   func ,g         1
+  _motor_current_mod_max_va_get
+                                  fff81830        14   func ,g         1
+FILE=.\motor_module\current_rx\r_motor_current_pi_gain_calc.obj
+                                  fff81844  fff8187f        3c
+  _motor_current_pi_gain_calc
+                                  fff81844        3c   func ,g         2
+FILE=.\motor_module\driver_rx\r_motor_driver.obj
+                                  fff81880  fff81956        d7
+  _R_MOTOR_DRIVER_Open
+                                  fff81880        11   func ,g         1
+  _R_MOTOR_DRIVER_Close
+                                  fff81891         1   func ,g         1
+  _R_MOTOR_DRIVER_ParameterUpdate
+                                  fff81892        33   func ,g         1
+  _R_MOTOR_DRIVER_BldcAnalogGet
+                                  fff818c5        42   func ,g         1
+  _R_MOTOR_DRIVER_BldcDutySet
+                                  fff81907        46   func ,g         4
+  _R_MOTOR_DRIVER_PWMControlStop
+                                  fff8194d         5   func ,g         2
+  _R_MOTOR_DRIVER_PWMControlStart
+                                  fff81952         5   func ,g         1
+FILE=.\motor_module\general\r_motor_filter.obj
+                                  fff81957  fff81acc       176
+  _motor_filter_lpff
+                                  fff81957         a   func ,g         0
+  _motor_filter_limitf
+                                  fff81961        12   func ,g         1
+  _motor_filter_limit
+                                  fff81973         d   func ,g         0
+  _motor_filter_upper_limitf
+                                  fff81980         a   func ,g         0
+  _motor_filter_upper_limit
+                                  fff8198a         6   func ,g         0
+  _motor_filter_lower_limitf
+                                  fff81990         a   func ,g         1
+  _motor_filter_lower_limit
+                                  fff8199a         6   func ,g         0
+  _motor_filter_limitf_abs
+                                  fff819a0        16   func ,g         8
+  _motor_filter_limit_abs
+                                  fff819b6        12   func ,g         0
+  _motor_filter_second_order_lpff_init
+                                  fff819c8        17   func ,g         0
+  _motor_filter_second_order_lpff_reset
+                                  fff819df         b   func ,g         0
+  _motor_filter_second_order_lpff_gain_calc
+                                  fff819ea        5d   func ,g         0
+  _motor_filter_second_order_lpff
+                                  fff81a47        2f   func ,g         0
+  _motor_filter_first_order_lpff_init
+                                  fff81a76         d   func ,g         2
+  _motor_filter_first_order_lpff_reset
+                                  fff81a83         7   func ,g         2
+  _motor_filter_first_order_lpff_gain_calc
+                                  fff81a8a        29   func ,g         3
+  _motor_filter_first_order_lpff
+                                  fff81ab3        1a   func ,g         3
+FILE=.\motor_module\general\r_motor_pi_control.obj
+                                  fff81acd  fff81b05        39
+  _motor_pi_ctrl
+                                  fff81acd        29   func ,g         3
+  _motor_pi_ctrl_reset
+                                  fff81af6         4   func ,g         1
+  _motor_pi_ctrl_kp_set
+                                  fff81afa         3   func ,g         0
+  _motor_pi_ctrl_set_ki
+                                  fff81afd         3   func ,g         0
+  _motor_pi_ctrl_integrator_set
+                                  fff81b00         3   func ,g         0
+  _motor_pi_ctrl_integral_limit_set
+                                  fff81b03         3   func ,g         1
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_action.obj
+                                  fff81b06  fff81b75        70
+  _motor_sensorless_vector_act_active
+                                  fff81b06        30   func ,g         1
+  _motor_sensorless_vector_act_inactive
+                                  fff81b36        2a   func ,g         2
+  _motor_sensorless_vector_act_nowork
+                                  fff81b60         3   func ,g         4
+  _motor_sensorless_vector_act_reset
+                                  fff81b63         9   func ,g         2
+  _motor_sensorless_vector_act_error
+                                  fff81b6c         a   func ,g         3
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_api.obj
+                                  fff81b76  fff81e52       2dd
+  _R_MOTOR_SENSORLESS_VECTOR_Open
+                                  fff81b76        3f   func ,g         1
+  _R_MOTOR_SENSORLESS_VECTOR_Close
+                                  fff81bb5        16   func ,g         0
+  _R_MOTOR_SENSORLESS_VECTOR_Reset
+                                  fff81bcb         4   func ,g         0
+  _R_MOTOR_SENSORLESS_VECTOR_ParameterUpdate
+                                  fff81bcf        79   func ,g         1
+  _R_MOTOR_SENSORLESS_VECTOR_MotorStart
+                                  fff81c48         c   func ,g         2
+  _R_MOTOR_SENSORLESS_VECTOR_MotorStop
+                                  fff81c54         c   func ,g         2
+  _R_MOTOR_SENSORLESS_VECTOR_MotorReset
+                                  fff81c60         c   func ,g         2
+  _R_MOTOR_SENSORLESS_VECTOR_ErrorSet
+                                  fff81c6c        11   func ,g         0
+  _R_MOTOR_SENSORLESS_VECTOR_SpeedSet
+                                  fff81c7d         7   func ,g         3
+  _R_MOTOR_SENSORLESS_VECTOR_SpeedGet
+                                  fff81c84         b   func ,g         0
+  _R_MOTOR_SENSORLESS_VECTOR_StatusGet
+                                  fff81c8f         8   func ,g         4
+  _R_MOTOR_SENSORLESS_VECTOR_ErrorStatusGet
+                                  fff81c97         3   func ,g         0
+  _R_MOTOR_SENSORLESS_VECTOR_CtrlTypeSet
+                                  fff81c9a        1a   func ,g         1
+  _R_MOTOR_SENSORLESS_VECTOR_LoopModeStatusGet
+                                  fff81cb4         3   func ,g         1
+  _R_MOTOR_SENSORLESS_VECTOR_SpeedInterrupt
+                                  fff81cb7        c8   func ,g         1
+  _R_MOTOR_SENSORLESS_VECTOR_CurrentInterrupt
+                                  fff81d7f        ce   func ,g         1
+  _R_MOTOR_SENSORLESS_VECTOR_OverCurrentInterrupt
+                                  fff81e4d         6   func ,g         1
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_manager.obj
+                                  fff81e53  fff8224b       3f9
+  _motor_sensorless_vector_default_init
+                                  fff81e53       1ee   func ,g         2
+  _motor_sensorless_vector_reset
+                                  fff82041        55   func ,g         5
+  _motor_sensorless_vector_decide_direction
+                                  fff82096        1d   func ,g         1
+  _motor_sensorless_vector_error_process
+                                  fff820b3        19   func ,g         2
+  _motor_sensorless_vector_speed_status_select
+                                  fff820cc         e   func ,g         1
+  _motor_sensorless_vector_iq_status_select
+                                  fff820da        db   func ,g         1
+  _motor_sensorless_vector_id_status_select
+                                  fff821b5        50   func ,g         1
+  _motor_sensorless_vector_nominal_current_set
+                                  fff82205        23   func ,g         2
+  _motor_sensorless_vector_module_activate
+                                  fff82228        1d   func ,g         1
+  _motor_sensorless_phase_err_lpf_setup
+                                  fff82245         7   func ,g         2
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_protection.obj
+                                  fff8224c  fff822c6        7b
+  _motor_sensorless_vector_over_speed_error_check
+                                  fff8224c         b   func ,l         1
+  _motor_sensorless_vector_over_voltage_error_check
+                                  fff82257         9   func ,l         1
+  _motor_sensorless_vector_low_voltage_error_check
+                                  fff82260         9   func ,l         1
+  _motor_sensorless_vector_over_current_error_check
+                                  fff82269        20   func ,l         1
+  _motor_sensorless_vector_error_check
+                                  fff82289        3e   func ,g         1
+FILE=.\motor_module\sensorless_vector_rx\r_motor_sensorless_vector_statemachine.obj
+                                  fff822c7  fff82328        62
+  _motor_sensorless_vector_statemachine_reset
+                                  fff822c7         7   func ,g         1
+  _motor_sensorless_vector_statemachine_init
+                                  fff822c7         0   func ,g         1
+  _motor_sensorless_vector_statemachine_event
+                                  fff822ce        58   func ,g         5
+  _motor_sensorless_vector_statemachine_status_get
+                                  fff82326         3   func ,g         5
+FILE=.\motor_module\speed_rx\r_motor_speed.obj
+                                  fff82329  fff823fd        d5
+  _motor_speed_max_speed_set
+                                  fff82329         a   func ,g         1
+  _motor_speed_rate_limit_set
+                                  fff82333        15   func ,g         1
+  _motor_speed_rate_limit_apply
+                                  fff82348        22   func ,g         1
+  _motor_speed_pi_control
+                                  fff8236a         e   func ,g         1
+  _motor_speed_ref_speed_set
+                                  fff82378        29   func ,g         1
+  _motor_speed_flux_weakening
+                                  fff823a1        5d   func ,g         1
+FILE=.\motor_module\speed_rx\r_motor_speed_api.obj
+                                  fff823fe  fff826a5       2a8
+  _R_MOTOR_SPEED_Open
+                                  fff823fe        f8   func ,g         1
+  _R_MOTOR_SPEED_Close
+                                  fff824f6         6   func ,g         1
+  _R_MOTOR_SPEED_Reset
+                                  fff824fc        3c   func ,g         3
+  _R_MOTOR_SPEED_Run
+                                  fff82538         4   func ,g         1
+  _R_MOTOR_SPEED_ParameterSet
+                                  fff8253c         c   func ,g         2
+  _R_MOTOR_SPEED_ParameterGet
+                                  fff82548        10   func ,g         2
+  _R_MOTOR_SPEED_ParameterUpdate
+                                  fff82558        af   func ,g         2
+  _R_MOTOR_SPEED_SpdRefSet
+                                  fff82607         a   func ,g         1
+  _R_MOTOR_SPEED_SpeedCyclic
+                                  fff82611        38   func ,g         2
+  _R_MOTOR_SPEED_Opl2lessReferenceIqCalc
+                                  fff82649        16   func ,g         1
+  _R_MOTOR_SPEED_Opl2lessPreprocess
+                                  fff8265f        18   func ,g         1
+  _R_MOTOR_SPEED_OplDampCtrl
+                                  fff82677        20   func ,g         1
+  _R_MOTOR_SPEED_OplDampReset
+                                  fff82697         8   func ,g         1
+  _R_MOTOR_SPEED_HuntingSuppress
+                                  fff8269f         3   func ,g         1
+  _R_MOTOR_SPEED_SwitchingFlagSet
+                                  fff826a2         4   func ,g         2
+FILE=.\motor_module\speed_rx\r_motor_speed_pi_gain_calc.obj
+                                  fff826a6  fff826d5        30
+  _motor_speed_pi_gain_calc
+                                  fff826a6        30   func ,g         2
+FILE=.\src\smc_gen\Config_CMT0\Config_CMT0.obj
+                                  fff826d6  fff8272f        5a
+  _R_Config_CMT0_Create
+                                  fff826d6        31   func ,g         1
+  _R_Config_CMT0_Start
+                                  fff82707        13   func ,g         1
+  _R_Config_CMT0_Stop
+                                  fff8271a        16   func ,g         0
+FILE=.\src\smc_gen\Config_CMT0\Config_CMT0_user.obj
+                                  fff82730  fff82755        26
+  _R_Config_CMT0_Create_UserInit
+                                  fff82730         1   func ,g         1
+  _r_Config_CMT0_cmi0_interrupt
+                                  fff82731        25   func ,l         0
+FILE=.\src\smc_gen\Config_IWDT\Config_IWDT.obj
+                                  fff82756  fff82774        1f
+  _R_Config_IWDT_Create
+                                  fff82756        13   func ,g         1
+  _R_Config_IWDT_Restart
+                                  fff82769         c   func ,g         1
+FILE=.\src\smc_gen\Config_IWDT\Config_IWDT_user.obj
+                                  fff82775  fff82775         1
+  _R_Config_IWDT_Create_UserInit
+                                  fff82775         1   func ,g         1
+FILE=.\src\smc_gen\Config_MTU3_MTU4\Config_MTU3_MTU4.obj
+                                  fff82776  fff82871        fc
+  _R_Config_MTU3_MTU4_Create
+                                  fff82776        e5   func ,g         1
+  _R_Config_MTU3_MTU4_Start
+                                  fff8285b         d   func ,g         1
+  _R_Config_MTU3_MTU4_Stop
+                                  fff82868         a   func ,g         1
+FILE=.\src\smc_gen\Config_MTU3_MTU4\Config_MTU3_MTU4_user.obj
+                                  fff82872  fff82872         1
+  _R_Config_MTU3_MTU4_Create_UserInit
+                                  fff82872         1   func ,g         1
+FILE=.\src\smc_gen\Config_POE\Config_POE.obj
+                                  fff82873  fff82977       105
+  _R_Config_POE_Create
+                                  fff82873        37   func ,g         1
+  _R_Config_POE_Start
+                                  fff828aa         c   func ,g         1
+  _R_Config_POE_Stop
+                                  fff828b6        c2   func ,g         1
+FILE=.\src\smc_gen\Config_POE\Config_POE_user.obj
+                                  fff82978  fff8298a        13
+  _R_Config_POE_Create_UserInit
+                                  fff82978         1   func ,g         1
+  _r_Config_POE_oei1_interrupt
+                                  fff82979        12   func ,g         1
+FILE=.\src\smc_gen\Config_PORT\Config_PORT.obj
+                                  fff8298b  fff829d0        46
+  _R_Config_PORT_Create
+                                  fff8298b        20   func ,g         1
+  _R_Config_PORT_GetSW1
+                                  fff829ab         3   func ,g         0
+  _R_Config_PORT_GetSW2
+                                  fff829ae         3   func ,g         0
+  _R_Config_PORT_Led1_on
+                                  fff829b1         8   func ,g         1
+  _R_Config_PORT_Led2_on
+                                  fff829b9         8   func ,g         1
+  _R_Config_PORT_Led1_off
+                                  fff829c1         8   func ,g         1
+  _R_Config_PORT_Led2_off
+                                  fff829c9         8   func ,g         1
+FILE=.\src\smc_gen\Config_PORT\Config_PORT_user.obj
+                                  fff829d1  fff829d1         1
+  _R_Config_PORT_Create_UserInit
+                                  fff829d1         1   func ,g         1
+FILE=.\src\smc_gen\Config_S12AD0\Config_S12AD0.obj
+                                  fff829d2  fff82b42       171
+  _R_Config_S12AD0_Create
+                                  fff829d2        d8   func ,g         1
+  _R_Config_S12AD0_Start
+                                  fff82aaa        17   func ,g         0
+  _R_Config_S12AD0_Stop
+                                  fff82ac1        22   func ,g         0
+  _R_Config_S12AD0_Get_ValueResult
+                                  fff82ae3        60   func ,g         0
+FILE=.\src\smc_gen\Config_S12AD0\Config_S12AD0_user.obj
+                                  fff82b43  fff82b6c        2a
+  _R_Config_S12AD0_Create_UserInit
+                                  fff82b43         1   func ,g         1
+  _r_Config_S12AD0_interrupt
+                                  fff82b44        29   func ,l         0
+FILE=.\src\smc_gen\Config_S12AD2\Config_S12AD2.obj
+                                  fff82b6d  fff82c63        f7
+  _R_Config_S12AD2_Create
+                                  fff82b6d        70   func ,g         1
+  _R_Config_S12AD2_Start
+                                  fff82bdd         c   func ,g         1
+  _R_Config_S12AD2_Stop
+                                  fff82be9        17   func ,g         0
+  _R_Config_S12AD2_Get_ValueResult
+                                  fff82c00        64   func ,g         0
+FILE=.\src\smc_gen\Config_S12AD2\Config_S12AD2_user.obj
+                                  fff82c64  fff82c64         1
+  _R_Config_S12AD2_Create_UserInit
+                                  fff82c64         1   func ,g         1
+FILE=.\src\smc_gen\general\r_cg_hardware_setup.obj
+                                  fff82c65  fff82cc1        5d
+  _r_undefined_exception
+                                  fff82c65         1   func ,g         1
+  _R_Systeminit
+                                  fff82c66        5c   func ,g         1
+FILE=.\src\smc_gen\general\r_smc_cgc.obj
+                                  fff82cc2  fff82cc5         4
+  _R_CGC_Create
+                                  fff82cc2         4   func ,g         1
+FILE=.\src\smc_gen\general\r_smc_cgc_user.obj
+                                  fff82cc6  fff82cc6         1
+  _R_CGC_Create_UserInit
+                                  fff82cc6         1   func ,g         1
+FILE=.\src\smc_gen\general\r_smc_interrupt.obj
+                                  fff82cc7  fff82cda        14
+  _R_Interrupt_Create
+                                  fff82cc7        14   func ,g         1
+FILE=.\src\smc_gen\r_bsp\board\generic_rx26t\hwsetup.obj
+                                  fff82cdb  fff82cf9        1f
+  _hardware_setup
+                                  fff82cdb        10   func ,g         1
+  _output_ports_configure
+                                  fff82ceb         2   func ,l         1
+  _interrupts_configure
+                                  fff82ced         2   func ,l         1
+  _peripheral_modules_enable
+                                  fff82cef         4   func ,l         1
+  _bsp_volsr_initial_configure
+                                  fff82cf3         7   func ,l         1
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowlvl.obj
+                                  fff82cfa  fff82d1b        22
+  _charput
+                                  fff82cfa        10   func ,g         1
+  _charget
+                                  fff82d0a        12   func ,g         1
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  fff82d1c  fff82ea2       187
+  _init_iolib
+                                  fff82d1c        84   func ,g         1
+  _close_all
+                                  fff82da0        2a   func ,g         1
+  _open
+                                  fff82dca        67   func ,g         1
+  _close
+                                  fff82e31         3   func ,g         1
+  _write
+                                  fff82e34        37   func ,g         1
+  _read
+                                  fff82e6b        34   func ,g         0
+  _lseek
+                                  fff82e9f         4   func ,g         0
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_common.obj
+                                  fff82ea3  fff82f73        d1
+  _R_BSP_GetVersion
+                                  fff82ea3         6   func ,g         0
+  _R_BSP_GetIClkFreqHz
+                                  fff82ea9         4   func ,g         1
+  _R_BSP_SoftwareDelay
+                                  fff82ead        c7   func ,g         1
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  fff82f74  fff8311b       1a8
+  _R_BSP_InterruptsDisable
+                                  fff82f74         9   func ,g         0
+  _R_BSP_InterruptsEnable
+                                  fff82f7d         9   func ,g         0
+  _R_BSP_CpuInterruptLevelRead
+                                  fff82f86         8   func ,g         1
+  _R_BSP_CpuInterruptLevelWrite
+                                  fff82f8e        5c   func ,g         1
+  _R_BSP_RegisterProtectEnable
+                                  fff82fea        67   func ,g         1
+  _R_BSP_RegisterProtectDisable
+                                  fff83051        5d   func ,g         2
+  _R_BSP_VoltageLevelSetting
+                                  fff830ae        38   func ,g         1
+  _R_BSP_SoftwareReset
+                                  fff830e6        11   func ,g         0
+  _bsp_register_protect_open
+                                  fff830f7        12   func ,g         1
+  _bsp_ram_initialize
+                                  fff83109        13   func ,g         1
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_interrupts.obj
+                                  fff8311c  fff83526       40b
+  _R_BSP_InterruptRequestEnable
+                                  fff8311c         e   func ,g         2
+  _R_BSP_InterruptRequestDisable
+                                  fff8312a         e   func ,g         8
+  _bsp_interrupt_open
+                                  fff83138        1a   func ,g         1
+  _R_BSP_InterruptWrite
+                                  fff83152        1c   func ,g         2
+  _R_BSP_InterruptRead
+                                  fff8316e        1b   func ,g         0
+  _R_BSP_InterruptControl
+                                  fff83189        75   func ,g        46
+  _bsp_fit_interrupts_control
+                                  fff831fe        43   func ,l         1
+  _bsp_gr_int_enable_disable
+                                  fff83241       138   func ,l         2
+  _excep_supervisor_inst_isr
+                                  fff83379        28   func ,g         1
+  _excep_access_isr
+                                  fff833a1        28   func ,g         1
+  _excep_undefined_inst_isr
+                                  fff833c9        28   func ,g         1
+  _excep_floating_point_isr
+                                  fff833f1        32   func ,g         1
+  _non_maskable_isr
+                                  fff83423        ad   func ,g         1
+  _undefined_interrupt_source_isr
+                                  fff834d0        28   func ,g         6
+  _bus_error_isr
+                                  fff834f8        2f   func ,g         0
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_locking.obj
+                                  fff83527  fff83556        30
+  _R_BSP_SoftwareLock
+                                  fff83527        10   func ,g         1
+  _R_BSP_SoftwareUnlock
+                                  fff83537         6   func ,g         1
+  _R_BSP_HardwareLock
+                                  fff8353d         d   func ,g         0
+  _R_BSP_HardwareUnlock
+                                  fff8354a         d   func ,g         0
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_rx_intrinsic_functions.obj
+                                  fff83557  fff836cb       175
+  _R_BSP_ChangeToUserMode
+                                  fff83557        20   func ,g         0
+  _R_BSP_SetBPSW
+                                  fff83577         4   func ,g         0
+  _R_BSP_GetBPSW
+                                  fff8357b        11   func ,g         0
+  _R_BSP_SetBPC
+                                  fff8358c         4   func ,g         0
+  _R_BSP_GetBPC
+                                  fff83590        11   func ,g         0
+  _R_BSP_SetEXTB
+                                  fff835a1         4   func ,g         0
+  _R_BSP_GetEXTB
+                                  fff835a5        11   func ,g         0
+  _R_BSP_MoveToAccHiLong
+                                  fff835b6         4   func ,g         0
+  _R_BSP_MoveToAccLoLong
+                                  fff835ba         4   func ,g         0
+  _R_BSP_MoveFromAccHiLong
+                                  fff835be        11   func ,g         0
+  _R_BSP_MoveFromAccMiLong
+                                  fff835cf        11   func ,g         0
+  _R_BSP_BitSet
+                                  fff835e0         4   func ,g         0
+  _R_BSP_BitClear
+                                  fff835e4         4   func ,g         0
+  _R_BSP_BitReverse
+                                  fff835e8         4   func ,g         0
+  _R_BSP_CalcSine_Cosine
+                                  fff835ec        11   func ,g         0
+  _R_BSP_CalcAtan_SquareRoot
+                                  fff835fd        1c   func ,g         0
+  _R_BSP_CalcSine_Cosine_Fpn
+                                  fff83619        18   func ,g         0
+  _R_BSP_CalcSine_Fpn
+                                  fff83631        17   func ,g         0
+  _R_BSP_CalcCosine_Fpn
+                                  fff83648        17   func ,g         0
+  _R_BSP_CalcAtan_SquareRoot_Fpn
+                                  fff8365f        28   func ,g         0
+  _R_BSP_CalcAtan_Fpn
+                                  fff83687        1e   func ,g         0
+  _R_BSP_CalcSquareRoot_Fpn
+                                  fff836a5        27   func ,g         0
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  fff836cc  fff836ec        21
+  _sbrk
+                                  fff836cc        21   func ,g         1
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\mcu_clocks.obj
+                                  fff836ed  fff8381f       133
+  _get_iclk_freq_hz
+                                  fff836ed        7e   func ,g         1
+  _mcu_clock_setup
+                                  fff8376b         0   func ,g         1
+  _operating_frequency_set
+                                  fff8376b        5f   func ,l         1
+  _clock_source_select
+                                  fff837ca        56   func ,l         1
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\mcu_init.obj
+                                  fff83820  fff838b6        97
+  _bsp_non_existent_port_init
+                                  fff83820        97   func ,g         1
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\mcu_interrupts.obj
+                                  fff838b7  fff83d54       49e
+  _bsp_interrupt_enable_disable
+                                  fff838b7        64   func ,g         1
+  _group_bl0_handler_isr
+                                  fff8391b       138   func ,l         0
+  _group_bl1_handler_isr
+                                  fff83a53       19e   func ,l         0
+  _group_bl2_handler_isr
+                                  fff83bf1        8e   func ,l         0
+  _group_al0_handler_isr
+                                  fff83c7f        9f   func ,l         0
+  _group_al1_handler_isr
+                                  fff83d1e        37   func ,l         0
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\mcu_mapped_interrupts.obj
+                                  fff83d55  fff83dea        96
+  _bsp_mapped_interrupt_open
+                                  fff83d55        96   func ,g         1
+FILE=.\src\smc_gen\r_pincfg\Pin.obj
+                                  fff83deb  fff83e88        9e
+  _R_Pins_Create
+                                  fff83deb        9e   func ,g         0
+FILE=ICS2_RX26T
+                                  fff83e89  fff84b3d       cb5
+  _ics_send_packet
+                                  fff83e89        5a   func ,l         3
+  _ics_command_ack_raw
+                                  fff83ee3         5   func ,l         8
+  _ics_command_ack_word
+                                  fff83ee8        1b   func ,l         2
+  _ics_command_error
+                                  fff83f03        44   func ,l         4
+  _ics_int_sci_rxi
+                                  fff83f47       13c   func ,g         1
+  _ics_interpreter
+                                  fff84083       12d   func ,l         1
+  _ics2_watchpoint
+                                  fff841b0       3cd   func ,g         1
+  _ics_icu_init
+                                  fff8457d        58   func ,l         1
+  _ics_dtc_init
+                                  fff845d5        69   func ,l         1
+  _ics_sci_init
+                                  fff8463e       3cf   func ,l         1
+  _ics2_init
+                                  fff84a0d        93   func ,g         1
+  _ics_send
+                                  fff84aa0        58   func ,l         1
+  _ics2_version
+                                  fff84af8         6   func ,g         0
+  _ics_int_sci_eri
+                                  fff84afe        40   func ,g         2
+FILE=r_motor_current_bemf_observer
+                                  fff84b3e  fff84cd6       199
+  _motor_current_bemf_observer_start
+                                  fff84b3e        a9   func ,g         1
+  _motor_current_bemf_observer_d_calc
+                                  fff84be7        10   func ,g         1
+  _motor_current_bemf_observer_q_calc
+                                  fff84bf7        13   func ,g         1
+  _motor_current_bemf_observer_amp_calc
+                                  fff84c0a        19   func ,g         0
+  _motor_current_bemf_observer_init
+                                  fff84c23         4   func ,g         1
+  _motor_current_bemf_observer_gain_calc
+                                  fff84c27        40   func ,g         2
+  _motor_current_bemf_observer_gain_set
+                                  fff84c67         f   func ,g         1
+  _motor_current_bemf_observer_reset
+                                  fff84c76        13   func ,g         2
+  _motor_current_angle_speed_pll
+                                  fff84c89        16   func ,g         1
+  _motor_current_angle_speed_init
+                                  fff84c9f         2   func ,g         1
+  _motor_current_angle_speed_gain_calc
+                                  fff84ca1        17   func ,g         2
+  _motor_current_angle_speed_gain_set
+                                  fff84cb8         5   func ,g         1
+  _motor_current_angle_speed_reset
+                                  fff84cbd         4   func ,g         2
+  _motor_current_filter_limitf_abs
+                                  fff84cc1        16   func ,l         2
+FILE=r_motor_current_volt_err_comp
+                                  fff84cd7  fff85096       3c0
+  _motor_current_volt_err_comp_init
+                                  fff84cd7        93   func ,g         1
+  _motor_current_volt_err_comp_reset
+                                  fff84d6a        10   func ,g         0
+  _motor_current_volt_err_comp_calc
+                                  fff84d7a       219   func ,l         2
+  _motor_current_volt_err_comp_main
+                                  fff84f93        7f   func ,g         1
+  _motor_current_volt_err_comp_table_set
+                                  fff85012        7b   func ,g         1
+  _motor_current_volt_err_vlimit_set
+                                  fff8508d         a   func ,g         1
+FILE=r_motor_speed_fluxwkn
+                                  fff85097  fff852c7       231
+  _motor_speed_flux_weakn_get_vec
+                                  fff85097        19   func ,l         2
+  _motor_speed_flux_weakn_vec_abs
+                                  fff850b0         d   func ,l         1
+  _motor_speed_flux_weakn_init
+                                  fff850bd        2d   func ,g         1
+  _motor_speed_flux_weakn_reset
+                                  fff850ea        10   func ,g         2
+  _motor_speed_flux_weakn_start
+                                  fff850fa        eb   func ,g         1
+  _motor_speed_flux_weakn_motor_set
+                                  fff851e5        3d   func ,g         2
+  _motor_speed_flux_weakn_iamax_set
+                                  fff85222        29   func ,g         2
+  _motor_speed_flux_weakn_vamax_set
+                                  fff8524b        1b   func ,g         2
+  _motor_speed_flux_weakn_vfw_ratio_set
+                                  fff85266        28   func ,g         1
+  _motor_speed_flux_weakn_iamax_get
+                                  fff8528e         3   func ,g         0
+  _motor_speed_flux_weakn_vamax_get
+                                  fff85291         3   func ,g         0
+  _motor_speed_flux_weakn_vfw_ratio_get
+                                  fff85294         3   func ,g         0
+  _motor_speed_flux_weakn_status_get
+                                  fff85297         3   func ,g         0
+  _motor_speed_flux_weakn_error_check
+                                  fff8529a         e   func ,g         1
+  _motor_speed_flux_weakn_invalid_parameter_check
+                                  fff852a8        10   func ,g         1
+  _motor_speed_flux_weakn_run_time_error_check
+                                  fff852b8        10   func ,g         0
+FILE=r_motor_speed_opl_damp_ctrl
+                                  fff852c8  fff85371        aa
+  _motor_speed_opl_damp_ctrl
+                                  fff852c8        3a   func ,g         1
+  _motor_speed_opl_damp_init
+                                  fff85302         d   func ,g         1
+  _motor_speed_opl_damp_reset
+                                  fff8530f         7   func ,g         3
+  _motor_speed_opl_damp_gain_set
+                                  fff85316         b   func ,g         0
+  _motor_speed_opl_damp_r_gain_set
+                                  fff85321        4e   func ,g         2
+  _motor_speed_opl_damp_limit_set
+                                  fff8536f         3   func ,g         2
+FILE=r_motor_speed_opl2less
+                                  fff85372  fff853c3        52
+  _motor_speed_opl2less_iq_calc
+                                  fff85372        21   func ,g         1
+  _motor_speed_opl2less_torque_current_calc
+                                  fff85393        31   func ,g         1
+FILE=atan2f
+                                  fff853c4  fff853ec        29
+  _atan2f
+                                  fff853c4        29   func ,g         2
+  _atan2
+                                  fff853c4         0   func ,g         1
+  _atan2l
+                                  fff853c4         0   func ,g         0
+FILE=copysignf
+                                  fff853ed  fff853fb         f
+  _copysignf
+                                  fff853ed         f   func ,g         4
+  _copysign
+                                  fff853ed         0   func ,g         1
+  _copysignl
+                                  fff853ed         0   func ,g         0
+FILE=fminf
+                                  fff853fc  fff85439        3e
+  _fminf
+                                  fff853fc        3e   func ,g         2
+  _fmin
+                                  fff853fc         0   func ,g         1
+  _fminl
+                                  fff853fc         0   func ,g         0
+FILE=xfdclass
+                                  fff8543a  fff85445         c
+  __FDclass
+                                  fff8543a         c   func ,g         1
+FILE=freopen
+                                  fff85446  fff85472        2d
+  _freopen
+                                  fff85446        2d   func ,g         3
+FILE=fclose
+                                  fff85473  fff854c6        54
+  _fclose
+                                  fff85473        54   func ,g         4
+FILE=__COM_DIV64u
+                                  fff854c7  fff8555f        99
+  __COM_DIV64u
+                                  fff854c7         0   none ,g         2
+  _Loop_Init
+                                  fff854d1         0   none ,l         2
+  _Loop
+                                  fff854d9         0   none ,l         1
+  _DivStart
+                                  fff854e5         0   none ,l         3
+  _Success
+                                  fff854f3         0   none ,l         1
+  _DivEnd
+                                  fff854ff         0   none ,l         0
+  IXI6DIV
+                                  fff85504         0   none ,l         1
+  IXI4DIV
+                                  fff85516         0   none ,l         1
+  IXI2DIV
+                                  fff85526         0   none ,l         1
+  I8I2DIV
+                                  fff8552e         0   none ,l         1
+  I4I2DIV
+                                  fff8555c         0   none ,l         1
+  _i8divU_End
+                                  fff8555f         0   none ,l         0
+FILE=__initsct
+                                  fff85560  fff855a9        4a
+  __INITSCT
+                                  fff85560         0   none ,g         1
+  loop1
+                                  fff85572         0   none ,l         1
+  next_loop1
+                                  fff85580         0   none ,l         2
+  loop3
+                                  fff85592         0   none ,l         1
+  next_loop3
+                                  fff855a3         0   none ,l         2
+FILE=cosf
+                                  fff855aa  fff855d7        2e
+  _cosf
+                                  fff855aa        2e   func ,g         2
+  _cos
+                                  fff855aa         0   func ,g         1
+  _cosl
+                                  fff855aa         0   func ,g         0
+FILE=sinf
+                                  fff855d8  fff85612        3b
+  _sinf
+                                  fff855d8        3b   func ,g         2
+  _sin
+                                  fff855d8         0   func ,g         1
+  _sinl
+                                  fff855d8         0   func ,g         0
+FILE=_i_atn2s
+                                  fff85613  fff8563c        2a
+  __in_atan2s
+                                  fff85613        2a   func ,g         1
+FILE=xfdtest
+                                  fff8563d  fff85676        3a
+  __FDtest
+                                  fff8563d        3a   func ,g         3
+FILE=fflush
+                                  fff85677  fff856f8        82
+  _fflush
+                                  fff85677        82   func ,g         2
+FILE=xfoprep
+                                  fff856f9  fff857ca        d2
+  __Foprep
+                                  fff856f9        d2   func ,g         1
+FILE=xfofind
+                                  fff857cb  fff85857        8d
+  __Fofind
+                                  fff857cb        44   func ,g         0
+  __Fofree
+                                  fff8580f        49   func ,g         2
+FILE=free
+                                  fff85858  fff858d9        82
+  _free
+                                  fff85858        82   func ,g         3
+FILE=_i_atans
+                                  fff858da  fff85a3a       161
+  __in_atans
+                                  fff858da       161   func ,g         1
+FILE=sincosfsub
+                                  fff85a3b  fff85b20        e6
+  ___poly_sinf
+                                  fff85a3b        31   func ,g         3
+  ___poly_cosf
+                                  fff85a6c        28   func ,g         3
+  _poly_cosfn
+                                  fff85a94         7   func ,l         1
+  _poly_sinfn
+                                  fff85a9b         5   func ,l         1
+  _sincosf_special
+                                  fff85aa0        31   func ,l         1
+  ___internal_sincosf
+                                  fff85ad1        50   func ,g         4
+FILE=xfopen
+                                  fff85b21  fff85b50        30
+  __Fopen
+                                  fff85b21        30   func ,g         1
+FILE=malloc
+                                  fff85b51  fff85c2b        db
+  _findmem
+                                  fff85b51        79   func ,l         1
+  _malloc
+                                  fff85bca        62   func ,g         1
+FILE=fmodf
+                                  fff85c2c  fff85c5a        2f
+  _fmodf
+                                  fff85c2c        2f   func ,g         2
+  _fmod
+                                  fff85c2c         0   func ,g         1
+  _fmodl
+                                  fff85c2c         0   func ,g         0
+FILE=_a_atans
+                                  fff85c5b  fff85c7d        23
+  __app_atans
+                                  fff85c5b        23   func ,g         4
+FILE=_i_fmds
+                                  fff85c7e  fff85d4b        ce
+  __in_fmods
+                                  fff85c7e        ce   func ,g         2
+FILE=_i_ldes
+                                  fff85d4c  fff85dca        7f
+  __in_ldexps
+                                  fff85d4c        7f   func ,g         2
+FILE=nanfval
+                                  fff85dcb  fff85dd1         7
+  ___nanf_value
+                                  fff85dcb         7   func ,g         1
+FILE=xgetmem
+                                  fff85dd2  fff85dec        1b
+  __Getmem
+                                  fff85dd2        1b   func ,g         1
+
+SECTION=EXCEPTVECT
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\vecttbl.obj
+                                  ffffff80  fffffffb        7c
+  _Except_Vectors
+                                  ffffff80        7c   data ,g         0
+
+SECTION=RESETVECT
+FILE=.\src\smc_gen\r_bsp\mcu\rx26t\vecttbl.obj
+                                  fffffffc  ffffffff         4
+  _Reset_Vector
+                                  fffffffc         4   data ,g         0
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Vector Table List ***
+
+NO.    SYMBOL/ADDRESS
+  0    _undefined_interrupt_source_isr
+  1    _undefined_interrupt_source_isr
+  2    _undefined_interrupt_source_isr
+  3    _undefined_interrupt_source_isr
+  4    _undefined_interrupt_source_isr
+  5    _undefined_interrupt_source_isr
+  6    _undefined_interrupt_source_isr
+  7    _undefined_interrupt_source_isr
+  8    _undefined_interrupt_source_isr
+  9    _undefined_interrupt_source_isr
+ 10    _undefined_interrupt_source_isr
+ 11    _undefined_interrupt_source_isr
+ 12    _undefined_interrupt_source_isr
+ 13    _undefined_interrupt_source_isr
+ 14    _undefined_interrupt_source_isr
+ 15    _undefined_interrupt_source_isr
+ 16    _bus_error_isr
+ 17    _undefined_interrupt_source_isr
+ 18    _undefined_interrupt_source_isr
+ 19    _undefined_interrupt_source_isr
+ 20    _undefined_interrupt_source_isr
+ 21    _undefined_interrupt_source_isr
+ 22    _undefined_interrupt_source_isr
+ 23    _undefined_interrupt_source_isr
+ 24    _undefined_interrupt_source_isr
+ 25    _undefined_interrupt_source_isr
+ 26    _undefined_interrupt_source_isr
+ 27    _undefined_interrupt_source_isr
+ 28    _r_Config_CMT0_cmi0_interrupt
+ 29    _undefined_interrupt_source_isr
+ 30    _undefined_interrupt_source_isr
+ 31    _undefined_interrupt_source_isr
+ 32    _undefined_interrupt_source_isr
+ 33    _undefined_interrupt_source_isr
+ 34    _undefined_interrupt_source_isr
+ 35    _undefined_interrupt_source_isr
+ 36    _undefined_interrupt_source_isr
+ 37    _undefined_interrupt_source_isr
+ 38    _undefined_interrupt_source_isr
+ 39    _undefined_interrupt_source_isr
+ 40    _undefined_interrupt_source_isr
+ 41    _undefined_interrupt_source_isr
+ 42    _undefined_interrupt_source_isr
+ 43    _undefined_interrupt_source_isr
+ 44    _undefined_interrupt_source_isr
+ 45    _undefined_interrupt_source_isr
+ 46    _undefined_interrupt_source_isr
+ 47    _undefined_interrupt_source_isr
+ 48    _undefined_interrupt_source_isr
+ 49    _undefined_interrupt_source_isr
+ 50    _undefined_interrupt_source_isr
+ 51    _undefined_interrupt_source_isr
+ 52    _undefined_interrupt_source_isr
+ 53    _undefined_interrupt_source_isr
+ 54    _undefined_interrupt_source_isr
+ 55    _undefined_interrupt_source_isr
+ 56    _undefined_interrupt_source_isr
+ 57    _undefined_interrupt_source_isr
+ 58    _undefined_interrupt_source_isr
+ 59    _undefined_interrupt_source_isr
+ 60    _undefined_interrupt_source_isr
+ 61    _undefined_interrupt_source_isr
+ 62    _undefined_interrupt_source_isr
+ 63    _undefined_interrupt_source_isr
+ 64    _undefined_interrupt_source_isr
+ 65    _undefined_interrupt_source_isr
+ 66    _undefined_interrupt_source_isr
+ 67    _undefined_interrupt_source_isr
+ 68    _undefined_interrupt_source_isr
+ 69    _undefined_interrupt_source_isr
+ 70    _undefined_interrupt_source_isr
+ 71    _undefined_interrupt_source_isr
+ 72    _undefined_interrupt_source_isr
+ 73    _undefined_interrupt_source_isr
+ 74    _undefined_interrupt_source_isr
+ 75    _undefined_interrupt_source_isr
+ 76    _undefined_interrupt_source_isr
+ 77    _undefined_interrupt_source_isr
+ 78    _undefined_interrupt_source_isr
+ 79    _undefined_interrupt_source_isr
+ 80    _undefined_interrupt_source_isr
+ 81    _undefined_interrupt_source_isr
+ 82    _undefined_interrupt_source_isr
+ 83    _undefined_interrupt_source_isr
+ 84    _undefined_interrupt_source_isr
+ 85    _undefined_interrupt_source_isr
+ 86    _ics_rxi_interrupt
+ 87    _ics_txi_interrupt
+ 88    _undefined_interrupt_source_isr
+ 89    _undefined_interrupt_source_isr
+ 90    _undefined_interrupt_source_isr
+ 91    _undefined_interrupt_source_isr
+ 92    _undefined_interrupt_source_isr
+ 93    _undefined_interrupt_source_isr
+ 94    _undefined_interrupt_source_isr
+ 95    _undefined_interrupt_source_isr
+ 96    _undefined_interrupt_source_isr
+ 97    _undefined_interrupt_source_isr
+ 98    _undefined_interrupt_source_isr
+ 99    _undefined_interrupt_source_isr
+100    _undefined_interrupt_source_isr
+101    _undefined_interrupt_source_isr
+102    _undefined_interrupt_source_isr
+103    _undefined_interrupt_source_isr
+104    _undefined_interrupt_source_isr
+105    _undefined_interrupt_source_isr
+106    _undefined_interrupt_source_isr
+107    _group_bl2_handler_isr
+108    _undefined_interrupt_source_isr
+109    _undefined_interrupt_source_isr
+110    _group_bl0_handler_isr
+111    _group_bl1_handler_isr
+112    _group_al0_handler_isr
+113    _group_al1_handler_isr
+114    _undefined_interrupt_source_isr
+115    _undefined_interrupt_source_isr
+116    _undefined_interrupt_source_isr
+117    _undefined_interrupt_source_isr
+118    _undefined_interrupt_source_isr
+119    _undefined_interrupt_source_isr
+120    _undefined_interrupt_source_isr
+121    _undefined_interrupt_source_isr
+122    _undefined_interrupt_source_isr
+123    _undefined_interrupt_source_isr
+124    _undefined_interrupt_source_isr
+125    _undefined_interrupt_source_isr
+126    _undefined_interrupt_source_isr
+127    _undefined_interrupt_source_isr
+128    _r_Config_S12AD0_interrupt
+129    _undefined_interrupt_source_isr
+130    _undefined_interrupt_source_isr
+131    _undefined_interrupt_source_isr
+132    _undefined_interrupt_source_isr
+133    _undefined_interrupt_source_isr
+134    _undefined_interrupt_source_isr
+135    _undefined_interrupt_source_isr
+136    _undefined_interrupt_source_isr
+137    _undefined_interrupt_source_isr
+138    _undefined_interrupt_source_isr
+139    _undefined_interrupt_source_isr
+140    _undefined_interrupt_source_isr
+141    _undefined_interrupt_source_isr
+142    _undefined_interrupt_source_isr
+143    _undefined_interrupt_source_isr
+144    _undefined_interrupt_source_isr
+145    _undefined_interrupt_source_isr
+146    _undefined_interrupt_source_isr
+147    _undefined_interrupt_source_isr
+148    _undefined_interrupt_source_isr
+149    _undefined_interrupt_source_isr
+150    _undefined_interrupt_source_isr
+151    _undefined_interrupt_source_isr
+152    _undefined_interrupt_source_isr
+153    _undefined_interrupt_source_isr
+154    _undefined_interrupt_source_isr
+155    _undefined_interrupt_source_isr
+156    _undefined_interrupt_source_isr
+157    _undefined_interrupt_source_isr
+158    _undefined_interrupt_source_isr
+159    _undefined_interrupt_source_isr
+160    _undefined_interrupt_source_isr
+161    _undefined_interrupt_source_isr
+162    _undefined_interrupt_source_isr
+163    _undefined_interrupt_source_isr
+164    _undefined_interrupt_source_isr
+165    _undefined_interrupt_source_isr
+166    _undefined_interrupt_source_isr
+167    _undefined_interrupt_source_isr
+168    _undefined_interrupt_source_isr
+169    _undefined_interrupt_source_isr
+170    _undefined_interrupt_source_isr
+171    _undefined_interrupt_source_isr
+172    _undefined_interrupt_source_isr
+173    _undefined_interrupt_source_isr
+174    _undefined_interrupt_source_isr
+175    _undefined_interrupt_source_isr
+176    _undefined_interrupt_source_isr
+177    _undefined_interrupt_source_isr
+178    _undefined_interrupt_source_isr
+179    _undefined_interrupt_source_isr
+180    _undefined_interrupt_source_isr
+181    _undefined_interrupt_source_isr
+182    _undefined_interrupt_source_isr
+183    _undefined_interrupt_source_isr
+184    _undefined_interrupt_source_isr
+185    _undefined_interrupt_source_isr
+186    _undefined_interrupt_source_isr
+187    _undefined_interrupt_source_isr
+188    _undefined_interrupt_source_isr
+189    _undefined_interrupt_source_isr
+190    _undefined_interrupt_source_isr
+191    _undefined_interrupt_source_isr
+192    _undefined_interrupt_source_isr
+193    _undefined_interrupt_source_isr
+194    _undefined_interrupt_source_isr
+195    _undefined_interrupt_source_isr
+196    _undefined_interrupt_source_isr
+197    _undefined_interrupt_source_isr
+198    _undefined_interrupt_source_isr
+199    _undefined_interrupt_source_isr
+200    _undefined_interrupt_source_isr
+201    _undefined_interrupt_source_isr
+202    _undefined_interrupt_source_isr
+203    _undefined_interrupt_source_isr
+204    _undefined_interrupt_source_isr
+205    _undefined_interrupt_source_isr
+206    _undefined_interrupt_source_isr
+207    _undefined_interrupt_source_isr
+208    _undefined_interrupt_source_isr
+209    _undefined_interrupt_source_isr
+210    _undefined_interrupt_source_isr
+211    _undefined_interrupt_source_isr
+212    _undefined_interrupt_source_isr
+213    _undefined_interrupt_source_isr
+214    _undefined_interrupt_source_isr
+215    _undefined_interrupt_source_isr
+216    _undefined_interrupt_source_isr
+217    _undefined_interrupt_source_isr
+218    _undefined_interrupt_source_isr
+219    _undefined_interrupt_source_isr
+220    _undefined_interrupt_source_isr
+221    _undefined_interrupt_source_isr
+222    _undefined_interrupt_source_isr
+223    _undefined_interrupt_source_isr
+224    _undefined_interrupt_source_isr
+225    _undefined_interrupt_source_isr
+226    _undefined_interrupt_source_isr
+227    _undefined_interrupt_source_isr
+228    _undefined_interrupt_source_isr
+229    _undefined_interrupt_source_isr
+230    _undefined_interrupt_source_isr
+231    _undefined_interrupt_source_isr
+232    _undefined_interrupt_source_isr
+233    _undefined_interrupt_source_isr
+234    _undefined_interrupt_source_isr
+235    _undefined_interrupt_source_isr
+236    _undefined_interrupt_source_isr
+237    _undefined_interrupt_source_isr
+238    _undefined_interrupt_source_isr
+239    _undefined_interrupt_source_isr
+240    _undefined_interrupt_source_isr
+241    _undefined_interrupt_source_isr
+242    _undefined_interrupt_source_isr
+243    _undefined_interrupt_source_isr
+244    _undefined_interrupt_source_isr
+245    _undefined_interrupt_source_isr
+246    _undefined_interrupt_source_isr
+247    _undefined_interrupt_source_isr
+248    _undefined_interrupt_source_isr
+249    _undefined_interrupt_source_isr
+250    _undefined_interrupt_source_isr
+251    _undefined_interrupt_source_isr
+252    _undefined_interrupt_source_isr
+253    _undefined_interrupt_source_isr
+254    _undefined_interrupt_source_isr
+255    _undefined_interrupt_source_isr
+
+*** Cross Reference List ***
+
+No   Unit Name   Global.Symbol   Location External Infomation
+---- ----------- --------------- -------- ---------------------
+0001 r_app_board_ui
+     SECTION=P
+                 _r_app_board_ui_mainloop
+                                 fff8085a 0003(fff80a0f:P)
+                 _r_app_board_ui_led_control
+                                 fff80923 0003(fff80995:P)
+                                          0003(fff80a1b:P)
+                 _r_app_board_ui_remove_sw_chattering
+                                 fff80945 0001(fff8087b:P)
+                                          0001(fff80893:P)
+                                          0001(fff808fc:P)
+                                          0001(fff80912:P)
+     SECTION=D_1
+     SECTION=R_1
+0002 r_app_board_ui_ctrl_rx26t_mcilv1
+     SECTION=P
+                 _r_app_board_ui_get_vr1
+                                 fff80967 0001(fff808a9:P)
+                 _r_app_board_ui_get_sw1
+                                 fff8096a 0001(fff80875:P)
+                                          0001(fff8088b:P)
+                 _r_app_board_ui_get_sw2
+                                 fff8096d 0001(fff808e7:P)
+                 _r_app_board_ui_led1_on
+                                 fff80970 0001(fff80932:P)
+                 _r_app_board_ui_led2_on
+                                 fff80974 0001(fff80941:P)
+                 _r_app_board_ui_led1_off
+                                 fff80978 0001(fff80927:P)
+                                          0001(fff8093d:P)
+                 _r_app_board_ui_led2_off
+                                 fff8097c 0001(fff8092b:P)
+                                          0001(fff80936:P)
+0003 r_app_main
+     SECTION=BDTCTBL
+                 _g_dtc_table
+                                 00000000 0003(fff8099c:P)
+     SECTION=B_2
+                 _j
+                                 000018ae 0003(fff8098e:P)
+     SECTION=B
+                 _i
+                                 000018d8 0003(fff80986:P)
+     SECTION=P
+                 _main
+                                 fff80980 0053(fff8005a:PResetPRG)
+0004 r_app_rmw
+     SECTION=B_1
+                 _gui_u1_active_gui
+                                 00001800
+                 _com_u1_system_mode
+                                 00001801 0004(fff80a3a:P)
+                                          0004(fff80db8:P)
+                 _g_u1_system_mode
+                                 00001802 0003(fff809fb:P)
+                                          0004(fff80a42:P)
+                                          0004(fff80db2:P)
+                 _com_u1_enable_write
+                                 00001803 0004(fff80a4a:P)
+                                          0004(fff80bfe:P)
+                 _g_u1_enable_write
+                                 00001804 0004(fff80a52:P)
+                                          0004(fff80c06:P)
+                 _com_u1_sw_userif
+                                 00001805 0003(fff809d6:P)
+                                          0004(fff80a5a:P)
+                 _g_u1_sw_userif
+                                 00001806 0003(fff809ce:P)
+                                          0004(fff80a62:P)
+                                          0004(fff80d9f:P)
+                 _com_u1_ctrl_loop_mode
+                                 00001807 0004(fff80acf:P)
+                                          0004(fff80c67:P)
+                 _com_u1_flag_volt_err_comp_use
+                                 00001808 0004(fff80b71:P)
+                                          0004(fff80ce5:P)
+                 _com_u1_flag_fluxwkn_use
+                                 00001809 0004(fff80b79:P)
+                                          0004(fff80cee:P)
+                 _com_u1_flag_less_switch_use
+                                 0000180a 0004(fff80ba5:P)
+                                          0004(fff80d42:P)
+                 _com_u1_flag_openloop_damping_use
+                                 0000180b 0004(fff80bcf:P)
+                                          0004(fff80d24:P)
+     SECTION=R_1
+                 _g_u1_update_param_flag
+                                 0000184a 0004(fff80d66:P)
+                                          0004(fff80d8b:P)
+     SECTION=B_2
+                 _g_u2_conf_sw_ver
+                                 000018b0
+                 _com_u2_offset_calc_time
+                                 000018b2 0004(fff80a6a:P)
+                                          0004(fff80c17:P)
+                 _com_u2_mtr_pp
+                                 000018b4 0004(fff80a74:P)
+                                          0004(fff80c1f:P)
+     SECTION=R_2
+                 _g_u2_conf_hw
+                                 000018d0
+                 _g_u2_conf_sw
+                                 000018d2
+                 _g_u2_conf_tool
+                                 000018d4
+     SECTION=B
+                 _g_st_rmw_input_buffer
+                                 000018dc 0004(fff80c11:P)
+                                          0004(fff80e6d:P)
+                 _com_f4_mtr_r
+                                 0000196c 0004(fff80a7d:P)
+                                          0004(fff80c28:P)
+                 _com_f4_mtr_ld
+                                 00001970 0004(fff80a8f:P)
+                                          0004(fff80c31:P)
+                 _com_f4_mtr_lq
+                                 00001974 0004(fff80a97:P)
+                                          0004(fff80c3a:P)
+                 _com_f4_mtr_m
+                                 00001978 0004(fff80a9f:P)
+                                          0004(fff80c43:P)
+                 _com_f4_mtr_j
+                                 0000197c 0004(fff80aab:P)
+                                          0004(fff80c4c:P)
+                 _com_f4_nominal_current_rms
+                                 00001980 0004(fff80ab7:P)
+                                          0004(fff80c55:P)
+                 _com_f4_max_speed_rpm
+                                 00001984 0004(fff80ac3:P)
+                                          0004(fff80c5e:P)
+                                          0004(fff80e16:P)
+                 _com_f4_ol_ref_id
+                                 00001988 0004(fff80adf:P)
+                                          0004(fff80c70:P)
+                 _com_f4_id_up_time
+                                 0000198c 0004(fff80aeb:P)
+                                          0004(fff80c79:P)
+                 _com_f4_id_down_time
+                                 00001990 0004(fff80af7:P)
+                                          0004(fff80c82:P)
+                 _com_f4_id_down_speed_rpm
+                                 00001994 0004(fff80b03:P)
+                                          0004(fff80c8b:P)
+                 _com_f4_id_up_speed_rpm
+                                 00001998 0004(fff80b0f:P)
+                                          0004(fff80c94:P)
+                 _com_f4_current_omega_hz
+                                 0000199c 0004(fff80b1b:P)
+                                          0004(fff80c9d:P)
+                                          0004(fff80e2c:P)
+                 _com_f4_current_zeta
+                                 000019a0 0004(fff80ad7:P)
+                                          0004(fff80ca6:P)
+                 _com_f4_speed_omega_hz
+                                 000019a4 0004(fff80b2f:P)
+                                          0004(fff80caf:P)
+                                          0004(fff80e48:P)
+                 _com_f4_speed_zeta
+                                 000019a8 0004(fff80b3b:P)
+                                          0004(fff80cb8:P)
+                 _com_f4_speed_lpf_hz
+                                 000019ac 0004(fff80b43:P)
+                                          0004(fff80cc1:P)
+                 _com_f4_ref_speed_rpm
+                                 000019b0 0004(fff80b4f:P)
+                                          0004(fff80cca:P)
+                                          0004(fff80e1c:P)
+                                          0004(fff80fbb:P)
+                 _com_f4_speed_rate_limit_rpm
+                                 000019b4 0004(fff80b5d:P)
+                                          0004(fff80cd3:P)
+                 _com_f4_overspeed_limit_rpm
+                                 000019b8 0004(fff80b65:P)
+                                          0004(fff80cdc:P)
+                 _com_f4_e_obs_omega_hz
+                                 000019bc 0004(fff80b81:P)
+                                          0004(fff80cfa:P)
+                 _com_f4_e_obs_zeta
+                                 000019c0 0004(fff80b89:P)
+                                          0004(fff80d0c:P)
+                 _com_f4_pll_est_omega_hz
+                                 000019c4 0004(fff80b91:P)
+                                          0004(fff80d1e:P)
+                 _com_f4_pll_est_zeta
+                                 000019c8 0004(fff80b9d:P)
+                                          0004(fff80d30:P)
+                 _com_f4_switch_phase_err_deg
+                                 000019cc 0004(fff80bb3:P)
+                                          0004(fff80d54:P)
+                 _com_f4_opl2less_sw_time
+                                 000019d0 0004(fff80bbb:P)
+                                          0004(fff80d00:P)
+                 _com_f4_phase_err_lpf_cut_freq
+                                 000019d4 0004(fff80bc7:P)
+                                          0004(fff80d12:P)
+                 _com_f4_ed_hpf_omega
+                                 000019d8 0004(fff80bd7:P)
+                                          0004(fff80d36:P)
+                 _com_f4_ol_damping_zeta
+                                 000019dc 0004(fff80be3:P)
+                                          0004(fff80d48:P)
+                 _com_f4_ol_damping_fb_limit_rate
+                                 000019e0 0004(fff80beb:P)
+                                          0004(fff80d5a:P)
+     SECTION=P
+                 _r_app_rmw_ui_init
+                                 fff80a36 0003(fff809b5:P)
+                                          0004(fff80e04:P)
+                 _r_app_rmw_ui_mainloop
+                                 fff80bf6 0003(fff80a07:P)
+                 _r_app_rmw_copy_com_to_buffer
+                                 fff80bf9 0003(fff809c9:P)
+                 _r_app_rmw_interrupt_handler
+                                 fff80d6e 0034(fff82b5e:P)
+     SECTION=D_2
+     SECTION=D_1
+0005 r_app_rmw_interrupt
+     SECTION=P
+0006 Config_MOTOR
+     SECTION=P
+                 _R_Config_MOTOR_Create
+                                 fff80fe7
+                 _R_Config_MOTOR_StartTimerCount
+                                 fff80fe8 0003(fff80a27:P)
+                 _R_Config_MOTOR_StopTimerCount
+                                 fff80fec
+                 _R_Config_MOTOR_StartTimerCtrl
+                                 fff80ff0 0017(fff82002:P)
+                 _R_Config_MOTOR_StopTimerCtrl
+                                 fff81022 0003(fff80a23:P)
+                                          0017(fff8200a:P)
+                 _R_Config_MOTOR_UpdDuty
+                                 fff81054 0017(fff81ffa:P)
+                 _R_Config_MOTOR_StartAD
+                                 fff81060 0003(fff80a2b:P)
+                 _R_Config_MOTOR_StopAD
+                                 fff81077
+                 _R_Config_MOTOR_AdcGetConvVal
+                                 fff81099 0017(fff81ff2:P)
+0007 Config_MOTOR_user
+     SECTION=P
+                 _R_Config_MOTOR_Create_UserInit
+                                 fff810b7
+0008 r_motor_current
+     SECTION=P
+                 _motor_current_decoupling
+                                 fff810b8 0009(fff815d6:P)
+                 _motor_current_pi_control
+                                 fff810f1 0009(fff815ca:P)
+                 _motor_current_rotor_angle_init
+                                 fff8111e 0009(fff8144b:P)
+                 _motor_current_rotor_angle_reset
+                                 fff8111e 0009(fff814ce:P)
+                 _motor_current_rotor_angle_update
+                                 fff8112c 0008(fff81342:P)
+                 _motor_current_transform_uvw_dq_abs
+                                 fff8113d 0009(fff815be:P)
+                 _motor_current_transform_dq_uvw_abs
+                                 fff8117e 0009(fff815ea:P)
+                                          0009(fff81602:P)
+                 _motor_current_volt_limit
+                                 fff811e4 0009(fff815dc:P)
+                 _motor_current_reference_iq_set
+                                 fff81228 0009(fff815a4:P)
+                 _motor_current_reference_id_set
+                                 fff8125c 0009(fff815ac:P)
+                 _motor_current_angle_speed_detect
+                                 fff81299 0009(fff815c4:P)
+                 _motor_current_angle_get
+                                 fff81344 0008(fff8130e:P)
+0009 r_motor_current_api
+     SECTION=B
+                 _g_st_cc
+                                 000019e4 0004(fff80ef0:P)
+                                          0009(fff8134b:P)
+                                          0009(fff8147f:P)
+                                          0016(fff81b8c:P)
+     SECTION=P
+                 _R_MOTOR_CURRENT_Open
+                                 fff81347 0016(fff81b79:P)
+                 _R_MOTOR_CURRENT_Close
+                                 fff8147d 0016(fff81bb6:P)
+                 _R_MOTOR_CURRENT_Reset
+                                 fff81483 0009(fff8147c:P)
+                                          0017(fff8208a:P)
+                 _R_MOTOR_CURRENT_Run
+                                 fff814e3 0017(fff82236:P)
+                 _R_MOTOR_CURRENT_ParameterSet
+                                 fff814e7 0016(fff81df5:P)
+                 _R_MOTOR_CURRENT_ParameterGet
+                                 fff8150b 0016(fff81e28:P)
+                                          0016(fff81e3a:P)
+                 _R_MOTOR_CURRENT_ParameterUpdate
+                                 fff8153f 0004(fff80f32:P)
+                                          0017(fff81f3b:P)
+                 _R_MOTOR_CURRENT_CurrentCyclic
+                                 fff81588 0016(fff81e31:P)
+                 _R_MOTOR_CURRENT_OffsetCalibration
+                                 fff81621 0016(fff81e1f:P)
+                 _R_MOTOR_CURRENT_CurrentOffsetRemove
+                                 fff8165d 0016(fff81da2:P)
+                 _R_MOTOR_CURRENT_VoltErrCompParamSet
+                                 fff8166e 0017(fff81f73:P)
+                 _R_MOTOR_CURRENT_BEMFObserverParameterUpdate
+                                 fff81676 0004(fff80f4c:P)
+                                          0017(fff81f5a:P)
+                 _R_MOTOR_CURRENT_HuntingSuppress
+                                 fff816a3 0017(fff82131:P)
+                                          0017(fff82195:P)
+0010 r_motor_current_modulation
+     SECTION=P
+                 _motor_current_mod_init
+                                 fff81728 0009(fff813eb:P)
+                 _motor_current_mod_reset
+                                 fff81771 0010(fff8174b:P)
+                 _motor_current_mod_start
+                                 fff81772 0009(fff8161b:P)
+                 _motor_current_mod_vdc_set
+                                 fff817bb 0009(fff8159e:P)
+                                          0010(fff81756:P)
+                 _motor_current_mod_max_duty_set
+                                 fff817d0 0009(fff81457:P)
+                                          0010(fff8175d:P)
+                 _motor_current_mod_min_duty_set
+                                 fff817f6 0009(fff81465:P)
+                                          0010(fff81766:P)
+                 _motor_current_mod_volt_err_ratio_set
+                                 fff81811 0009(fff8146d:P)
+                                          0010(fff8176f:P)
+                 _motor_current_mod_voltage_multiplier_get
+                                 fff81814 0010(fff81835:P)
+                 _motor_current_mod_max_va_get
+                                 fff81830 0008(fff811ed:P)
+0011 r_motor_current_pi_gain_calc
+     SECTION=P
+                 _motor_current_pi_gain_calc
+                                 fff81844 0009(fff813e1:P)
+                                          0009(fff81585:P)
+0012 r_motor_driver
+     SECTION=B
+                 _g_st_driver
+                                 00001ba4 0012(fff81884:P)
+                                          0016(fff81b9e:P)
+     SECTION=P
+                 _R_MOTOR_DRIVER_Open
+                                 fff81880 0016(fff81b81:P)
+                 _R_MOTOR_DRIVER_Close
+                                 fff81891 0016(fff81bbe:P)
+                 _R_MOTOR_DRIVER_ParameterUpdate
+                                 fff81892 0017(fff82036:P)
+                 _R_MOTOR_DRIVER_BldcAnalogGet
+                                 fff818c5 0016(fff81d97:P)
+                 _R_MOTOR_DRIVER_BldcDutySet
+                                 fff81907 0015(fff81b1e:P)
+                                          0015(fff81b4f:P)
+                                          0016(fff81e18:P)
+                                          0016(fff81e47:P)
+                 _R_MOTOR_DRIVER_PWMControlStop
+                                 fff8194d 0015(fff81b3e:P)
+                                          0015(fff81b70:P)
+                 _R_MOTOR_DRIVER_PWMControlStart
+                                 fff81952 0015(fff81b25:P)
+0013 r_motor_filter
+     SECTION=P
+                 _motor_filter_lpff
+                                 fff81957
+                 _motor_filter_limitf
+                                 fff81961 0004(fff80e41:P)
+                 _motor_filter_limit
+                                 fff81973
+                 _motor_filter_upper_limitf
+                                 fff81980
+                 _motor_filter_upper_limit
+                                 fff8198a
+                 _motor_filter_lower_limitf
+                                 fff81990 0004(fff80e5d:P)
+                 _motor_filter_lower_limit
+                                 fff8199a
+                 _motor_filter_limitf_abs
+                                 fff819a0 0001(fff808c3:P)
+                                          0004(fff80e25:P)
+                                          0008(fff81221:P)
+                                          0008(fff81259:P)
+                                          0014(fff81ae6:P)
+                                          0014(fff81af3:P)
+                                          0020(fff8239e:P)
+                                          0065(fff852ff:P)
+                 _motor_filter_limit_abs
+                                 fff819b6
+                 _motor_filter_second_order_lpff_init
+                                 fff819c8
+                 _motor_filter_second_order_lpff_reset
+                                 fff819df
+                 _motor_filter_second_order_lpff_gain_calc
+                                 fff819ea
+                 _motor_filter_second_order_lpff
+                                 fff81a47
+                 _motor_filter_first_order_lpff_init
+                                 fff81a76 0017(fff81ec5:P)
+                                          0021(fff824e0:P)
+                 _motor_filter_first_order_lpff_reset
+                                 fff81a83 0017(fff8205f:P)
+                                          0021(fff82535:P)
+                 _motor_filter_first_order_lpff_gain_calc
+                                 fff81a8a 0017(fff82249:P)
+                                          0021(fff824ee:P)
+                                          0021(fff825a6:P)
+                 _motor_filter_first_order_lpff
+                                 fff81ab3 0016(fff81cd9:P)
+                                          0021(fff8261c:P)
+                                          0065(fff852d1:P)
+0014 r_motor_pi_control
+     SECTION=P
+                 _motor_pi_ctrl
+                                 fff81acd 0008(fff81103:P)
+                                          0008(fff81116:P)
+                                          0020(fff82375:P)
+                 _motor_pi_ctrl_reset
+                                 fff81af6 0021(fff8251c:P)
+                 _motor_pi_ctrl_kp_set
+                                 fff81afa
+                 _motor_pi_ctrl_set_ki
+                                 fff81afd
+                 _motor_pi_ctrl_integrator_set
+                                 fff81b00
+                 _motor_pi_ctrl_integral_limit_set
+                                 fff81b03 0021(fff82461:P)
+0015 r_motor_sensorless_vector_action
+     SECTION=P
+                 _motor_sensorless_vector_act_active
+                                 fff81b06 0019(000024e4:R)
+                 _motor_sensorless_vector_act_inactive
+                                 fff81b36 0019(000024d8:R)
+                                          0019(000024dc:R)
+                 _motor_sensorless_vector_act_nowork
+                                 fff81b60 0019(000024e0:R)
+                                          0019(000024e8:R)
+                                          0019(000024ec:R)
+                                          0019(000024f8:R)
+                 _motor_sensorless_vector_act_reset
+                                 fff81b63 0019(000024fc:R)
+                                          0019(00002504:R)
+                 _motor_sensorless_vector_act_error
+                                 fff81b6c 0019(000024f0:R)
+                                          0019(000024f4:R)
+                                          0019(00002500:R)
+0016 r_motor_sensorless_vector_api
+     SECTION=B
+                 _g_st_sensorless_vector
+                                 00001bc4 0001(fff8085e:P)
+                                          0003(fff809de:P)
+                                          0004(fff80dc0:P)
+                                          0004(fff80e7c:P)
+                                          0004(fff80faf:P)
+                                          0016(fff81b86:P)
+                                          0016(fff81bc3:P)
+                                          0016(fff81c01:P)
+                                          0024(fff82742:P)
+                                          0030(fff8297b:P)
+                                          0034(fff82b55:P)
+     SECTION=P
+                 _R_MOTOR_SENSORLESS_VECTOR_Open
+                                 fff81b76 0003(fff80a1f:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_Close
+                                 fff81bb5
+                 _R_MOTOR_SENSORLESS_VECTOR_Reset
+                                 fff81bcb
+                 _R_MOTOR_SENSORLESS_VECTOR_ParameterUpdate
+                                 fff81bcf 0004(fff80ebb:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_MotorStart
+                                 fff81c48 0001(fff80887:P)
+                                          0004(fff80de8:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_MotorStop
+                                 fff81c54 0001(fff8089b:P)
+                                          0004(fff80de1:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_MotorReset
+                                 fff81c60 0001(fff80920:P)
+                                          0004(fff80def:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_ErrorSet
+                                 fff81c6c
+                 _R_MOTOR_SENSORLESS_VECTOR_SpeedSet
+                                 fff81c7d 0001(fff808e3:P)
+                                          0004(fff80ecc:P)
+                                          0004(fff80fc2:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_SpeedGet
+                                 fff81c84
+                 _R_MOTOR_SENSORLESS_VECTOR_StatusGet
+                                 fff81c8f 0001(fff80865:P)
+                                          0003(fff809f6:P)
+                                          0003(fff80a15:P)
+                                          0004(fff80df5:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_ErrorStatusGet
+                                 fff81c97
+                 _R_MOTOR_SENSORLESS_VECTOR_CtrlTypeSet
+                                 fff81c9a 0004(fff80ec4:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_LoopModeStatusGet
+                                 fff81cb4 0001(fff808a1:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_SpeedInterrupt
+                                 fff81cb7 0024(fff82747:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_CurrentInterrupt
+                                 fff81d7f 0034(fff82b5a:P)
+                 _R_MOTOR_SENSORLESS_VECTOR_OverCurrentInterrupt
+                                 fff81e4d 0030(fff82980:P)
+0017 r_motor_sensorless_vector_manager
+     SECTION=P
+                 _motor_sensorless_vector_default_init
+                                 fff81e53 0015(fff81b66:P)
+                                          0016(fff81bb2:P)
+                 _motor_sensorless_vector_reset
+                                 fff82041 0015(fff81b0d:P)
+                                          0015(fff81b55:P)
+                                          0016(fff81bc8:P)
+                                          0016(fff81bcc:P)
+                                          0017(fff8203c:P)
+                 _motor_sensorless_vector_decide_direction
+                                 fff82096 0016(fff81ccf:P)
+                 _motor_sensorless_vector_error_process
+                                 fff820b3 0016(fff81e50:P)
+                                          0018(fff822c4:P)
+                 _motor_sensorless_vector_speed_status_select
+                                 fff820cc 0016(fff81d6a:P)
+                 _motor_sensorless_vector_iq_status_select
+                                 fff820da 0016(fff81d70:P)
+                 _motor_sensorless_vector_id_status_select
+                                 fff821b5 0016(fff81d76:P)
+                 _motor_sensorless_vector_nominal_current_set
+                                 fff82205 0016(fff81c39:P)
+                                          0017(fff81feb:P)
+                 _motor_sensorless_vector_module_activate
+                                 fff82228 0015(fff81b2b:P)
+                 _motor_sensorless_phase_err_lpf_setup
+                                 fff82245 0016(fff81c45:P)
+                                          0017(fff81ed7:P)
+     SECTION=C
+0018 r_motor_sensorless_vector_protection
+     SECTION=P
+                 _motor_sensorless_vector_error_check
+                                 fff82289 0016(fff81db5:P)
+0019 r_motor_sensorless_vector_statemachine
+     SECTION=P
+                 _motor_sensorless_vector_statemachine_init
+                                 fff822c7 0016(fff81baa:P)
+                 _motor_sensorless_vector_statemachine_reset
+                                 fff822c7
+                 _motor_sensorless_vector_statemachine_event
+                                 fff822ce 0016(fff81c51:P)
+                                          0016(fff81c5d:P)
+                                          0016(fff81c69:P)
+                                          0016(fff81c7a:P)
+                                          0017(fff820c9:P)
+                 _motor_sensorless_vector_statemachine_status_get
+                                 fff82326 0016(fff81bda:P)
+                                          0016(fff81c94:P)
+                                          0016(fff81ca5:P)
+                                          0016(fff81cc4:P)
+                                          0016(fff81dfd:P)
+     SECTION=D
+     SECTION=D_1
+     SECTION=R
+     SECTION=R_1
+0020 r_motor_speed
+     SECTION=P
+                 _motor_speed_max_speed_set
+                                 fff82329 0021(fff82592:P)
+                 _motor_speed_rate_limit_set
+                                 fff82333 0021(fff8259a:P)
+                 _motor_speed_rate_limit_apply
+                                 fff82348 0020(fff8238a:P)
+                 _motor_speed_pi_control
+                                 fff8236a 0021(fff82634:P)
+                 _motor_speed_ref_speed_set
+                                 fff82378 0021(fff8262a:P)
+                 _motor_speed_flux_weakening
+                                 fff823a1 0021(fff82643:P)
+0021 r_motor_speed_api
+     SECTION=B
+                 _g_st_sc
+                                 00001c88 0004(fff80f9d:P)
+                                          0016(fff81b95:P)
+                                          0021(fff82402:P)
+                                          0021(fff824f8:P)
+     SECTION=P
+                 _R_MOTOR_SPEED_Open
+                                 fff823fe 0016(fff81b7d:P)
+                 _R_MOTOR_SPEED_Close
+                                 fff824f6 0016(fff81bba:P)
+                 _R_MOTOR_SPEED_Reset
+                                 fff824fc 0017(fff82093:P)
+                                          0021(fff824f5:P)
+                 _R_MOTOR_SPEED_Run
+                                 fff82538 0017(fff8223f:P)
+                 _R_MOTOR_SPEED_ParameterSet
+                                 fff8253c 0016(fff81d07:P)
+                                          0016(fff81d37:P)
+                 _R_MOTOR_SPEED_ParameterGet
+                                 fff82548 0016(fff81d19:P)
+                                          0016(fff81d49:P)
+                 _R_MOTOR_SPEED_ParameterUpdate
+                                 fff82558 0004(fff80fa7:P)
+                                          0017(fff81fdf:P)
+                 _R_MOTOR_SPEED_SpdRefSet
+                                 fff82607 0016(fff81c81:P)
+                 _R_MOTOR_SPEED_SpeedCyclic
+                                 fff82611 0016(fff81d0e:P)
+                                          0016(fff81d3e:P)
+                 _R_MOTOR_SPEED_Opl2lessReferenceIqCalc
+                                 fff82649 0017(fff82155:P)
+                 _R_MOTOR_SPEED_Opl2lessPreprocess
+                                 fff8265f 0017(fff82122:P)
+                 _R_MOTOR_SPEED_OplDampCtrl
+                                 fff82677 0017(fff82106:P)
+                 _R_MOTOR_SPEED_OplDampReset
+                                 fff82697 0017(fff8213e:P)
+                 _R_MOTOR_SPEED_HuntingSuppress
+                                 fff8269f 0017(fff821a1:P)
+                 _R_MOTOR_SPEED_SwitchingFlagSet
+                                 fff826a2 0016(fff81d64:P)
+                                          0017(fff8218b:P)
+0022 r_motor_speed_pi_gain_calc
+     SECTION=P
+                 _motor_speed_pi_gain_calc
+                                 fff826a6 0021(fff82473:P)
+                                          0021(fff8258a:P)
+0023 Config_CMT0
+     SECTION=P
+                 _R_Config_CMT0_Create
+                                 fff826d6 0037(fff82c87:P)
+                 _R_Config_CMT0_Start
+                                 fff82707 0003(fff80a33:P)
+                 _R_Config_CMT0_Stop
+                                 fff8271a
+0024 Config_CMT0_user
+     SECTION=P
+                 _R_Config_CMT0_Create_UserInit
+                                 fff82730 0023(fff82704:P)
+0025 Config_IWDT
+     SECTION=P
+                 _R_Config_IWDT_Create
+                                 fff82756 0037(fff82c8b:P)
+                 _R_Config_IWDT_Restart
+                                 fff82769 0003(fff809c1:P)
+0026 Config_IWDT_user
+     SECTION=P
+                 _R_Config_IWDT_Create_UserInit
+                                 fff82775 0025(fff82766:P)
+0027 Config_MTU3_MTU4
+     SECTION=P
+                 _R_Config_MTU3_MTU4_Create
+                                 fff82776 0037(fff82c93:P)
+                 _R_Config_MTU3_MTU4_Start
+                                 fff8285b 0006(fff80fe9:P)
+                 _R_Config_MTU3_MTU4_Stop
+                                 fff82868 0006(fff80fed:P)
+0028 Config_MTU3_MTU4_user
+     SECTION=P
+                 _R_Config_MTU3_MTU4_Create_UserInit
+                                 fff82872 0027(fff82858:P)
+0029 Config_POE
+     SECTION=P
+                 _R_Config_POE_Create
+                                 fff82873 0037(fff82c8f:P)
+                 _R_Config_POE_Start
+                                 fff828aa 0030(fff82988:P)
+                 _R_Config_POE_Stop
+                                 fff828b6 0030(fff82984:P)
+0030 Config_POE_user
+     SECTION=P
+                 _R_Config_POE_Create_UserInit
+                                 fff82978 0029(fff828a7:P)
+                 _r_Config_POE_oei1_interrupt
+                                 fff82979 0037(fff82caf:P)
+0031 Config_PORT
+     SECTION=P
+                 _R_Config_PORT_Create
+                                 fff8298b 0037(fff82c7f:P)
+                 _R_Config_PORT_GetSW1
+                                 fff829ab
+                 _R_Config_PORT_GetSW2
+                                 fff829ae
+                 _R_Config_PORT_Led1_on
+                                 fff829b1 0002(fff80971:P)
+                 _R_Config_PORT_Led2_on
+                                 fff829b9 0002(fff80975:P)
+                 _R_Config_PORT_Led1_off
+                                 fff829c1 0002(fff80979:P)
+                 _R_Config_PORT_Led2_off
+                                 fff829c9 0002(fff8097d:P)
+0032 Config_PORT_user
+     SECTION=P
+                 _R_Config_PORT_Create_UserInit
+                                 fff829d1 0031(fff829a8:P)
+0033 Config_S12AD0
+     SECTION=P
+                 _R_Config_S12AD0_Create
+                                 fff829d2 0037(fff82c97:P)
+                 _R_Config_S12AD0_Start
+                                 fff82aaa
+                 _R_Config_S12AD0_Stop
+                                 fff82ac1
+                 _R_Config_S12AD0_Get_ValueResult
+                                 fff82ae3
+0034 Config_S12AD0_user
+     SECTION=P
+                 _R_Config_S12AD0_Create_UserInit
+                                 fff82b43 0033(fff82aa7:P)
+0035 Config_S12AD2
+     SECTION=P
+                 _R_Config_S12AD2_Create
+                                 fff82b6d 0037(fff82c83:P)
+                 _R_Config_S12AD2_Start
+                                 fff82bdd 0003(fff80a2f:P)
+                 _R_Config_S12AD2_Stop
+                                 fff82be9
+                 _R_Config_S12AD2_Get_ValueResult
+                                 fff82c00
+     SECTION=W
+     SECTION=W_1
+     SECTION=W_2
+0036 Config_S12AD2_user
+     SECTION=P
+                 _R_Config_S12AD2_Create_UserInit
+                                 fff82c64 0035(fff82bda:P)
+0037 r_cg_hardware_setup
+     SECTION=P
+                 _r_undefined_exception
+                                 fff82c65 0037(fff82ca2:P)
+                 _R_Systeminit
+                                 fff82c66 0041(fff82cf0:P)
+0038 r_smc_cgc
+     SECTION=P
+                 _R_CGC_Create
+                                 fff82cc2 0037(fff82c7b:P)
+0039 r_smc_cgc_user
+     SECTION=P
+                 _R_CGC_Create_UserInit
+                                 fff82cc6 0038(fff82cc3:P)
+0040 r_smc_interrupt
+     SECTION=P
+                 _R_Interrupt_Create
+                                 fff82cc7 0037(fff82c9b:P)
+0041 hwsetup
+     SECTION=P
+                 _hardware_setup
+                                 fff82cdb 0053(fff80040:PResetPRG)
+0042 dbsct
+     SECTION=C
+                 __CTBL
+                                 fff80094
+     SECTION=C$DSEC
+                 __DTBL
+                                 fff801c8
+     SECTION=C$BSEC
+                 __BTBL
+                                 fff801ec
+     SECTION=L
+                 _deadSpace
+                                 fff80814
+     SECTION=B
+     SECTION=B_1
+     SECTION=B_2
+     SECTION=C_1
+     SECTION=C_2
+     SECTION=D
+     SECTION=D_1
+     SECTION=D_2
+     SECTION=R
+     SECTION=R_1
+     SECTION=R_2
+     SECTION=W
+     SECTION=W_1
+     SECTION=W_2
+     SECTION=R
+     SECTION=R_1
+     SECTION=R_2
+0043 lowlvl
+     SECTION=P
+                 _charput
+                                 fff82cfa 0044(fff82e64:P)
+                 _charget
+                                 fff82d0a 0044(fff82e8b:P)
+0044 lowsrc
+     SECTION=B_1
+                 _flmod
+                                 0000180c 0044(fff82de5:P)
+                                          0044(fff82e38:P)
+                                          0044(fff82e6f:P)
+                 _sml_buf
+                                 00001820
+     SECTION=B
+                 __Files
+                                 00001d48 0044(fff82d26:P)
+                                          0044(fff82da4:P)
+                                          0081(fff85685:P)
+                                          0083(fff857d5:P)
+                                          0083(fff8583e:P)
+     SECTION=R
+                 _env_list
+                                 00002508 0044(00002518:R)
+                 _environ
+                                 00002518
+     SECTION=P
+                 _init_iolib
+                                 fff82d1c 0053(fff80034:PResetPRG)
+                 _close_all
+                                 fff82da0 0053(fff8005e:PResetPRG)
+                 _open
+                                 fff82dca 0089(fff85b4b:P)
+                 _close
+                                 fff82e31 0072(fff854a1:P)
+                 _write
+                                 fff82e34 0081(fff856c4:P)
+                 _read
+                                 fff82e6b
+                 _lseek
+                                 fff82e9f
+     SECTION=L
+     SECTION=D
+0045 mcu_locks
+     SECTION=B
+                 _g_bsp_Locks
+                                 00001d98 0047(fff8310e:P)
+                                          0049(fff83542:P)
+                                          0049(fff8354f:P)
+0046 r_bsp_common
+     SECTION=P
+                 _R_BSP_GetVersion
+                                 fff82ea3
+                 _R_BSP_GetIClkFreqHz
+                                 fff82ea9 0046(fff82ec6:P)
+                 _R_BSP_SoftwareDelay
+                                 fff82ead 0055(fff837be:P)
+0047 r_bsp_cpu
+     SECTION=P
+                 _R_BSP_InterruptsDisable
+                                 fff82f74
+                 _R_BSP_InterruptsEnable
+                                 fff82f7d
+                 _R_BSP_CpuInterruptLevelRead
+                                 fff82f86 0048(fff83223:P)
+                 _R_BSP_CpuInterruptLevelWrite
+                                 fff82f8e 0048(fff83233:P)
+                 _R_BSP_RegisterProtectEnable
+                                 fff82fea 0060(fff83e86:P)
+                 _R_BSP_RegisterProtectDisable
+                                 fff83051 0047(fff830e9:P)
+                                          0060(fff83df2:P)
+                 _R_BSP_VoltageLevelSetting
+                                 fff830ae 0041(fff82cf7:P)
+                 _R_BSP_SoftwareReset
+                                 fff830e6
+                 _bsp_register_protect_open
+                                 fff830f7 0053(fff8003c:PResetPRG)
+                 _bsp_ram_initialize
+                                 fff83109 0053(fff80030:PResetPRG)
+     SECTION=C_2
+     SECTION=B_2
+     SECTION=W
+     SECTION=W_1
+     SECTION=W_2
+0048 r_bsp_interrupts
+     SECTION=P
+                 _R_BSP_InterruptRequestEnable
+                                 fff8311c 0048(fff83290:P)
+                                          0057(fff838e3:P)
+                 _R_BSP_InterruptRequestDisable
+                                 fff8312a 0048(fff8326d:P)
+                                          0048(fff832a8:P)
+                                          0048(fff832c9:P)
+                                          0048(fff832ef:P)
+                                          0048(fff83315:P)
+                                          0048(fff8332d:P)
+                                          0048(fff8334d:P)
+                                          0057(fff838ec:P)
+                 _bsp_interrupt_open
+                                 fff83138 0053(fff80038:PResetPRG)
+                 _R_BSP_InterruptWrite
+                                 fff83152 0037(fff82ca7:P)
+                                          0037(fff82cb4:P)
+                 _R_BSP_InterruptRead
+                                 fff8316e
+                 _R_BSP_InterruptControl
+                                 fff83189 0047(fff82ffa:P)
+                                          0047(fff8304b:P)
+                                          0047(fff83061:P)
+                                          0047(fff830a8:P)
+                                          0048(fff83393:P)
+                                          0048(fff833bb:P)
+                                          0048(fff833e3:P)
+                                          0048(fff8340b:P)
+                                          0048(fff83455:P)
+                                          0048(fff83467:P)
+                                          0048(fff83479:P)
+                                          0048(fff8348b:P)
+                                          0048(fff8349d:P)
+                                          0048(fff834af:P)
+                                          0048(fff834c9:P)
+                                          0048(fff834ea:P)
+                                          0048(fff83519:P)
+                                          0053(fff80056:PResetPRG)
+                                          0057(fff83943:P)
+                                          0057(fff83954:P)
+                                          0057(fff83965:P)
+                                          0057(fff83976:P)
+                                          0057(fff83987:P)
+                                          0057(fff83998:P)
+                                          0057(fff839a9:P)
+                                          0057(fff839ba:P)
+                                          0057(fff839cb:P)
+                                          0057(fff839dc:P)
+                                          0057(fff839ed:P)
+                                          0057(fff839fe:P)
+                                          0057(fff83a0f:P)
+                                          0057(fff83a20:P)
+                                          0057(fff83a31:P)
+                                          0057(fff83a4e:P)
+                                          0057(fff83a7b:P)
+                                          0057(fff83a8c:P)
+                                          0057(fff83a9d:P)
+                                          0057(fff83aae:P)
+                                          0057(fff83abf:P)
+                                          0057(fff83ad0:P)
+                                          0057(fff83ae1:P)
+                                          0057(fff83af2:P)
+                                          0057(fff83b03:P)
+                                          0057(fff83b14:P)
+                                          0057(fff83b25:P)
+                                          0057(fff83b36:P)
+                                          0057(fff83b47:P)
+                                          0057(fff83b58:P)
+                                          0057(fff83b69:P)
+                                          0057(fff83b7a:P)
+                                          0057(fff83b8b:P)
+                                          0057(fff83b9c:P)
+                                          0057(fff83bad:P)
+                                          0057(fff83bbe:P)
+                                          0057(fff83bcf:P)
+                                          0057(fff83bec:P)
+                                          0057(fff83c19:P)
+                                          0057(fff83c2a:P)
+                                          0057(fff83c3b:P)
+                                          0057(fff83c4c:P)
+                                          0057(fff83c5d:P)
+                                          0057(fff83c7a:P)
+                                          0057(fff83ca7:P)
+                                          0057(fff83cb8:P)
+                                          0057(fff83cc9:P)
+                                          0057(fff83cda:P)
+                                          0057(fff83ceb:P)
+                                          0057(fff83cfc:P)
+                                          0057(fff83d19:P)
+                                          0057(fff83d50:P)
+                 _excep_supervisor_inst_isr
+                                 fff83379 0059(ffffffd0:EXCEPTVECT)
+                 _excep_access_isr
+                                 fff833a1 0059(ffffffd4:EXCEPTVECT)
+                 _excep_undefined_inst_isr
+                                 fff833c9 0059(ffffffdc:EXCEPTVECT)
+                 _excep_floating_point_isr
+                                 fff833f1 0059(ffffffe4:EXCEPTVECT)
+                 _non_maskable_isr
+                                 fff83423 0059(fffffff8:EXCEPTVECT)
+                 _undefined_interrupt_source_isr
+                                 fff834d0 0059(ffffffd8:EXCEPTVECT)
+                                          0059(ffffffe0:EXCEPTVECT)
+                                          0059(ffffffe8:EXCEPTVECT)
+                                          0059(ffffffec:EXCEPTVECT)
+                                          0059(fffffff0:EXCEPTVECT)
+                                          0059(fffffff4:EXCEPTVECT)
+                 _bus_error_isr
+                                 fff834f8
+     SECTION=B
+0049 r_bsp_locking
+     SECTION=P
+                 _R_BSP_SoftwareLock
+                                 fff83527 0049(fff83549:P)
+                 _R_BSP_SoftwareUnlock
+                                 fff83537 0049(fff83556:P)
+                 _R_BSP_HardwareLock
+                                 fff8353d
+                 _R_BSP_HardwareUnlock
+                                 fff8354a
+0050 r_bsp_mcu_startup
+0051 r_bsp_software_interrupt
+0052 r_rx_intrinsic_functions
+     SECTION=P
+                 _R_BSP_ChangeToUserMode
+                                 fff83557
+                 _R_BSP_SetBPSW
+                                 fff83577
+                 _R_BSP_GetBPSW
+                                 fff8357b
+                 _R_BSP_SetBPC
+                                 fff8358c
+                 _R_BSP_GetBPC
+                                 fff83590
+                 _R_BSP_SetEXTB
+                                 fff835a1
+                 _R_BSP_GetEXTB
+                                 fff835a5
+                 _R_BSP_MoveToAccHiLong
+                                 fff835b6
+                 _R_BSP_MoveToAccLoLong
+                                 fff835ba
+                 _R_BSP_MoveFromAccHiLong
+                                 fff835be
+                 _R_BSP_MoveFromAccMiLong
+                                 fff835cf
+                 _R_BSP_BitSet
+                                 fff835e0
+                 _R_BSP_BitClear
+                                 fff835e4
+                 _R_BSP_BitReverse
+                                 fff835e8
+                 _R_BSP_CalcSine_Cosine
+                                 fff835ec
+                 _R_BSP_CalcAtan_SquareRoot
+                                 fff835fd
+                 _R_BSP_CalcSine_Cosine_Fpn
+                                 fff83619
+                 _R_BSP_CalcSine_Fpn
+                                 fff83631
+                 _R_BSP_CalcCosine_Fpn
+                                 fff83648
+                 _R_BSP_CalcAtan_SquareRoot_Fpn
+                                 fff8365f
+                 _R_BSP_CalcAtan_Fpn
+                                 fff83687
+                 _R_BSP_CalcSquareRoot_Fpn
+                                 fff836a5
+0053 resetprg
+     SECTION=PResetPRG
+                 _PowerON_Reset_PC
+                                 fff80000 0059(fffffffc:RESETVECT)
+     SECTION=SI
+     SECTION=SU
+     SECTION=C$VECT
+     SECTION=EXCEPTVECT
+0054 sbrk
+     SECTION=B
+                 __s1ptr
+                                 00002068
+     SECTION=P
+                 _sbrk
+                                 fff836cc 0097(fff85ddb:P)
+     SECTION=D
+     SECTION=R
+0055 mcu_clocks
+     SECTION=P
+                 _get_iclk_freq_hz
+                                 fff836ed 0046(fff82eaa:P)
+                 _mcu_clock_setup
+                                 fff8376b 0053(fff80028:PResetPRG)
+0056 mcu_init
+     SECTION=P
+                 _bsp_non_existent_port_init
+                                 fff83820 0041(fff82ce8:P)
+0057 mcu_interrupts
+     SECTION=P
+                 _bsp_interrupt_enable_disable
+                                 fff838b7 0048(fff831cf:P)
+0058 mcu_mapped_interrupts
+     SECTION=P
+                 _bsp_mapped_interrupt_open
+                                 fff83d55 0048(fff8314f:P)
+0059 vecttbl
+     SECTION=$ADDR_C_120040
+                 ___SPCCreg
+                                 00120040
+     SECTION=$ADDR_C_120048
+                 ___TMEFreg
+                                 00120048
+     SECTION=$ADDR_C_120050
+                 ___OSIS1reg
+                                 00120050
+                 ___OSIS2reg
+                                 00120054
+                 ___OSIS3reg
+                                 00120058
+                 ___OSIS4reg
+                                 0012005c
+                 ___TMINFreg
+                                 00120060
+                 ___MDEreg
+                                 00120064
+                 ___OFS0reg
+                                 00120068
+                 ___OFS1reg
+                                 0012006c
+     SECTION=$ADDR_C_120090
+                 ___BANKSELreg
+                                 00120090
+     SECTION=$ADDR_C_1200A0
+                 ___FAWreg
+                                 001200a0
+     SECTION=EXCEPTVECT
+                 _Except_Vectors
+                                 ffffff80
+     SECTION=RESETVECT
+                 _Reset_Vector
+                                 fffffffc
+0060 Pin
+     SECTION=P
+                 _R_Pins_Create
+                                 fff83deb
+0061 ICS2_RX26T
+     SECTION=B_1
+                 _ics_rcom
+                                 00001847 0061(fff83fc9:P)
+                                          0061(fff84085:P)
+     SECTION=B
+                 _ics_dtc_tx
+                                 000024c4 0061(fff845df:P)
+                                          0061(fff84ab3:P)
+     SECTION=P
+                 _ics_int_sci_rxi
+                                 fff83f47 0005(fff80fd6:P)
+                 _ics2_watchpoint
+                                 fff841b0 0004(fff80d86:P)
+                 _ics2_init
+                                 fff84a0d 0003(fff809ac:P)
+                 _ics2_version
+                                 fff84af8
+                 _ics_int_sci_eri
+                                 fff84afe 0061(fff83f9e:P)
+                                          0061(fff84578:P)
+     SECTION=D_2
+     SECTION=D_1
+     SECTION=B_2
+     SECTION=W
+     SECTION=W_1
+     SECTION=W_2
+     SECTION=R_1
+     SECTION=R_2
+0062 r_motor_current_bemf_observer
+     SECTION=P
+                 _motor_current_bemf_observer_start
+                                 fff84b3e 0008(fff812af:P)
+                 _motor_current_bemf_observer_d_calc
+                                 fff84be7 0008(fff812bb:P)
+                 _motor_current_bemf_observer_q_calc
+                                 fff84bf7 0008(fff812c8:P)
+                 _motor_current_bemf_observer_amp_calc
+                                 fff84c0a
+                 _motor_current_bemf_observer_init
+                                 fff84c23 0009(fff81407:P)
+                 _motor_current_bemf_observer_gain_calc
+                                 fff84c27 0009(fff8141b:P)
+                                          0009(fff8168e:P)
+                 _motor_current_bemf_observer_gain_set
+                                 fff84c67 0062(fff84c60:P)
+                 _motor_current_bemf_observer_reset
+                                 fff84c76 0009(fff814d6:P)
+                                          0062(fff84c26:P)
+                 _motor_current_angle_speed_pll
+                                 fff84c89 0008(fff812ff:P)
+                 _motor_current_angle_speed_init
+                                 fff84c9f 0009(fff81433:P)
+                 _motor_current_angle_speed_gain_calc
+                                 fff84ca1 0009(fff81443:P)
+                                          0009(fff816a0:P)
+                 _motor_current_angle_speed_gain_set
+                                 fff84cb8 0062(fff84cb7:P)
+                 _motor_current_angle_speed_reset
+                                 fff84cbd 0009(fff814e0:P)
+                                          0062(fff84ca0:P)
+0063 r_motor_current_volt_err_comp
+     SECTION=P
+                 _motor_current_volt_err_comp_init
+                                 fff84cd7 0009(fff813f7:P)
+                 _motor_current_volt_err_comp_reset
+                                 fff84d6a
+                 _motor_current_volt_err_comp_main
+                                 fff84f93 0009(fff81610:P)
+                 _motor_current_volt_err_comp_table_set
+                                 fff85012 0009(fff81673:P)
+                 _motor_current_volt_err_vlimit_set
+                                 fff8508d 0009(fff81475:P)
+0064 r_motor_speed_fluxwkn
+     SECTION=P
+                 _motor_speed_flux_weakn_init
+                                 fff850bd 0021(fff8248f:P)
+                 _motor_speed_flux_weakn_reset
+                                 fff850ea 0021(fff82523:P)
+                                          0064(fff850e9:P)
+                 _motor_speed_flux_weakn_start
+                                 fff850fa 0020(fff823e4:P)
+                 _motor_speed_flux_weakn_motor_set
+                                 fff851e5 0021(fff825b2:P)
+                                          0064(fff850ca:P)
+                 _motor_speed_flux_weakn_iamax_set
+                                 fff85222 0021(fff825c3:P)
+                                          0064(fff850d8:P)
+                 _motor_speed_flux_weakn_vamax_set
+                                 fff8524b 0020(fff823b8:P)
+                                          0064(fff850d1:P)
+                 _motor_speed_flux_weakn_vfw_ratio_set
+                                 fff85266 0064(fff850df:P)
+                 _motor_speed_flux_weakn_iamax_get
+                                 fff8528e
+                 _motor_speed_flux_weakn_vamax_get
+                                 fff85291
+                 _motor_speed_flux_weakn_vfw_ratio_get
+                                 fff85294
+                 _motor_speed_flux_weakn_status_get
+                                 fff85297
+                 _motor_speed_flux_weakn_error_check
+                                 fff8529a 0064(fff85115:P)
+                 _motor_speed_flux_weakn_invalid_parameter_check
+                                 fff852a8 0064(fff850ef:P)
+                 _motor_speed_flux_weakn_run_time_error_check
+                                 fff852b8
+0065 r_motor_speed_opl_damp_ctrl
+     SECTION=P
+                 _motor_speed_opl_damp_ctrl
+                                 fff852c8 0021(fff82689:P)
+                 _motor_speed_opl_damp_init
+                                 fff85302 0021(fff824a1:P)
+                 _motor_speed_opl_damp_reset
+                                 fff8530f 0021(fff8252b:P)
+                                          0021(fff8269c:P)
+                                          0065(fff8530e:P)
+                 _motor_speed_opl_damp_gain_set
+                                 fff85316
+                 _motor_speed_opl_damp_r_gain_set
+                                 fff85321 0021(fff824d3:P)
+                                          0021(fff825f7:P)
+                 _motor_speed_opl_damp_limit_set
+                                 fff8536f 0021(fff82604:P)
+                                          0065(fff85307:P)
+0066 r_motor_speed_opl2less
+     SECTION=P
+                 _motor_speed_opl2less_iq_calc
+                                 fff85372 0021(fff82659:P)
+                 _motor_speed_opl2less_torque_current_calc
+                                 fff85393 0021(fff8266f:P)
+0067 atan2f
+     SECTION=P
+                 _atan2l
+                                 fff853c4
+                 _atan2
+                                 fff853c4
+                 _atan2f
+                                 fff853c4 0008(fff812dd:P)
+0068 copysignf
+     SECTION=P
+                 _copysignl
+                                 fff853ed
+                 _copysign
+                                 fff853ed
+                 _copysignf
+                                 fff853ed 0013(fff819b0:P)
+                                          0020(fff82361:P)
+                                          0062(fff84cd1:P)
+0069 fminf
+     SECTION=P
+                 _fminl
+                                 fff853fc
+                 _fmin
+                                 fff853fc
+                 _fminf
+                                 fff853fc 0020(fff82359:P)
+0070 xfdclass
+     SECTION=P
+                 __FDclass
+                                 fff8543a 0008(fff812e4:P)
+0071 freopen
+     SECTION=P
+                 _freopen
+                                 fff85446 0044(fff82d4c:P)
+                                          0044(fff82d6a:P)
+                                          0044(fff82d88:P)
+0072 fclose
+     SECTION=P
+                 _fclose
+                                 fff85473 0044(fff82dc0:P)
+                                          0071(fff85455:P)
+                                          0082(fff85768:P)
+                                          0082(fff857c4:P)
+0073 xfiles
+     SECTION=R
+                 __Stdin
+                                 00002520 0044(fff82d20:P)
+                                          0073(00002524:R)
+                                          0073(00002528:R)
+                                          0073(0000252c:R)
+                                          0073(00002530:R)
+                                          0073(00002534:R)
+                                          0073(00002538:R)
+                                          0073(0000253c:R)
+                 __Stdout
+                                 00002568 0044(fff82d2e:P)
+                                          0073(0000256c:R)
+                                          0073(00002570:R)
+                                          0073(00002574:R)
+                                          0073(00002578:R)
+                                          0073(0000257c:R)
+                                          0073(00002580:R)
+                                          0073(00002584:R)
+                 __Stderr
+                                 000025b0 0044(fff82d36:P)
+                                          0073(000025c8:R)
+                                          0073(000025cc:R)
+     SECTION=D
+     SECTION=D_1
+     SECTION=R_1
+0074 _nfiles
+     SECTION=C
+                 __nfiles
+                                 fff800ac 0044(fff82daa:P)
+                                          0081(fff8568d:P)
+                                          0083(fff857cf:P)
+                                          0083(fff85836:P)
+0075 __COM_DIV64u
+     SECTION=P
+                 __COM_DIV64u
+                                 fff854c7 0046(fff82f1b:P)
+                                          0046(fff82f4b:P)
+0076 __initsct
+     SECTION=P
+                 __INITSCT
+                                 fff85560 0053(fff8002c:PResetPRG)
+     SECTION=C$BSEC
+     SECTION=C$DSEC
+0077 cosf
+     SECTION=P
+                 _cosl
+                                 fff855aa
+                 _cos
+                                 fff855aa
+                 _cosf
+                                 fff855aa 0066(fff8537f:P)
+0078 sinf
+     SECTION=P
+                 _sinl
+                                 fff855d8
+                 _sin
+                                 fff855d8
+                 _sinf
+                                 fff855d8 0066(fff853a9:P)
+0079 _i_atn2s
+     SECTION=P
+                 __in_atan2s
+                                 fff85613 0067(fff853c5:P)
+0080 xfdtest
+     SECTION=P
+                 __FDtest
+                                 fff8563d 0069(fff85406:P)
+                                          0069(fff85413:P)
+                                          0070(fff85441:P)
+0081 fflush
+     SECTION=P
+                 _fflush
+                                 fff85677 0072(fff8548b:P)
+                                          0081(fff8569d:P)
+0082 xfoprep
+     SECTION=P
+                 __Foprep
+                                 fff856f9 0071(fff8546d:P)
+     SECTION=C
+0083 xfofind
+     SECTION=P
+                 __Fofind
+                                 fff857cb
+                 __Fofree
+                                 fff8580f 0072(fff854ac:P)
+                                          0072(fff854b7:P)
+0084 _errno
+     SECTION=B
+                 __errno
+                                 000024d4 0067(fff853e0:P)
+                                          0072(fff854be:P)
+                                          0082(fff8575f:P)
+                                          0088(fff85ab8:P)
+                                          0091(fff85c4c:P)
+0085 free
+     SECTION=P
+                 _free
+                                 fff85858 0072(fff85498:P)
+                                          0083(fff85854:P)
+                                          0090(fff85bc2:P)
+0086 _i_atans
+     SECTION=P
+                 __in_atans
+                                 fff858da 0079(fff8561d:P)
+0087 consts
+     SECTION=C
+                 __IFZEROS
+                                 fff800f8 0086(fff85947:P)
+                                          0094(fff85d86:P)
+                 __IFONES
+                                 fff800fc 0086(fff8592e:P)
+                 __HALFS
+                                 fff80100
+                 __QUOTS
+                                 fff80104
+                 __TWOS
+                                 fff80108
+                 __FOURS
+                                 fff8010c
+                 __PAIS
+                                 fff80110 0079(fff8562c:P)
+                 __2PAIS
+                                 fff80114
+                 __HLFPAIS
+                                 fff80118 0086(fff85920:P)
+                 __QUOPAIS
+                                 fff8011c 0086(fff85936:P)
+                 __LOGE2S
+                                 fff80120
+                 __NIFZEROS
+                                 fff80124 0094(fff85d8c:P)
+                 __NIFONES
+                                 fff80128 0086(fff8593c:P)
+                 __NHALFS
+                                 fff8012c 0086(fff859e0:P)
+                 __NQUOTS
+                                 fff80130 0086(fff859b7:P)
+                 __NTWOS
+                                 fff80134
+                 __NFOURS
+                                 fff80138
+                 __NPAIS
+                                 fff8013c 0079(fff85637:P)
+                 __N2PAIS
+                                 fff80140
+                 __NHLFPAIS
+                                 fff80144
+                 __NQUOPAIS
+                                 fff80148
+                 __NLOGE2S
+                                 fff8014c
+0088 sincosfsub
+     SECTION=P
+                 ___poly_sinf
+                                 fff85a3b 0078(fff855f9:P)
+                                          0088(fff85a9f:P)
+                                          0088(00002624:R)
+                 ___poly_cosf
+                                 fff85a6c 0077(fff855cd:P)
+                                          0088(fff85a95:P)
+                                          0088(00002628:R)
+                 ___internal_sincosf
+                                 fff85ad1 0077(fff855d5:P)
+                                          0078(fff8560a:P)
+                                          0078(fff85610:P)
+     SECTION=D
+     SECTION=R
+0089 xfopen
+     SECTION=P
+                 __Fopen
+                                 fff85b21 0082(fff857b6:P)
+     SECTION=C
+0090 malloc
+     SECTION=R
+                 __Aldata
+                                 00002634 0085(fff8586f:P)
+                                          0090(fff85b55:P)
+                                          0090(fff85c1d:P)
+     SECTION=P
+                 _malloc
+                                 fff85bca 0083(fff857fc:P)
+     SECTION=D
+0091 fmodf
+     SECTION=P
+                 _fmodl
+                                 fff85c2c
+                 _fmod
+                                 fff85c2c
+                 _fmodf
+                                 fff85c2c 0088(fff85aca:P)
+0092 _a_atans
+     SECTION=P
+                 __app_atans
+                                 fff85c5b 0086(fff859aa:P)
+                                          0086(fff859d0:P)
+                                          0086(fff859f9:P)
+                                          0086(fff85a1e:P)
+     SECTION=C
+0093 _i_fmds
+     SECTION=P
+                 __in_fmods
+                                 fff85c7e 0086(fff85974:P)
+                                          0091(fff85c31:P)
+0094 _i_ldes
+     SECTION=P
+                 __in_ldexps
+                                 fff85d4c 0086(fff859c4:P)
+                                          0086(fff859ed:P)
+0095 nanfval
+     SECTION=P
+                 ___nanf_value
+                                 fff85dcb 0088(fff85ac0:P)
+0096 _const
+     SECTION=C
+                 __IFNAND
+                                 fff80178
+                 __IFINFD
+                                 fff80180
+                 __NIFINFD
+                                 fff80188
+                 __IFNANS
+                                 fff80190 0086(fff85a32:P)
+                                          0093(fff85d45:P)
+                                          0094(fff85d7a:P)
+                 __IFINFS
+                                 fff80194 0094(fff85d5e:P)
+                 __NIFINFS
+                                 fff80198 0094(fff85d64:P)
+0097 xgetmem
+     SECTION=P
+                 __Getmem
+                                 fff85dd2 0090(fff85baf:P)
+0098 _sbrk_si
+     SECTION=C
+                 __sbrk_size
+                                 fff8019c 0090(fff85b5b:P)
+0099 floatval
+     SECTION=C
+                 __FLT_MAX_VAL
+                                 fff801a0 0093(fff85ceb:P)
+                 __FLT_MIN_VAL
+                                 fff801a4
+                 __DBL_MAX_VAL
+                                 fff801a8
+                 __DBL_MIN_VAL
+                                 fff801b0
+                 __LDBL_MAX_VAL
+                                 fff801b8
+                 __LDBL_MIN_VAL
+                                 fff801c0

@@ -1,0 +1,7 @@
+-MAKEUD_LBG="C:\A_sw_workspace\e2s_workspace\e2workspace_202512\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\HardwareDebug\\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1_lbg.ud" 
+-isa=rxv3 
+-fpu 
+-lang=c99 
+-head=runtime,math,stdio,stdlib,string,new 
+-output="RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1.lib" 
+-nologo

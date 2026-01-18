@@ -1,0 +1,19 @@
+-isa=rxv3
+-MAKEUD="C:\e2s_workspace\e2workspace_202307_01\RX_Motor_202307\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\HardwareDebug\src"
+-include="C:\Program Files (x86)\Renesas\RX\3_5_0\/include"
+-include="C:\e2s_workspace\e2workspace_202307_01\RX_Motor_202307\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\src\smc_gen\r_config"
+-include="C:\e2s_workspace\e2workspace_202307_01\RX_Motor_202307\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\src\smc_gen\r_pincfg"
+-include="C:\e2s_workspace\e2workspace_202307_01\RX_Motor_202307\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\src\smc_gen\general"
+-include="C:\e2s_workspace\e2workspace_202307_01\RX_Motor_202307\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\src\smc_gen\r_bsp"
+-include="C:\e2s_workspace\e2workspace_202307_01\RX_Motor_202307\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1\src\smc_gen"
+-asmopt=-bank
+-lang=c99
+-utf8
+-nomessage
+-output=obj
+-obj_path="src"
+-debug
+-outcode=utf8
+-tfu=intrinsic
+-tfu_version=v2
+-nologo

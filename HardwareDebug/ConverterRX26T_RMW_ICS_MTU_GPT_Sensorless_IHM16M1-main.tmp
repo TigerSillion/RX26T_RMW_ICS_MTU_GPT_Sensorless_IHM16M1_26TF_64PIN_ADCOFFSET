@@ -1,0 +1,8 @@
+-MAKEUD="C:\A_sw_workspace\e2s_workspace\e2workspace_202510\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1-main\HardwareDebug\\RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1-main_c.ud" 
+-input="RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1-main.abs" 
+-form=stype 
+-output="RX26T_RMW_ICS_MTU_GPT_Sensorless_IHM16M1-main.mot" 
+-byte_count=10 
+-nologo 
+-nomessage 
+-exit

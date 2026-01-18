@@ -1,0 +1,5986 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><style type="text/css">
+table {
+    font-family: verdana,arial,sans-serif;
+    font-size:14px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #a9c6c9;
+	width: 100%
+}
+table thead td {
+    background-color:#4472C7;    border-width: 1px;
+    padding: 13px;
+    border-style: solid;
+    border-color: #a9c6c9;
+	text-align: center;
+	color:#ffffff;
+}
+table tbody td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+.evenrowcolor{
+    background-color:#CFD5EA;
+}
+.oddrowcolor{
+    background-color:#E9EBF5;
+}
+</style>
+</head>
+<body>
+<div style="margin-left:auto;margin-right:auto;width:80%;">
+<div>
+  <h1 style="text-align: center">SmartConfigurator MCU migration report</h1>
+</div>
+<div>
+  <p>From device: R5F526TFCxFP.</p>
+</div>
+<div>
+  <p>To device: R5F526TFCxFM.</p>
+</div>
+<div>
+  <h1 style="text-align: left">1 Clock Settings</h1>
+<div>
+  <p>Success. Settings are fully converted</p>
+</div>
+<div>
+  <p>The following is a summary table with all configured clock values and their conversion status.</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 1-1 Board input clock values migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Main clock</td>
+<td>10</td>
+<td>10</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+  <p></p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 1-2 Configured clock values migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>FlashIF clock (FCLK)</td>
+<td>60</td>
+<td>60</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>System clock (ICLK)</td>
+<td>120</td>
+<td>120</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Peripheral module clock (PCLKA)</td>
+<td>120</td>
+<td>120</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Peripheral module clock (PCLKB)</td>
+<td>60</td>
+<td>60</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Peripheral module clock (PCLKC)</td>
+<td>120</td>
+<td>120</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Peripheral module clock (PCLKD)</td>
+<td>60</td>
+<td>60</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CANFD clock (CANFDCLK)</td>
+<td>60</td>
+<td>60</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CACLCLK</td>
+<td>-</td>
+<td>-</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CACHCLK</td>
+<td>-</td>
+<td>-</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>IWDTCLK/CACILCLK</td>
+<td>120</td>
+<td>120</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CANFDMCLK/CACMCLK</td>
+<td>10</td>
+<td>10</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+  <p></p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 1-3 Configured macro definitions migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>BSP_CFG_MCU_VCC_MV</td>
+<td>5000</td>
+<td>5000</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_MAIN_CLOCK_OSCILLATE_ENABLE</td>
+<td>1</td>
+<td>1</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>BSP_CFG_MAIN_CLOCK_SOURCE</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_XTAL_HZ</td>
+<td>10000000</td>
+<td>10000000</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>BSP_CFG_MOSC_WAIT_TIME</td>
+<td>0x53</td>
+<td>0x53</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_HOCO_OSCILLATE_ENABLE</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>BSP_CFG_HOCO_FREQUENCY</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_LOCO_OSCILLATE_ENABLE</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>BSP_CFG_IWDT_CLOCK_OSCILLATE_ENABLE</td>
+<td>1</td>
+<td>1</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_PLL_SRC</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>BSP_CFG_PLL_DIV</td>
+<td>1</td>
+<td>1</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_PLL_MUL</td>
+<td>24.0</td>
+<td>24.0</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>BSP_CFG_CLOCK_SOURCE</td>
+<td>4</td>
+<td>4</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_FCK_DIV</td>
+<td>4</td>
+<td>4</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>BSP_CFG_ICK_DIV</td>
+<td>2</td>
+<td>2</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_PCKA_DIV</td>
+<td>2</td>
+<td>2</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>BSP_CFG_PCKB_DIV</td>
+<td>4</td>
+<td>4</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_PCKC_DIV</td>
+<td>2</td>
+<td>2</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>BSP_CFG_PCKD_DIV</td>
+<td>4</td>
+<td>4</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>BSP_CFG_CFDCK_DIV</td>
+<td>4</td>
+<td>4</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h1 style="text-align: left">2 System Settings</h1>
+<div>
+  <p>Success. Settings are fully converted</p>
+</div>
+<div>
+  <p>The following is a summary table with all configured system values and their conversion status.</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 2-1 On-chip debug setting Migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Debug interface setting</td>
+<td>FINE</td>
+<td>FINE</td>
+<td>Success.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+  <p></p>
+</div>
+</div>
+<div>
+  <h1 style="text-align: left">3 Software Component</h1>
+<div>
+  <p>The following is a summary table with all configurations and their conversion status.</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-1 Components migration status</caption>
+<thead>
+<tr>
+<td>Configurations</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>r_bsp</td>
+<td>Success.</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Config_S12AD2</td>
+<td>Success.Settings are partially converted</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Config_PORT</td>
+<td>Success.Settings are partially converted</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Config_CMT0</td>
+<td>Success.Settings are fully converted</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Config_IWDT</td>
+<td>Success.Settings are fully converted</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Config_POE</td>
+<td>Success.Settings are partially converted</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Config_MTU3_MTU4</td>
+<td>Success.Settings are fully converted</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Config_S12AD0</td>
+<td>Success.Settings are fully converted</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+  <h2 style="text-align: left">3.1 r_bsp</h2>
+<div>
+  <p>Success. </p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-1-1 Settings Migration Status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration Status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>User stack setting</td>
+<td>2 stacks</td>
+<td>2 stacks</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>User stack size</td>
+<td>0x1000</td>
+<td>0x1000</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Interrupt stack size</td>
+<td>0x400</td>
+<td>0x400</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Heap size</td>
+<td>0x400</td>
+<td>0x400</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Initializes C input and output library functions</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable user stdio charget function</td>
+<td>Use BSP charget() function</td>
+<td>Use BSP charget() function</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>User stdio charget function name</td>
+<td>my_sw_charget_function</td>
+<td>my_sw_charget_function</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable user stdio charput function</td>
+<td>Use BSP charput() function</td>
+<td>Use BSP charput() function</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>User stdio charput function name</td>
+<td>my_sw_charput_function</td>
+<td>my_sw_charput_function</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Processor Mode</td>
+<td>Stay in Supervisor mode</td>
+<td>Stay in Supervisor mode</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>ID code 1</td>
+<td>0xFFFFFFFF</td>
+<td>0xFFFFFFFF</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>ID code 2</td>
+<td>0xFFFFFFFF</td>
+<td>0xFFFFFFFF</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>ID code 3</td>
+<td>0xFFFFFFFF</td>
+<td>0xFFFFFFFF</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>ID code 4</td>
+<td>0xFFFFFFFF</td>
+<td>0xFFFFFFFF</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>ID code protection select</td>
+<td>Disabled</td>
+<td>Disabled</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Block erasure command protection select</td>
+<td>Disabled</td>
+<td>Disabled</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Programming command protection select</td>
+<td>Disabled</td>
+<td>Disabled</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Read command protection select</td>
+<td>Disabled</td>
+<td>Disabled</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Serial programmer conection select</td>
+<td>Enabled</td>
+<td>Enabled</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>TMEF - TM Enable Flag Register</td>
+<td>0xFFFFFFFF</td>
+<td>0xFFFFFFFF</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>FAW - Flash Access Window Setting Register</td>
+<td>0xFFFFFFFF</td>
+<td>0xFFFFFFFF</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>ROMCODE - ROM Code Protection Register</td>
+<td>0xFFFFFFFF</td>
+<td>0xFFFFFFFF</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Select the startup bank</td>
+<td>Bank 1: FFF80000h~FFFBFFFFh; Bank 0: FFFC0000h~FFFFFFFFh.</td>
+<td>Bank 1: FFF80000h~FFFBFFFFh; Bank 0: FFFC0000h~FFFFFFFFh.</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Lock function select</td>
+<td>Use default locking (non-RTOS)</td>
+<td>Use default locking (non-RTOS)</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Lock function type</td>
+<td>bsp_lock_t</td>
+<td>bsp_lock_t</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>HW lock function name</td>
+<td>my_hw_locking_function</td>
+<td>my_hw_locking_function</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>HW unlock function name</td>
+<td>my_hw_unlocking_function</td>
+<td>my_hw_unlocking_function</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>SW lock function name</td>
+<td>my_sw_locking_function</td>
+<td>my_sw_locking_function</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>SW unlock function name</td>
+<td>my_sw_unlocking_function</td>
+<td>my_sw_unlocking_function</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable user warm start callback (PRE)</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>User warm start callback  function name (PRE)</td>
+<td>my_sw_warmstart_prec_function</td>
+<td>my_sw_warmstart_prec_function</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable user warm start callback (POST)</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>User warm start callback  function name (POST)</td>
+<td>my_sw_warmstart_postc_function</td>
+<td>my_sw_warmstart_postc_function</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Parameter checking</td>
+<td>Enabled</td>
+<td>Enabled</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Interrupt Priority Level When FIT Module Interrupts Are Disabled</td>
+<td>Priority level 15 (highest)</td>
+<td>Priority level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Software Interrupt Unit1 (SWINT1)</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Software Interrupt Unit2 (SWINT2)</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Software Interrupt Task Buffer Number</td>
+<td>8</td>
+<td>8</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Initial value of the software interrupt priority.</td>
+<td>Priority level 1</td>
+<td>Priority level 1</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Serial terminal select</td>
+<td>Disabled</td>
+<td>Disabled</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Channel for serial terminal</td>
+<td>Channel 11</td>
+<td>Channel 11</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Bitrate for serial terminal</td>
+<td>115200</td>
+<td>115200</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Interrupt priority  for serial terminal</td>
+<td>Priority level 15 (highest)</td>
+<td>Priority level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable initilize function for TFU (fixed-point numbers).</td>
+<td>Disabled</td>
+<td>Disabled</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Unit and Format Setting of the input values in fixed-point sincos operations.</td>
+<td>Unit of turn, Q1.31 format</td>
+<td>Unit of turn, Q1.31 format</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Format Setting of the output values in fixed-point sincos operations.</td>
+<td>Q1.31</td>
+<td>Q1.31</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Output Format Setting of output values of atan calculations in fixed-point atanhypot_k operations.</td>
+<td>Unit of turn, Q1.31 format</td>
+<td>Unit of turn, Q1.31 format</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h2 style="text-align: left">3.2 Config_S12AD2</h2>
+<div>
+  <p>Success. Settings are partially converted</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-2-1 Setting migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Double trigger mode</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN200</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN201</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN202</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN203</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN204</td>
+<td>Use</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN205</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN206</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN207</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN208</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN209</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN210</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN211</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN216</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN217</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Temperature sensor output</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Internal reference voltage</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Start trigger source</td>
+<td>Compare match between MTU4.TADCORA and MTU4.TCNT</td>
+<td>Compare match between MTU4.TADCORA and MTU4.TCNT</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable AD conversion end interrupt (S12ADI2)</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>S12ADI Priority</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN200</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN201</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN202</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN203</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN204</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN205</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN206</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN207</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN208</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN209</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN210</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN211</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN216</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN217</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Temperature sensor output</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Internal reference voltage</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Mode</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Voltage used</td>
+<td>0V</td>
+<td>0V</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Charge setting</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Period</td>
+<td>15 ADCLK</td>
+<td>15 ADCLK</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Constant sample and hold</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Data placement</td>
+<td>Right-alignment</td>
+<td>Right-alignment</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Automatic clearing</td>
+<td>Disable automatic clearing</td>
+<td>Disable automatic clearing</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Automatic setting</td>
+<td>Disable automatic setting</td>
+<td>Disable automatic setting</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Addition/Average mode select</td>
+<td>Addition mode</td>
+<td>Addition mode</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Addition count</td>
+<td>1-time</td>
+<td>1-time</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Window function</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable comparison window A</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable comparison window B</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Window A/B complex condition</td>
+<td>Window A comparison condition matched OR window B comparison condition matched</td>
+<td>Window A comparison condition matched OR window B comparison condition matched</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Reference data 0 for comparison</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Reference data 1 for comparison</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN200</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN201</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN202</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN203</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN204</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN205</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN206</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN207</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN208</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN209</td>
+<td>Unuse</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN210</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN211</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN216</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for AN217</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for Temperature sensor output</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Use comparator for Internal reference voltage</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Reference data 0 for comparison</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Reference data 1 for comparison</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Comparison B channel</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Comparison B Level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN200/Self-diagnosis</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN201</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN202</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN203</td>
+<td>0.45</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN204</td>
+<td>0.45</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN205</td>
+<td>0.45</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN206</td>
+<td>0.45</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN207</td>
+<td>0.45</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN208</td>
+<td>0.45</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN209</td>
+<td>0.45</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN210</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN211</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN216-AN217</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Temperature sensor output</td>
+<td>4</td>
+<td>4</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Internal reference voltage</td>
+<td>4</td>
+<td>4</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable ADST2 pin output</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>ELC scan end event generation condition</td>
+<td>On completion of all scans</td>
+<td>On completion of all scans</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable AD conversion compare interrupt A (S12CMPAI2)</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable AD conversion compare interrupt B (S12CMPBI2)</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Group BL1 priority</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h2 style="text-align: left">3.3 Config_PORT</h2>
+<div>
+  <p>Success. Settings are partially converted</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-1 Common setting migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Handling of all unused pins</td>
+<td>Keep as current</td>
+<td>Keep as current</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-2 PORT0</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Port0 Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORT0 output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-3 PORT1</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Port1 Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORT1 output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-4 PORT2</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Apply to all</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Use status</td>
+<td>Unused GPIO</td>
+<td>Unused GPIO</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Pull-up</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Open-drain all</td>
+<td>CMOS output</td>
+<td>CMOS output</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Output 1</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>High-drive output</td>
+<td>Normal drive output</td>
+<td>Normal drive output</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-5 PORT20</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Use status</td>
+<td>Out</td>
+<td>Out</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Output 1</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Pull-up</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Open-drain</td>
+<td>CMOS output</td>
+<td>CMOS output</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>High-drive output</td>
+<td>Normal drive output</td>
+<td>Normal drive output</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-6 PORT21</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Use status</td>
+<td>Out</td>
+<td>Out</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Output 1</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Pull-up</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Open-drain</td>
+<td>CMOS output</td>
+<td>CMOS output</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>High-drive output</td>
+<td>Normal drive output</td>
+<td>Normal drive output</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-7 PORT22</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Use status</td>
+<td>Out</td>
+<td>Out</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Output 1</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Pull-up</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Open-drain</td>
+<td>CMOS output</td>
+<td>CMOS output</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>High-drive output</td>
+<td>Normal drive output</td>
+<td>Normal drive output</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-8 PORT2</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Port2 Enable</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORT2 output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-9 PORT3</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Port3 Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORT3 output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-10 PORT4</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Port4 Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORT4 output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-11 PORT5</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Port5 Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORT5 output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-12 PORT6</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Port6 Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORT6 output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-13 PORT7</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Port7 Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORT7 output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-14 PORT9</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Port9 Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORT9 output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-15 PORTB</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>PortB Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORTB output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-16 PORTD</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>PortD Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORTD output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-17 PORTE</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>PortE Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORTE output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-3-18 PORTN</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>PortN Enable</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable PORTN output retention</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h2 style="text-align: left">3.4 Config_CMT0</h2>
+<div>
+  <p>Success. Settings are fully converted</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-4-1 Setting migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Count clock</td>
+<td>PCLK/8</td>
+<td>PCLK/8</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Interval value</td>
+<td>500</td>
+<td>500</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Interval unit</td>
+<td>µs</td>
+<td>µs</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Compare match interrupt (CMI0)</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable multiple interrupts (CMI0)</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Priority</td>
+<td>Level 11</td>
+<td>Level 11</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h2 style="text-align: left">3.5 Config_IWDT</h2>
+<div>
+  <p>Success. Settings are fully converted</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-5-1 Setting migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Start mode setting</td>
+<td>Register start mode</td>
+<td>Register start mode</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Clock division ratio</td>
+<td>IWDTCLK/128</td>
+<td>IWDTCLK/128</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Timeout cycle</td>
+<td>16384</td>
+<td>16384</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Start position</td>
+<td>100</td>
+<td>100</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>End position</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Sleep mode count stop control setting</td>
+<td>Enabled</td>
+<td>Enabled</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Reset interrupt request setting</td>
+<td>Reset output</td>
+<td>Reset output</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Priority</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h2 style="text-align: left">3.6 Config_POE</h2>
+<div>
+  <p>Success. Settings are partially converted</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-6-1 Setting migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>High-impedance on detection of stopped oscillation</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE8#</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE8# Masking Circuit</td>
+<td>Does not mask POE8# signal</td>
+<td>Does not mask POE8# signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE8# Mode select (Accept a request)</td>
+<td>On the falling edge of POE8# input</td>
+<td>On the falling edge of POE8# input</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE8# Sampling count</td>
+<td>16 times</td>
+<td>16 times</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE9#</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE9# Masking Circuit</td>
+<td>Does not mask POE9# signal</td>
+<td>Does not mask POE9# signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE9# Mode select (Accept a request)</td>
+<td>On the falling edge of POE9# input</td>
+<td>On the falling edge of POE9# input</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE9# Sampling count</td>
+<td>16 times</td>
+<td>16 times</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Output enable interrupt 3</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Priority (Group BL1)</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Software port output enable MTU0</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC0A</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC0B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC0C</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC0D</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE0# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE4# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE8# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE9# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE10# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE11# input</td>
+<td>Uncheck</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE12# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 0 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 1 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 2 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 3 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 4 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 5 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Software port output enable MTU9</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC9A</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC9B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC9C</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC9D</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE0# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE4# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE8# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE9# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE10# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE11# input</td>
+<td>Uncheck</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE12# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 0 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 1 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 2 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 3 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 4 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 5 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE0#</td>
+<td>Check</td>
+<td>Check</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE0# Masking Circuit</td>
+<td>Does not mask POE0# signal</td>
+<td>Does not mask POE0# signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE0# Mode select (Accept a request)</td>
+<td>On the falling edge of POE0# input</td>
+<td>On the falling edge of POE0# input</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE0# Sampling count</td>
+<td>16 times</td>
+<td>16 times</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Output enable interrupt 1</td>
+<td>Check</td>
+<td>Check</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Priority (Group BL1)</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>High impedance when simultaneously in active level</td>
+<td>Check</td>
+<td>Check</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable active level</td>
+<td>Check</td>
+<td>Check</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable MTIOC3B and MTIOC3D</td>
+<td>Check</td>
+<td>Check</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTIOC3B active level</td>
+<td>High</td>
+<td>High</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTIOC3D active level</td>
+<td>High</td>
+<td>High</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC4A and MTIOC4C</td>
+<td>Check</td>
+<td>Check</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTIOC4A active level</td>
+<td>High</td>
+<td>High</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTIOC4C active level</td>
+<td>High</td>
+<td>High</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable MTIOC4B and MTIOC4D</td>
+<td>Check</td>
+<td>Check</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTIOC4B active level</td>
+<td>High</td>
+<td>High</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTIOC4D active level</td>
+<td>High</td>
+<td>High</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Software port output enable MTU3 / MTU4</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE0# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE4# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE8# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE9# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE10# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE11# input</td>
+<td>Uncheck</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE12# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 0 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 1 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 2 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 3 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 4 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 5 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE4#</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE4# Masking Circuit</td>
+<td>Does not mask POE4# signal</td>
+<td>Does not mask POE4# signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE4# Mode select (Accept a request)</td>
+<td>On the falling edge of POE4# input</td>
+<td>On the falling edge of POE4# input</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE4# Sampling count</td>
+<td>16 times</td>
+<td>16 times</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Output enable interrupt 2</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Priority (Group BL1)</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>High impedance when simultaneously in active level</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable active level</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC6B and MTIOC6D</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTIOC6B active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTIOC6D active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable MTIOC7A and MTIOC7C</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTIOC7A active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTIOC7C active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTIOC7B and MTIOC7D</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTIOC7B active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTIOC7D active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Software port output enable MTU6 / MTU7</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE0# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE4# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE8# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE9# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE10# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE11# input</td>
+<td>Uncheck</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE12# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 0 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 1 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 2 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 3 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 4 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 5 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE10#</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE10# Masking Circuit</td>
+<td>Does not mask POE10# signal</td>
+<td>Does not mask POE10# signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE10# Mode select (Accept a request)</td>
+<td>On the falling edge of POE10# input</td>
+<td>On the falling edge of POE10# input</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE10# Sampling count</td>
+<td>16 times</td>
+<td>16 times</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE11#</td>
+<td>Uncheck</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE11# Masking Circuit</td>
+<td>Does not mask POE11# signal</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE11# Mode select (Accept a request)</td>
+<td>On the falling edge of POE11# input</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE11# Sampling count</td>
+<td>16 times</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Output enable interrupt 4</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Priority (Group BL1)</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>High impedance when simultaneously in active level</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable active level</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable GTIOC0A and GTIOC0B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>GTIOC0A active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>GTIOC0B active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable GTIOC1A and GTIOC1B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>GTIOC1A active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>GTIOC1B active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable GTIOC2A and GTIOC2B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>GTIOC2A active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>GTIOC2B active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Software port output enable GPT0 / GPT1</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Software port output enable GPT0 / GPT1 / GPT2</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE0# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE4# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE8# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE9# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE10# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE11# input</td>
+<td>Uncheck</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE12# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 0 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 1 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 2 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 3 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 4 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 5 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Software port output enable GPT2 / GPT3</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable GTIOC3A and GTIOC3B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE0# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE4# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE8# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE9# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE10# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE11# input</td>
+<td>Uncheck</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE12# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 0 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 1 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 2 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 3 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 4 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 5 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE12#</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE12# Masking Circuit</td>
+<td>Does not mask POE12# signal</td>
+<td>Does not mask POE12# signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE12# Mode select (Accept a request)</td>
+<td>On the falling edge of POE12# input</td>
+<td>On the falling edge of POE12# input</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE12# Sampling count</td>
+<td>16 times</td>
+<td>16 times</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Output enable interrupt 5</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Priority (Group BL1)</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>High impedance when simultaneously in active level</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable active level</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable GTIOC4A and GTIOC4B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>GTIOC4A active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>GTIOC4B active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable GTIOC5A and GTIOC5B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>GTIOC5A active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>GTIOC5B active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable GTIOC6A and GTIOC6B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>GTIOC6A active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>GTIOC6B active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Software port output enable GPT4 / GPT5 / GPT6</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE0# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE4# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE8# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE9# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE10# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE11# input</td>
+<td>Uncheck</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE12# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 0 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 1 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 2 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 3 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 4 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 5 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>High impedance when simultaneously in active level</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable active level</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable GTIOC7A and GTIOC7B</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>GTIOC7A active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>GTIOC7B active level</td>
+<td>Low</td>
+<td>Low</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Switch to I/O pin</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Software port output enable GPT7</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE0# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE4# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE8# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE9# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE10# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE11# input</td>
+<td>Uncheck</td>
+<td>-</td>
+<td>Failed. Setting does not exist</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>POE12# input</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 0 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 1 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 2 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 3 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC 4 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC 5 output</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC0 Masking Circuit</td>
+<td>Does not mask COMP0 level detection signal</td>
+<td>Does not mask COMP0 level detection signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC1 Masking Circuit</td>
+<td>Does not mask COMP1 level detection signal</td>
+<td>Does not mask COMP1 level detection signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC2 Masking Circuit</td>
+<td>Does not mask COMP2 level detection signal</td>
+<td>Does not mask COMP2 level detection signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC3 Masking Circuit</td>
+<td>Does not mask COMP3 level detection signal</td>
+<td>Does not mask COMP3 level detection signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CMPC4 Masking Circuit</td>
+<td>Does not mask COMP4 level detection signal</td>
+<td>Does not mask COMP4 level detection signal</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>CMPC5 Masking Circuit</td>
+<td>Does not mask COMP5 level detection signal</td>
+<td>Does not mask COMP5 level detection signal</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h2 style="text-align: left">3.7 Config_MTU3_MTU4</h2>
+<div>
+  <p>Success. Settings are fully converted</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-7-1 Setting migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Include this channel in the synchronous operation</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Counter clear source</td>
+<td>Disabled counter clear</td>
+<td>Disabled counter clear</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Counter clock selection</td>
+<td>PCLK</td>
+<td>PCLK</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Clock edge selection</td>
+<td>Rising edge</td>
+<td>Rising edge</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable the noise filter for MTCLKA pin</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable the noise filter for MTCLKB pin</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Noise filter clock selection (External clock pin)</td>
+<td>PCLK</td>
+<td>PCLK</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Timer operation period</td>
+<td>50</td>
+<td>50</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Period unit</td>
+<td>µs</td>
+<td>µs</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable dead time</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Dead time</td>
+<td>2</td>
+<td>2</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Deadtime unit</td>
+<td>µs</td>
+<td>µs</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTU3.TGRB register value</td>
+<td>1620</td>
+<td>1620</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTU4.TGRA register value</td>
+<td>1620</td>
+<td>1620</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTU4.TGRB register value</td>
+<td>1620</td>
+<td>1620</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable U, V and W phase output control by software or external input signal</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Method to control output</td>
+<td>External input</td>
+<td>External input</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Positive-phase output control (initial value)</td>
+<td>Level output</td>
+<td>Level output</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Negative-phase output control (initial value)</td>
+<td>Level output</td>
+<td>Level output</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable MTIOC3A toggle output</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Buffer transfer timing of PWM output level setting</td>
+<td>Does not transfer data from the buffer register</td>
+<td>Does not transfer data from the buffer register</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable U phase: Initial output level of MTIOC3B pin (positive-phase)</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>U phase: Initial output level of MTIOC3B pin (positive-phase)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:H,output at compare match on down-count:L)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:H,output at compare match on down-count:L)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable U phase: Initial output level of MTIOC3D pin (negative-phase)</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>U phase: Initial output level of MTIOC3D pin (negative-phase)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:L,output at compare match on down-count:H)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:L,output at compare match on down-count:H)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable V phase: Initial output level of MTIOC4A pin (positive-phase)</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>V phase: Initial output level of MTIOC4A pin (positive-phase)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:H,output at compare match on down-count:L)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:H,output at compare match on down-count:L)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable V phase: Initial output level of MTIOC4C pin (negative-phase)</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>V phase: Initial output level of MTIOC4C pin (negative-phase)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:L,output at compare match on down-count:H)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:L,output at compare match on down-count:H)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable W phase: Initial output level of MTIOC4B pin (positive-phase)</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>W phase: Initial output level of MTIOC4B pin (positive-phase)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:H,output at compare match on down-count:L)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:H,output at compare match on down-count:L)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable W phase: Initial output level of MTIOC4D pin (negative-phase)</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>W phase: Initial output level of MTIOC4D pin (negative-phase)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:L,output at compare match on down-count:H)</td>
+<td>Active level:H (Initial output:L,output at compare match on up-count:L,output at compare match on down-count:H)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Interrupt skipping mode</td>
+<td>Interrupt skipping function 1 (compare match interrupt skipping)</td>
+<td>Interrupt skipping function 1 (compare match interrupt skipping)</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Interrupt skipping count</td>
+<td>Disable interrupt skip</td>
+<td>Disable interrupt skip</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable MTU3/TGRA compare match interrupt (TGIA3)</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>TGIA Priority</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Interrupt skipping count</td>
+<td>Disable interrupt skip</td>
+<td>Disable interrupt skip</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTU3/TGRB compare match interrupt (TGIB3)</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>TGIB Priority</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTU4/TGRA compare match interrupt (TGIA4)</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>TGIA4 Priority</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTU4/TGRB compare match interrupt (TGIB4)</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>TGIB4 Priority</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable MTU4 underflow interrupt (TCIV4)</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>TCIV Priority</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Interrupt skipping count</td>
+<td>Disable interrupt skip</td>
+<td>Disable interrupt skip</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable multiple interrupts for MTU3/TGRA compare match interrupt (TGIA3)</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable multiple interrupts for MTU3/TGRB compare match interrupt (TGIB3)</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable multiple interrupts for MTU4/TGRA compare match interrupt (TGIA4)</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable multiple interrupts for MTU4/TGRB compare match interrupt (TGIB4)</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable multiple interrupts for MTU4 overflow interrupt (TCIV4)</td>
+<td>Uncheck</td>
+<td>Uncheck</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Waveform output immediately before synchronous clearing is retained</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Data transfer timing from buffer to temporary register</td>
+<td>Do not link with interrupt skipping function 1</td>
+<td>Do not link with interrupt skipping function 1</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable A/D conversion start request on matching of the crest of count (trigger signal of MTU3 TRGA3N)</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable A/D conversion start request on matching of the trough of count (trigger signal of MTU4 TRGA4N)</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable A/D conversion start request on matching of the counter and cycle register value (trigger signal of MTU4 TRG4ABN)</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable A/D conversion start request on matching of the counter and cycle set register A value</td>
+<td>Enable</td>
+<td>Enable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>A/D trigger A request output</td>
+<td>On matching of counting up</td>
+<td>On matching of counting up</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Initial value of A/D conversion start request cycle set register A</td>
+<td>2</td>
+<td>2</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Initial value of cycle set buffer register A</td>
+<td>2</td>
+<td>2</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Link with TGIA3 interrupt skipping</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Link with TCIV4 interrupt skipping</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable A/D conversion start request on matching of the counter and cycle set register B value</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>A/D trigger B request output</td>
+<td>On matching of counting up</td>
+<td>On matching of counting up</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Initial value of A/D conversion start request cycle set register B</td>
+<td>65535</td>
+<td>65535</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Initial value of cycle set buffer register B</td>
+<td>65535</td>
+<td>65535</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Link with TGIA3 interrupt skipping</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Link with TCIV4 interrupt skipping</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Transfer data from the cycle set buffer register</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Transfer data from the cycle set buffer register</td>
+<td>Transfers data at the crest of the count</td>
+<td>Transfers data at the crest of the count</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>ADSM0 pin</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>ADSM0 pin source</td>
+<td>Source not selected</td>
+<td>Source not selected</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>ADSM1 pin</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>ADSM1 pin source</td>
+<td>Source not selected</td>
+<td>Source not selected</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h2 style="text-align: left">3.8 Config_S12AD0</h2>
+<div>
+  <p>Success. Settings are fully converted</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-8-1 Setting migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>Double trigger mode</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN000</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN001</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN002</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN003</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Start trigger source</td>
+<td>Compare match between MTU4.TADCORA and MTU4.TCNT</td>
+<td>Compare match between MTU4.TADCORA and MTU4.TCNT</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable AD conversion end interrupt (S12ADI)</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>S12ADI Priority</td>
+<td>Level 12</td>
+<td>Level 12</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN000</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN001</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN002</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN003</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Mode</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Voltage used</td>
+<td>0V</td>
+<td>0V</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Charge setting</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Period</td>
+<td>15 ADCLK</td>
+<td>15 ADCLK</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN000</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN001</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN002</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Constant sample and hold</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN000 analog path selection</td>
+<td>A/D__AN000 | CMPC00__None | CMPC01__None</td>
+<td>A/D__AN000 | CMPC00__None | CMPC01__None</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Gain selection</td>
+<td>x 2.000</td>
+<td>x 2.000</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN001 analog path selection</td>
+<td>A/D__AN001 | CMPC10__None | CMPC11__None</td>
+<td>A/D__AN001 | CMPC10__None | CMPC11__None</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Gain selection</td>
+<td>x 2.000</td>
+<td>x 2.000</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN002 analog path selection</td>
+<td>A/D__AN002 | CMPC20__None | CMPC21__None</td>
+<td>A/D__AN002 | CMPC20__None | CMPC21__None</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Gain selection</td>
+<td>x 2.000</td>
+<td>x 2.000</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Data placement</td>
+<td>Right-alignment</td>
+<td>Right-alignment</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Automatic clearing</td>
+<td>Disable automatic clearing</td>
+<td>Disable automatic clearing</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Automatic setting</td>
+<td>Disable automatic setting</td>
+<td>Disable automatic setting</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Addition/Average mode select</td>
+<td>Addition mode</td>
+<td>Addition mode</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Addition count</td>
+<td>1-time</td>
+<td>1-time</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Window function</td>
+<td>Disable</td>
+<td>Disable</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable comparison window A</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable comparison window B</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Window A/B complex condition</td>
+<td>Window A comparison condition matched OR window B comparison condition matched</td>
+<td>Window A comparison condition matched OR window B comparison condition matched</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Reference data 0 for comparison</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Reference data 1 for comparison</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Use comparator for AN000</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Use comparator for AN001</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Use comparator for AN002</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Use comparator for AN003</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Compare level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Reference data 0 for comparison</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Reference data 1 for comparison</td>
+<td>0</td>
+<td>0</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Comparison B channel</td>
+<td>Unused</td>
+<td>Unused</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Comparison B Level</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Reference data 0 > A/D-converted value</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Dedicated sample and hold sampling time</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN000/Self-diagnosis</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN001</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN002</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN003</td>
+<td>0.45</td>
+<td>0.45</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable ADST0 pin output</td>
+<td>Unuse</td>
+<td>Unuse</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>ELC scan end event generation condition</td>
+<td>On completion of all scans</td>
+<td>On completion of all scans</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Enable AD conversion compare interrupt A (S12CMPAI)</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Enable AD conversion compare interrupt B (S12CMPBI)</td>
+<td>Use</td>
+<td>Use</td>
+<td>Success. </td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Group BL1 priority</td>
+<td>Level 15 (highest)</td>
+<td>Level 15 (highest)</td>
+<td>Success. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+  <h1 style="text-align: left">4 Pins</h1>
+<div>
+  <p>The following is a summary table with all pin assignments and their conversion status.</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 4-1 Pin Migration Status</caption>
+<thead>
+<tr>
+<td>Function</td>
+<td>Symbolic Name</td>
+<td>Pin Number (Before)</td>
+<td>Pin Number (After)</td>
+<td>Migration Status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>EMLE</td>
+<td>-</td>
+<td>2</td>
+<td>1</td>
+<td>Success</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>FINED</td>
+<td>-</td>
+<td>6</td>
+<td>4</td>
+<td>Success</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>XTAL</td>
+<td>-</td>
+<td>11</td>
+<td>7</td>
+<td>Success</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>EXTAL</td>
+<td>-</td>
+<td>13</td>
+<td>9</td>
+<td>Success</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTIOC4D</td>
+<td>-</td>
+<td>51</td>
+<td>33</td>
+<td>Success</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTIOC4C</td>
+<td>-</td>
+<td>52</td>
+<td>34</td>
+<td>Success</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTIOC3D</td>
+<td>-</td>
+<td>53</td>
+<td>35</td>
+<td>Success</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTIOC4B</td>
+<td>-</td>
+<td>54</td>
+<td>36</td>
+<td>Success</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>MTIOC4A</td>
+<td>-</td>
+<td>55</td>
+<td>37</td>
+<td>Success</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>MTIOC3B</td>
+<td>-</td>
+<td>56</td>
+<td>38</td>
+<td>Success</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>POE0#</td>
+<td>-</td>
+<td>57</td>
+<td>39</td>
+<td>Success</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>P23</td>
+<td>-</td>
+<td>66</td>
+<td>-</td>
+<td>Discarded. Function is not available</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>P22</td>
+<td>-</td>
+<td>67</td>
+<td>42</td>
+<td>Success</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>P21</td>
+<td>-</td>
+<td>68</td>
+<td>43</td>
+<td>Success</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>P20</td>
+<td>-</td>
+<td>69</td>
+<td>44</td>
+<td>Success</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN204</td>
+<td>-</td>
+<td>83</td>
+<td>-</td>
+<td>Discarded. Function is not available</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN003</td>
+<td>-</td>
+<td>88</td>
+<td>56</td>
+<td>Success</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>AN002</td>
+<td>-</td>
+<td>89</td>
+<td>57</td>
+<td>Success</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>AN000</td>
+<td>-</td>
+<td>91</td>
+<td>59</td>
+<td>Success</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h1 style="text-align: left">5 Interrupts</h1>
+<div>
+  <p>The following is a summary table with all interrupt assignments and their conversion status</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 5-1 Interrupt Migration Status</caption>
+<thead>
+<tr>
+<td>Vector Number</td>
+<td>Old Interrupt Assignment</td>
+<td>New Interrupt Assignment</td>
+<td>Status (Before device change)</td>
+<td>Status (After device change)</td>
+<td>Migration Status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>16</td>
+<td>BSC_BUSERR</td>
+<td>BSC_BUSERR</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>18</td>
+<td>RAM_RAMERR</td>
+<td>RAM_RAMERR</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>21</td>
+<td>FCU_FIFERR</td>
+<td>FCU_FIFERR</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>23</td>
+<td>FCU_FRDYI</td>
+<td>FCU_FRDYI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>26</td>
+<td>ICU_SWINT2</td>
+<td>ICU_SWINT2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>27</td>
+<td>ICU_SWINT</td>
+<td>ICU_SWINT</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>28</td>
+<td>CMT0_CMI0</td>
+<td>CMT0_CMI0</td>
+<td>State= Used<br>Priority= 11</td>
+<td>State= Used<br>Priority= 11</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>29</td>
+<td>CMT1_CMI1</td>
+<td>CMT1_CMI1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>30</td>
+<td>CMT2_CMI2</td>
+<td>CMT2_CMI2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>31</td>
+<td>CMT3_CMI3</td>
+<td>CMT3_CMI3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>38</td>
+<td>RSPI0_SPRI0</td>
+<td>RSPI0_SPRI0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>39</td>
+<td>RSPI0_SPTI0</td>
+<td>RSPI0_SPTI0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>40</td>
+<td>RI3C0_RESPI</td>
+<td>RI3C0_RESPI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>41</td>
+<td>RI3C0_CMDI</td>
+<td>RI3C0_CMDI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>42</td>
+<td>RI3C0_IBII</td>
+<td>RI3C0_IBII</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>43</td>
+<td>RI3C0_RCVI</td>
+<td>RI3C0_RCVI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>48</td>
+<td>RSPIA0_SPRI</td>
+<td>RSPIA0_SPRI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>49</td>
+<td>RSPIA0_SPTI</td>
+<td>RSPIA0_SPTI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>52</td>
+<td>RIIC0_RXI0</td>
+<td>RIIC0_RXI0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>53</td>
+<td>RIIC0_TXI0</td>
+<td>RIIC0_TXI0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>60</td>
+<td>SCI1_RXI1</td>
+<td>SCI1_RXI1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>61</td>
+<td>SCI1_TXI1</td>
+<td>SCI1_TXI1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>64</td>
+<td>ICU_IRQ0</td>
+<td>ICU_IRQ0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>65</td>
+<td>ICU_IRQ1</td>
+<td>ICU_IRQ1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>66</td>
+<td>ICU_IRQ2</td>
+<td>ICU_IRQ2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>67</td>
+<td>ICU_IRQ3</td>
+<td>ICU_IRQ3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>68</td>
+<td>ICU_IRQ4</td>
+<td>ICU_IRQ4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>69</td>
+<td>ICU_IRQ5</td>
+<td>ICU_IRQ5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>70</td>
+<td>ICU_IRQ6</td>
+<td>ICU_IRQ6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>71</td>
+<td>ICU_IRQ7</td>
+<td>ICU_IRQ7</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>72</td>
+<td>ICU_IRQ8</td>
+<td>ICU_IRQ8</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>73</td>
+<td>ICU_IRQ9</td>
+<td>ICU_IRQ9</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>74</td>
+<td>ICU_IRQ10</td>
+<td>ICU_IRQ10</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>75</td>
+<td>ICU_IRQ11</td>
+<td>ICU_IRQ11</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>76</td>
+<td>ICU_IRQ12</td>
+<td>ICU_IRQ12</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>77</td>
+<td>ICU_IRQ13</td>
+<td>ICU_IRQ13</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>78</td>
+<td>ICU_IRQ14</td>
+<td>ICU_IRQ14</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>79</td>
+<td>ICU_IRQ15</td>
+<td>ICU_IRQ15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>84</td>
+<td>SCI5_RXI5</td>
+<td>SCI5_RXI5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>85</td>
+<td>SCI5_TXI5</td>
+<td>SCI5_TXI5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>86</td>
+<td>SCI6_RXI6</td>
+<td>SCI6_RXI6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>87</td>
+<td>SCI6_TXI6</td>
+<td>SCI6_TXI6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>88</td>
+<td>LVD1_LVD1</td>
+<td>LVD1_LVD1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>89</td>
+<td>LVD2_LVD2</td>
+<td>LVD2_LVD2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>95</td>
+<td>IWDT_IWUNI</td>
+<td>IWDT_IWUNI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>96</td>
+<td>WDT_WUNI</td>
+<td>WDT_WUNI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>100</td>
+<td>RSCI8_RXI</td>
+<td>RSCI8_RXI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>101</td>
+<td>RSCI8_TXI</td>
+<td>RSCI8_TXI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>102</td>
+<td>RSCI9_RXI</td>
+<td>RSCI9_RXI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>103</td>
+<td>RSCI9_TXI</td>
+<td>RSCI9_TXI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>107</td>
+<td>GROUPBL2<br>1-CHEI<br>2-CFRI<br>3-GLEI<br>4-RFRI<br>5-CHTI<br>6-RMRI</td>
+<td>GROUPBL2<br>1-CHEI<br>2-CFRI<br>3-GLEI<br>4-RFRI<br>5-CHTI<br>6-RMRI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>110</td>
+<td>GROUPBL0<br>1-TEI1<br>2-ERI1<br>3-TEI5<br>4-ERI5<br>5-TEI6<br>6-ERI6<br>7-TEI12<br>8-ERI12<br>9-SCIX0<br>10-SCIX1<br>11-SCIX2<br>12-SCIX3<br>13-FERRI<br>14-MENDI<br>15-OVFI<br>16-DOPCI</td>
+<td>GROUPBL0<br>2-TEI1<br>3-ERI1<br>10-TEI5<br>11-ERI5<br>12-TEI6<br>13-ERI6<br>16-TEI12<br>17-ERI12<br>18-SCIX0<br>19-SCIX1<br>20-SCIX2<br>21-SCIX3<br>26-FERRI<br>27-MENDI<br>28-OVFI<br>29-DOPCI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Group Interrupt Assignment Changed<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>111</td>
+<td>GROUPBL1<br>1-POEGGAI<br>2-POEGGBI<br>3-POEGGCI<br>4-POEGGDI<br>5-OEI5<br>6-OEI1<br>7-OEI2<br>8-OEI3<br>9-OEI4<br>10-TEI0<br>11-EEI0<br>12-S12CMPAI2<br>13-S12CMPBI2<br>14-S12CMPAI<br>15-S12CMPBI<br>16-S12CMPAI1<br>17-S12CMPBI1<br>18-TEI<br>19-ERI<br>20-TEI<br>21-ERI<br>22-BFD</td>
+<td>GROUPBL1<br>0-POEGGAI<br>1-POEGGBI<br>2-POEGGCI<br>3-POEGGDI<br>8-OEI5<br>9-OEI1<br>10-OEI2<br>11-OEI3<br>12-OEI4<br>13-TEI0<br>14-EEI0<br>18-S12CMPAI2<br>19-S12CMPBI2<br>20-S12CMPAI<br>21-S12CMPBI<br>22-S12CMPAI1<br>23-S12CMPBI1<br>24-TEI<br>25-ERI<br>26-TEI<br>27-ERI<br>31-BFD</td>
+<td>State= Used<br>Priority= 15</td>
+<td>State= Used<br>Priority= 15</td>
+<td>Group Interrupt Assignment Changed<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>112</td>
+<td>GROUPAL0<br>1-TEI<br>2-ERI<br>3-BFD<br>4-SPII0<br>5-SPEI0<br>6-SPII<br>7-SPEI</td>
+<td>GROUPAL0<br>12-TEI<br>13-ERI<br>14-BFD<br>16-SPII0<br>17-SPEI0<br>22-SPII<br>23-SPEI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Group Interrupt Assignment Changed<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>113</td>
+<td>GROUPAL1<br>1-EEI</td>
+<td>GROUPAL1<br>13-EEI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Group Interrupt Assignment Changed<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>114</td>
+<td>RSCI11_RXI</td>
+<td>RSCI11_RXI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>115</td>
+<td>RSCI11_TXI</td>
+<td>RSCI11_TXI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>116</td>
+<td>SCI12_RXI12</td>
+<td>SCI12_RXI12</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>117</td>
+<td>SCI12_TXI12</td>
+<td>SCI12_TXI12</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>118</td>
+<td>RI3C0_RXI</td>
+<td>RI3C0_RXI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>119</td>
+<td>RI3C0_TXI</td>
+<td>RI3C0_TXI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>120</td>
+<td>DMAC_DMAC0I</td>
+<td>DMAC_DMAC0I</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>121</td>
+<td>DMAC_DMAC1I</td>
+<td>DMAC_DMAC1I</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>122</td>
+<td>DMAC_DMAC2I</td>
+<td>DMAC_DMAC2I</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>123</td>
+<td>DMAC_DMAC3I</td>
+<td>DMAC_DMAC3I</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>124</td>
+<td>DMAC_DMAC74I</td>
+<td>DMAC_DMAC74I</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>125</td>
+<td>OST_OSTDI</td>
+<td>OST_OSTDI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>128</td>
+<td>S12AD_S12ADI</td>
+<td>S12AD_S12ADI</td>
+<td>State= Used<br>Priority= 12</td>
+<td>State= Used<br>Priority= 12</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>129</td>
+<td>S12AD_S12GBADI</td>
+<td>S12AD_S12GBADI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>130</td>
+<td>S12AD_S12GCADI</td>
+<td>S12AD_S12GCADI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>132</td>
+<td>S12AD1_S12ADI1</td>
+<td>S12AD1_S12ADI1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>133</td>
+<td>S12AD1_S12GBADI1</td>
+<td>S12AD1_S12GBADI1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>134</td>
+<td>S12AD1_S12GCADI1</td>
+<td>S12AD1_S12GCADI1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>136</td>
+<td>S12AD2_S12ADI2</td>
+<td>S12AD2_S12ADI2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>137</td>
+<td>S12AD2_S12GBADI2</td>
+<td>S12AD2_S12GBADI2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>138</td>
+<td>S12AD2_S12GCADI2</td>
+<td>S12AD2_S12GCADI2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>140</td>
+<td>CANFD_RFDREQ0</td>
+<td>CANFD_RFDREQ0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>141</td>
+<td>CANFD_RFDREQ1</td>
+<td>CANFD_RFDREQ1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>142</td>
+<td>CANFD0_CFDREQ0</td>
+<td>CANFD0_CFDREQ0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>146</td>
+<td>TMR0_CMIA0</td>
+<td>TMR0_CMIA0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>147</td>
+<td>TMR0_CMIB0</td>
+<td>TMR0_CMIB0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>148</td>
+<td>TMR0_OVI0</td>
+<td>TMR0_OVI0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>149</td>
+<td>TMR1_CMIA1</td>
+<td>TMR1_CMIA1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>150</td>
+<td>TMR1_CMIB1</td>
+<td>TMR1_CMIB1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>151</td>
+<td>TMR1_OVI1</td>
+<td>TMR1_OVI1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>152</td>
+<td>TMR2_CMIA2</td>
+<td>TMR2_CMIA2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>153</td>
+<td>TMR2_CMIB2</td>
+<td>TMR2_CMIB2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>154</td>
+<td>TMR2_OVI2</td>
+<td>TMR2_OVI2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>155</td>
+<td>TMR3_CMIA3</td>
+<td>TMR3_CMIA3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>156</td>
+<td>TMR3_CMIB3</td>
+<td>TMR3_CMIB3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>157</td>
+<td>TMR3_OVI3</td>
+<td>TMR3_OVI3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>158</td>
+<td>TMR4_CMIA4</td>
+<td>TMR4_CMIA4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>159</td>
+<td>TMR4_CMIB4</td>
+<td>TMR4_CMIB4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>160</td>
+<td>TMR4_OVI4</td>
+<td>TMR4_OVI4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>161</td>
+<td>TMR5_CMIA5</td>
+<td>TMR5_CMIA5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>162</td>
+<td>TMR5_CMIB5</td>
+<td>TMR5_CMIB5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>163</td>
+<td>TMR5_OVI5</td>
+<td>TMR5_OVI5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>164</td>
+<td>TMR6_CMIA6</td>
+<td>TMR6_CMIA6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>165</td>
+<td>TMR6_CMIB6</td>
+<td>TMR6_CMIB6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>166</td>
+<td>TMR6_OVI6</td>
+<td>TMR6_OVI6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>167</td>
+<td>TMR7_CMIA7</td>
+<td>TMR7_CMIA7</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>168</td>
+<td>TMR7_CMIB7</td>
+<td>TMR7_CMIB7</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>169</td>
+<td>TMR7_OVI7</td>
+<td>TMR7_OVI7</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>175</td>
+<td>ELC_ELSR18I</td>
+<td>ELC_ELSR18I</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>176</td>
+<td>ELC_ELSR19I</td>
+<td>ELC_ELSR19I</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>177</td>
+<td>TSIP_RD</td>
+<td>TSIP_RD</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>178</td>
+<td>TSIP_WR</td>
+<td>TSIP_WR</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>179</td>
+<td>TSIP_ERR</td>
+<td>TSIP_ERR</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>180</td>
+<td>CMPC0_CMPC0</td>
+<td>CMPC0_CMPC0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>181</td>
+<td>CMPC1_CMPC1</td>
+<td>CMPC1_CMPC1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>182</td>
+<td>CMPC2_CMPC2</td>
+<td>CMPC2_CMPC2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>183</td>
+<td>CMPC3_CMPC3</td>
+<td>CMPC3_CMPC3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>184</td>
+<td>CMPC4_CMPC4</td>
+<td>CMPC4_CMPC4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>185</td>
+<td>CMPC5_CMPC5</td>
+<td>CMPC5_CMPC5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>186</td>
+<td>CMTW0_CMWI0</td>
+<td>CMTW0_CMWI0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>187</td>
+<td>CMTW0_IC0I0</td>
+<td>CMTW0_IC0I0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>188</td>
+<td>CMTW0_IC1I0</td>
+<td>CMTW0_IC1I0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>189</td>
+<td>CMTW0_OC0I0</td>
+<td>CMTW0_OC0I0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>190</td>
+<td>CMTW0_OC1I0</td>
+<td>CMTW0_OC1I0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>191</td>
+<td>CMTW1_CMWI1</td>
+<td>CMTW1_CMWI1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>192</td>
+<td>CMTW1_IC0I1</td>
+<td>CMTW1_IC0I1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>193</td>
+<td>CMTW1_IC1I1</td>
+<td>CMTW1_IC1I1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>194</td>
+<td>CMTW1_OC0I1</td>
+<td>CMTW1_OC0I1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>195</td>
+<td>CMTW1_OC1I1</td>
+<td>CMTW1_OC1I1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>197</td>
+<td>RSCI9_AED</td>
+<td>RSCI9_AED</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>208</td>
+<td>MTU0_TGIA0</td>
+<td>MTU0_TGIA0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>209</td>
+<td>MTU0_TGIB0</td>
+<td>MTU0_TGIB0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>210</td>
+<td>MTU0_TGIC0</td>
+<td>MTU0_TGIC0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>211</td>
+<td>MTU0_TGID0</td>
+<td>MTU0_TGID0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>212</td>
+<td>MTU0_TCIV0</td>
+<td>MTU0_TCIV0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>213</td>
+<td>MTU0_TGIE0</td>
+<td>MTU0_TGIE0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>214</td>
+<td>MTU0_TGIF0</td>
+<td>MTU0_TGIF0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>215</td>
+<td>MTU1_TGIA1</td>
+<td>MTU1_TGIA1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>216</td>
+<td>MTU1_TGIB1</td>
+<td>MTU1_TGIB1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>217</td>
+<td>MTU1_TCIV1</td>
+<td>MTU1_TCIV1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>218</td>
+<td>MTU1_TCIU1</td>
+<td>MTU1_TCIU1</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>219</td>
+<td>MTU2_TGIA2</td>
+<td>MTU2_TGIA2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>220</td>
+<td>MTU2_TGIB2</td>
+<td>MTU2_TGIB2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>221</td>
+<td>MTU2_TCIV2</td>
+<td>MTU2_TCIV2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>222</td>
+<td>MTU2_TCIU2</td>
+<td>MTU2_TCIU2</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>223</td>
+<td>MTU3_TGIA3</td>
+<td>MTU3_TGIA3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>224</td>
+<td>MTU3_TGIB3</td>
+<td>MTU3_TGIB3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>225</td>
+<td>MTU3_TGIC3</td>
+<td>MTU3_TGIC3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>226</td>
+<td>MTU3_TGID3</td>
+<td>MTU3_TGID3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>227</td>
+<td>MTU3_TCIV3</td>
+<td>MTU3_TCIV3</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>228</td>
+<td>MTU4_TGIA4</td>
+<td>MTU4_TGIA4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>229</td>
+<td>MTU4_TGIB4</td>
+<td>MTU4_TGIB4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>230</td>
+<td>MTU4_TGIC4</td>
+<td>MTU4_TGIC4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>231</td>
+<td>MTU4_TGID4</td>
+<td>MTU4_TGID4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>232</td>
+<td>MTU4_TCIV4</td>
+<td>MTU4_TCIV4</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>233</td>
+<td>MTU5_TGIU5</td>
+<td>MTU5_TGIU5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>234</td>
+<td>MTU5_TGIV5</td>
+<td>MTU5_TGIV5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>235</td>
+<td>MTU5_TGIW5</td>
+<td>MTU5_TGIW5</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>236</td>
+<td>MTU6_TGIA6</td>
+<td>MTU6_TGIA6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>237</td>
+<td>MTU6_TGIB6</td>
+<td>MTU6_TGIB6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>238</td>
+<td>MTU6_TGIC6</td>
+<td>MTU6_TGIC6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>239</td>
+<td>MTU6_TGID6</td>
+<td>MTU6_TGID6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>240</td>
+<td>MTU6_TCIV6</td>
+<td>MTU6_TCIV6</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>241</td>
+<td>MTU7_TGIA7</td>
+<td>MTU7_TGIA7</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>242</td>
+<td>MTU7_TGIB7</td>
+<td>MTU7_TGIB7</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>243</td>
+<td>MTU7_TGIC7</td>
+<td>MTU7_TGIC7</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>244</td>
+<td>MTU7_TGID7</td>
+<td>MTU7_TGID7</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>245</td>
+<td>MTU7_TCIV7</td>
+<td>MTU7_TCIV7</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>246</td>
+<td>RSPIA0_SPCI</td>
+<td>RSPIA0_SPCI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>247</td>
+<td>RSPI0_SPCI0</td>
+<td>RSPI0_SPCI0</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>248</td>
+<td>RSCI11_AED</td>
+<td>RSCI11_AED</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>249</td>
+<td>CANFD_EC1EI</td>
+<td>CANFD_EC1EI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>250</td>
+<td>CANFD_EC2EI</td>
+<td>CANFD_EC2EI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>251</td>
+<td>CANFD_ECOVI</td>
+<td>CANFD_ECOVI</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>252</td>
+<td>PERIA_INTA252</td>
+<td>PERIA_INTA252</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>253</td>
+<td>PERIA_INTA253</td>
+<td>PERIA_INTA253</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="oddrowcolor">
+<td>254</td>
+<td>PERIA_INTA254</td>
+<td>PERIA_INTA254</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+<tr class ="evenrowcolor">
+<td>255</td>
+<td>PERIA_INTA255</td>
+<td>PERIA_INTA255</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>State= Not Use<br>Priority= 15</td>
+<td>Success<br></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
