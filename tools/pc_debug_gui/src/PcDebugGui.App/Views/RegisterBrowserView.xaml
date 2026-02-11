@@ -1,0 +1,31 @@
+<UserControl x:Class="PcDebugGui.App.Views.RegisterBrowserView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="搜索" VerticalAlignment="Center" />
+            <TextBox Width="260" Margin="8,0" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+
+        <TreeView Grid.Row="1" Margin="0,8" ItemsSource="{Binding RegisterTree}">
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type local:RegisterNode}" ItemsSource="{Binding Children}" xmlns:local="clr-namespace:PcDebugGui.App.Models">
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding IsFavorite}" Margin="0,0,4,0" />
+                        <TextBlock Text="{Binding Name}" Margin="0,0,8,0" />
+                        <TextBlock Text="{Binding Address}" Margin="0,0,8,0" Foreground="Gray" />
+                        <TextBox Width="120" Text="{Binding Value}" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.Resources>
+        </TreeView>
+
+        <TextBlock Grid.Row="2" Text="支持树结构浏览、搜索、读写与收藏。" Foreground="Gray" />
+    </Grid>
+</UserControl>

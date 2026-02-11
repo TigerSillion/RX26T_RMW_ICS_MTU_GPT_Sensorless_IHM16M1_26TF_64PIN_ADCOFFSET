@@ -1,0 +1,15 @@
+<UserControl x:Class="PcDebugGui.App.Views.FocTuningView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <DataGrid ItemsSource="{Binding Parameters}" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Category}" Header="类别" IsReadOnly="True" Width="140" />
+                <DataGridTextColumn Binding="{Binding Name}" Header="字段" IsReadOnly="True" Width="220" />
+                <DataGridTextColumn Binding="{Binding Value, UpdateSourceTrigger=PropertyChanged}" Header="值" Width="120" />
+                <DataGridTextColumn Binding="{Binding Unit}" Header="单位" IsReadOnly="True" Width="100" />
+                <DataGridTextColumn Binding="{Binding Description}" Header="说明" IsReadOnly="True" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
