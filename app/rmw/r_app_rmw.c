@@ -39,6 +39,7 @@
 #include "r_motor_module_cfg.h"
 #include "r_motor_sensorless_vector_api.h"
 #include "Config_MOTOR.h"
+#include "debug_proto/rmw_debug_proto.h"
 
 /***********************************************************************************************************************
 * Global variables
@@ -130,6 +131,7 @@ float       com_f4_ol_damping_fb_limit_rate;    /* Rate of reference speed for f
  Private global variables and functions
  **********************************************************************************************************************/
 static uint8_t  s_u1_cnt_ics = 0;           /* Counter for period of calling "scope_watchpoint" */
+uint8_t g_u1_ics_decimation = ICS_DECIMATION;
 static void r_app_rmw_system_mode(void);
 static void r_app_rmw_check_com_input(void);
 static void r_app_rmw_update_params(void);
@@ -143,6 +145,8 @@ static void r_app_rmw_update_command(void);
 ***********************************************************************************************************************/
 void r_app_rmw_ui_init(void)
 {
+    r_app_rmw_debug_proto_init();
+
     /* Operation variables */
     com_u1_system_mode  = STATEMACHINE_EVENT_STOP;
     g_u1_system_mode    = STATEMACHINE_EVENT_STOP;
@@ -319,13 +323,15 @@ void r_app_rmw_interrupt_handler(void)
     s_u1_cnt_ics++;
 
     /* Decimation of ICS call */
-    if (ICS_DECIMATION < s_u1_cnt_ics)
+    if (g_u1_ics_decimation < s_u1_cnt_ics)
     {
         s_u1_cnt_ics = 0;
 
         /* Call ICS */
         ics2_watchpoint();
     }
+
+    r_app_rmw_debug_proto_periodic();
 
     /* Update commands and configurations when trigger flag is set */
     if (1 == g_u1_update_param_flag)

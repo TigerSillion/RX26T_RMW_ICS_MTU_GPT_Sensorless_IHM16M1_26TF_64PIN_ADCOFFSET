@@ -513,6 +513,7 @@ extern uint8_t      g_u1_system_mode;               /* System mode */
 extern uint8_t      com_u1_enable_write;            /* ICS write enable flag */
 extern uint8_t      g_u1_enable_write;              /* ICS write enable flag */
 extern uint8_t      com_u1_sw_userif;               /* User interface switch */
+extern uint8_t      g_u1_ics_decimation;            /* Configurable decimation for ICS watchpoint */
 extern uint8_t      g_u1_sw_userif;                 /* User interface switch */
 
 /* Offset parameters */

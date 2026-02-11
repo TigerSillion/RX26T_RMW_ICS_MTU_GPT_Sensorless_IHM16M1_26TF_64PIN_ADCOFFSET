@@ -29,6 +29,7 @@
 * Includes <System Includes> , "Project Includes"
 ***********************************************************************************************************************/
 #include "r_app_rmw.h"
+#include "debug_proto/rmw_debug_proto.h"
 
 /***********************************************************************************************************************
 * Exported global variables
@@ -47,7 +48,7 @@ static void ics_eri_interrupt(void)
 #if     defined(BSP_MCU_RX13T)
     /* no code */
 #else
-    ics_int_sci_eri();
+    r_app_rmw_debug_proto_on_eri();
 #endif
 } /* End of function ics_eri_interrupt */
 #endif
@@ -61,7 +62,7 @@ static void ics_eri_interrupt(void)
 #pragma interrupt ics_rxi_interrupt(vect=ICS_INT_RXI)
 static void ics_rxi_interrupt(void)
 {
-    ics_int_sci_rxi();
+    r_app_rmw_debug_proto_on_rxi();
 } /* End of function ics_rxi_interrupt */
 
 /***********************************************************************************************************************
