@@ -1,0 +1,32 @@
+<Window x:Class="PcDebugGui.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:PcDebugGui.App.Views"
+        Title="RX26T PC Debug GUI"
+        Height="900"
+        Width="1400">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="8">
+            <TextBlock Text="Transport" VerticalAlignment="Center" Margin="0,0,8,0" />
+            <ComboBox Width="130" ItemsSource="{Binding TransportKinds}" SelectedItem="{Binding SelectedTransport}" />
+            <TextBox Width="100" Margin="8,0,0,0" Text="{Binding PortName}" ToolTip="COM口" />
+            <TextBox Width="100" Margin="8,0,0,0" Text="{Binding BaudRate}" ToolTip="波特率" />
+            <Button Margin="8,0,0,0" Width="120" Content="连接" Command="{Binding ConnectCommand}" />
+            <Button Margin="8,0,0,0" Width="120" Content="断开" Command="{Binding DisconnectCommand}" />
+            <Button Margin="32,0,0,0" Width="140" Content="保存会话模板" Command="{Binding SaveSessionCommand}" />
+            <Button Margin="8,0,0,0" Width="140" Content="恢复最近模板" Command="{Binding RestoreLatestSessionCommand}" />
+        </StackPanel>
+
+        <TabControl Margin="8">
+            <TabItem Header="FOC 参数调谐">
+                <views:FocTuningView DataContext="{Binding FocTuning}" />
+            </TabItem>
+            <TabItem Header="软件示波器">
+                <views:OscilloscopeView DataContext="{Binding Oscilloscope}" />
+            </TabItem>
+            <TabItem Header="变量/寄存器浏览">
+                <views:RegisterBrowserView DataContext="{Binding RegisterBrowser}" />
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>
